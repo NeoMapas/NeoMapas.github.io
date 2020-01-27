@@ -1,1 +1,17 @@
 theme: jekyll-theme-minimal
+title: "NeoMapas: Iniciativa para el Mapeo de la Biodiversidad Neotropical"
+
+collections:
+  URA:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "URA"
+    values:
+      layout: "ura"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

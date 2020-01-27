@@ -1,0 +1,43 @@
+---
+layout: default
+section: browse
+---
+<h1>{{ page.name }}</h1>
+<h4>Contributors: {{ page.contributors }}</h4>
+<div style=";
+   position: relative;
+  left: 0px;padding: 15px;
+  width: 60%;">
+
+   <div style="background-color:#67A6F5;
+   position: fixed;
+  bottom: 0;
+  font-size: 13px;
+  right: 0;
+  border: 3px solid #2173AD;
+  max-width: 35%;
+  padding: 15px;
+  margin: auto;">
+
+  {% include form-step2.html %}
+
+</div>
+
+{{ content }}
+
+<h2>Ecosystem functional groups in this biome</h2>
+<ul>
+  {% assign filtered_posts = site.EFGs | where: 'biomecode', page.code %}
+  {% for post in filtered_posts %}
+    <li><a href="../EFGs/{{ post.code }}.html">{{ post.name }}</a></li>
+  {% endfor %}
+</ul>
+
+Back to: <a href="../Realms.html">Realm overview</a>
+{% for therealm in site.Realms %}
+ {% if page.realm contains therealm.name %}
+   / <a href="../Realms/{{ therealm.name }}.html">{{ therealm.name }} Realm</a>
+   {% endif %}
+{% endfor %}
+/ <a href="../Biomes.html">Biomes overview</a>
+</div>

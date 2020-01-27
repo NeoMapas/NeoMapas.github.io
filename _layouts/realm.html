@@ -1,0 +1,17 @@
+---
+section: browse
+layout: default
+---
+<h1>{{ page.name }}</h1>
+
+{{ content }}
+
+<h2>Biomes</h2>
+<ul>
+  {% for post in site.Biomes %}
+  {% if post.realm contains page.name %}
+    <li><a href="../Biomes/{{ post.code }}.html">{{ post.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+ <a href="../Realms.html">Back to the Realm overview</a>
