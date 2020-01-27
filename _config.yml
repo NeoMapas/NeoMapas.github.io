@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: "NeoMapas"
 description: "NeoMapas: Iniciativa para el Mapeo de la Biodiversidad Neotropical"
-logo: assets/images/logo_NeoMapas_p.gif
+logo: "assets/images/logo_NeoMapas_p.gif"
 show_downloads: "false"
 
 collections:
