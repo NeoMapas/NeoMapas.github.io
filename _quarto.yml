@@ -1,0 +1,22 @@
+project:
+  type: website
+  
+website:
+  title: "NeoMapas"
+  description: "Iniciativa para el Mapeo de la Biodiversidad Neotropical"
+  margin-header: |
+    ![Logo image](/assets/images/logo_NeoMapas_p.gif)
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: 
+      light: united
+      dark: superhero
+    css: styles.css
+    toc: true
+    

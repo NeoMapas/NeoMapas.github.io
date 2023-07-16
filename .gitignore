@@ -1,4 +1,8 @@
 *~
+.DS_Store
+
+# tu secreto ni al más discreto
+secrets
 
 # History files
 .Rhistory
@@ -39,3 +43,5 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+/.quarto/

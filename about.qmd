@@ -1,0 +1,14 @@
+---
+layout: default
+title: Contacto
+---
+
+# Contacto
+Página creada y mantenida por [José R. Ferrer-Paris](https://github.com/jrfep) actualmente basado en [University of New South Wales, Australia](https://github.com/unsw-edu-au)
+
+# Referencias
+This page is part of the publication:
+
+https://www.researchgate.net/publication/269408844_NeoMaps_The_Neotropical_Biodiversity_Mapping_Initiative
+
+
