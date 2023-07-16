@@ -8,6 +8,40 @@ código: NM05
 
 # Ubicación
 
+```{r}
+#| label: Data download
+library("dataverse")
+require(sf)
+library(dplyr)
+library(tmap)
+
+Sys.setenv("DATAVERSE_SERVER" = "dataverse.harvard.edu")
+
+gpstrack <- get_dataframe_by_name(
+  filename = "05.gpx",
+  dataset = "10.7910/DVN/Y1AQKS",
+  original = TRUE,
+  .f = sf::read_sf)
+
+
+ruta <- gpstrack %>% filter(grepl("05", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+
+```
+
+```{r}
+#| label: Map
+#| eval: true
+
+#library(leaflet)
+#leaflet() %>% 
+#  addTiles() %>%
+#  addMarkers(data=ruta, label = ~as.character(name))
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+
+```
+
+
 # Actividades
 
 # Documentos
