@@ -1,6 +1,8 @@
 ---
 title: "NM05 : Rosario de Perijá"
 author: JRFEP
+editor_options: 
+  chunk_output_type: console
 ---
 
 estado: Zulia
@@ -15,7 +17,7 @@ require(sf)
 library(dplyr)
 library(tmap)
 
-Sys.setenv("DATAVERSE_SERVER" = "dataverse.harvard.edu")
+# Sys.setenv("DATAVERSE_SERVER" = "dataverse.harvard.edu")
 
 gpstrack <- get_dataframe_by_name(
   filename = "05.gpx",
