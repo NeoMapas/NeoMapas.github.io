@@ -1,0 +1,29 @@
+---
+title: "NM08 - Altagracia de Orituco"
+subtitle: "Aragua"
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/other.bibtex
+  - ../bibTeX/reports.bibtex
+nocite: |
+  @Ferrer_Paris_2012
+  @Rodr_guez_2012
+  @https://doi.org/10.6084/m9.figshare.4736611,
+---
+
+# Ubicación
+
+Altagracia de Orituco 
+
+# Actividades
+
+Región incluida en las actividades del estudio piloto de muestreo de escarabajos [@Ferrer_Paris_2013].
+
+# Hallazgos importantes
+
+
+
+# Documentos
+
+::: {#refs}
+:::

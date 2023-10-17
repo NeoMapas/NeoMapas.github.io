@@ -1,0 +1,14 @@
+---
+title: "Lugares"
+listing: 
+  id: nm-listing
+  contents: NM
+  type: table
+  fields: [title, subtitle]
+  field-display-names:
+    title: "Transección/ruta"
+    subtitle: "Estado"
+---
+
+::: {#nm-listing}
+:::

@@ -12,6 +12,19 @@ listing:
 ::: {#col-listing}
 :::
 
+### Research team, collaborators, and funding 
+
+#### Research team and collaborators 
+
+Dr. Jon Paul Rodríguez, NeoMap funder, identified and evaluated the survey protocols for bird monitoring. 
+
+Dr. Ada Sánchez-Mercado, Co-investigator, tested survey protocols for butterflies and dung beetles on the pilot phase, and coordinate the postgraduate international courses. 
+
+Dr. Gustavo Rodríguez, lead a team of 50 Venezuelan ornithologists and birdwatchers to conduct the bird surveys, and curate and analyse all the data obtained. 
+
+MSc. Angel Solis, Beetle Curator at the Museo Nacional de Costa Rica, identified dung beetle specimens and created taxonomic keys for several genera and species. 
+
+
 ## Otros colaboradores de NeoMapas
 
 - Jon Paul Rodríguez

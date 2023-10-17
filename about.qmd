@@ -11,3 +11,14 @@ Algunos productos científicos de NeoMapas están disponibles en los siguientes 
 - [Zenodo](https://zenodo.org/communities/neomapas/?page=1&size=20)
 - [Figshare](https://figshare.com/search?q=:keyword:%20%22NeoMapas%22)
 - [Dataverse](https://dataverse.harvard.edu/dataverse/NeoMapas)
+
+
+### Funding 
+
+- Total Venezuela, S. A., Program for the Support of the Conservation of the Biodiversity of Venezuela. 
+- Venezuelan Institute for Scientific Research. 
+- EcoHealth Alliance. 
+- National Audubon Society - Latin America, and Caribbean Program 
+- Provita. 
+- Conservation International - Andean Centre for Biodiversity Conservation. 
+- Disney Wildlife Conservation Fund - Conservation Technology Support Program. 
