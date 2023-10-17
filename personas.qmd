@@ -1,0 +1,23 @@
+---
+title: "Colaboradores"
+listing: 
+  id: col-listing
+  contents: personas
+  type: grid
+  fields: [image,  title]
+  field-display-names:
+    title: "Nombre"
+---
+
+::: {#col-listing}
+:::
+
+## Otros colaboradores de NeoMapas
+
+- Jon Paul Rodríguez
+- Chris Sharpe
+- Cecilia Lozano
+- Ángel Solis
+- Ariana 
+- Arlene Cardozo-Urdaneta
+

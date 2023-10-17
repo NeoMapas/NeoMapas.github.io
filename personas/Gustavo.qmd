@@ -1,0 +1,33 @@
+---
+title: "Gustavo Rodríguez"
+about:
+  id: hero-heading
+  template: jolla
+  image: gustavo.jpg
+  links: 
+    - icon: link
+      text: wordpress
+      href: https://gustavoarodrigueza.wordpress.com/sobre-mi/
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+nocite: |
+  @Rodr_guez_2012
+---
+
+:::{#hero-heading}
+
+## Breve Biografía
+
+Gustavo A. Rodríguez Arvelo (1961-†2021) fue un reconocido ornitólogo venezolano. Autor de varios artículos científicos y libros; guía y mentor de numerosos observadores de aves en el país.
+
+## Contribuciones
+
+NeoMapas Aves | Muestreo nacional | 2009
+
+:::
+
+
+## Documentos más relevantes
+
+::: {#refs}
+:::

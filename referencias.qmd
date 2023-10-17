@@ -1,0 +1,73 @@
+---
+title: "Publicaciones de NeoMapas"
+author: "JR Ferrer-Paris"
+date: "10 Oct 2023"
+---
+
+```{r setup, include = FALSE, cache = FALSE,message=FALSE}
+library(RefManageR)
+here::i_am("referencias.qmd")
+BibOptions(check.entries = FALSE, style = "markdown", cite.style = "authoryear",
+           bib.style = "numeric", hyperlink = FALSE)
+```
+
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+bib1 <- ReadBib(here::here("bibTeX","peer-review.bibtex"), check = FALSE)
+bib2 <- ReadBib(here::here("bibTeX","preprints.bibtex"), check = FALSE)
+bib3 <- ReadBib(here::here("bibTeX","other.bibtex"), check = FALSE)
+bib4 <- ReadBib(here::here("bibTeX","reports.bibtex"), check = FALSE)
+bib5 <- ReadBib(here::here("bibTeX","datasets.bibtex"), check = FALSE)
+#bib6 <- ReadBib(here::here("bibTeX","code-and-software.bibtex"), check = FALSE)
+NoCite(bib = bib1, 1:length(bib1), .opts = list(hyperlink = FALSE))
+NoCite(bib = bib2, 1:length(bib2), .opts = list(hyperlink = FALSE))
+NoCite(bib = bib3, 1:length(bib3), .opts = list(hyperlink = FALSE))
+NoCite(bib = bib4, 1:length(bib4), .opts = list(hyperlink = FALSE))
+NoCite(bib = bib5, 1:length(bib5), .opts = list(hyperlink = FALSE))
+#NoCite(bib = bib6, 1:length(bib6), .opts = list(hyperlink = FALSE))
+```
+
+Lista de todas las publicaciones, informes y otros productos científicos relacionados con la iniciativa NeoMapas.
+
+
+## Publicaciones arbitradas
+
+Publicaciones en revistas arbitradas.
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib1, .opts = list(check.entries = FALSE, max.names=100, sorting = "ydnt"))
+```
+
+## Notas y comentarios
+
+Notas y comentarios editados pero no arbitrados.
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib3, .opts = list(check.entries = FALSE,  max.names=100, sorting = "ydnt"))
+```
+
+
+## Reportes
+
+Reportes producidos y depositados en repositorios de acceso libre con DOI u otro identificador permanente.
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib4, .opts = list(check.entries = FALSE,  max.names=100, sorting = "ydnt"))
+```
+
+## Pre-prints
+
+Manuscritos y reportes preparados (pre-arbitraje).
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib2, .opts = list(check.entries = FALSE,  max.names=100, sorting = "ydnt"))
+```
+
+
+## Conjuntos de datos
+
+Conjuntos de datos preparados y depositados en repositorios de acceso abierto.
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib5, .opts = list(check.entries = FALSE,  max.names=100, sorting = "ydnt"))
+```

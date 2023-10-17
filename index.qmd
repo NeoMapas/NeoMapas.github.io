@@ -2,6 +2,10 @@
 title: "NeoMapas.github.io"
 ---
 
-This is a Quarto website.
+Esta es la página de la iniciativa para el monitoreo de la biodiversidad en Venezuela.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+
+
+
+

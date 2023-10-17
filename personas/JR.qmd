@@ -1,0 +1,36 @@
+---
+title: "JR Ferrer-Paris"
+about:
+  id: hero-heading
+  template: jolla
+  image: profile.jpg
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/jrfep
+    - icon: github
+      text: Github
+      href: https://github.com/jrfep
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+nocite: |
+  @Ferrer_Paris_2016
+  @Ferrer_Paris_2012
+---
+
+:::{#hero-heading}
+
+JR Ferrer-Paris ha sido coordinador de la iniciativa NeoMapas desde 2006 hasta 2018.
+
+## Contribuciones
+
+Coordinador de la iniciativa | 2006 - 2018
+
+Estudio piloto | Escarabajos y mariposas | 2005 - 2006
+
+:::
+
+### Documentos más relevantes
+
+::: {#refs}
+:::
