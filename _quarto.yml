@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "NeoMapas.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - referencias.qmd
+      - personas.qmd
+      - about.qmd
+
+format:
+  html:
+    theme: united
+    css: styles.css
+    toc: true
+
+lang: es
+

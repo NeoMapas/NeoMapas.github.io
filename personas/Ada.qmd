@@ -1,0 +1,25 @@
+---
+title: "Ada Y. Sánchez-Mercado"
+about:
+  id: hero-heading
+  template: jolla
+  image: https://api.research.unsw.edu.au/sites/default/files/images/profile/Ada_Sanchez-Mercado_0.jpg
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+nocite: |
+  @Rodr_guez_2012
+  @Ferrer_Paris_2012
+---
+
+:::{#hero-heading}
+
+## Contribuciones
+
+Estudio piloto | Escarabajos y mariposas | 2005 - 2006
+
+:::
+
+### Documentos más relevantes
+
+::: {#refs}
+:::
