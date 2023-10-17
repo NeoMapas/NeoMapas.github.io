@@ -4,6 +4,8 @@ project:
 
 website:
   title: "NeoMapas.github.io"
+  margin-header: |
+  ![Logo image](/img/logo_NeoMapas_p.gif)
   navbar:
     left:
       - href: index.qmd
