@@ -3,18 +3,28 @@ project:
   output-dir: docs
 
 website:
-  title: "NeoMapas.github.io"
+  title: "NeoMapas"
+  favicon: /img/logo_NeoMapas_p.gif
+  twitter-card: 
+    creator: "@neomapas"
+  site-url: https://neomapas.github.io
+  margin-header: |
+    ![Iniciativa para el monitoreo de la biodiversidad Neotropical](/img/logo_NeoMapas_p.gif)
   navbar:
     left:
       - href: index.qmd
         text: Inicio
       - referencias.qmd
       - personas.qmd
+      - lugares.qmd
+      - especies.qmd
       - about.qmd
 
 format:
   html:
-    theme: united
+    theme: 
+      light: united
+      dark: superhero
     css: styles.css
     toc: true
 

@@ -12,6 +12,19 @@ listing:
 ::: {#col-listing}
 :::
 
+### Research team, collaborators, and funding 
+
+#### Research team and collaborators 
+
+Dr. Jon Paul Rodríguez, NeoMaps founder, identified and evaluated the survey protocols for bird monitoring. 
+
+Dr. Ada Sánchez-Mercado, Co-investigator, tested survey protocols for butterflies and dung beetles on the pilot phase, and coordinate the postgraduate international courses. 
+
+Dr. Gustavo Rodríguez, lead a team of XX? Venezuelan ornithologists and birdwatchers to conduct the bird surveys, and curate and analyse all the data obtained. 
+
+MSc. Angel Solis, Beetle Curator at the Museo Nacional de Costa Rica, identified dung beetle specimens and created taxonomic keys for several genera and species. 
+
+
 ## Otros colaboradores de NeoMapas
 
 - Jon Paul Rodríguez
@@ -20,4 +33,36 @@ listing:
 - Ángel Solis
 - Ariana 
 - Arlene Cardozo-Urdaneta
+
+## Curso 2009
+
+**Coordinadores del Curso** 
+
+José Rafael Ferrer-Paris y Ada Y. Sánchez-Mercado (IVIC) 
+
+**Profesores componente teórico** 
+
+- Tatjana Good, James Cook University (Australia)             
+- Fernando  Vaz-de-Mello, Universidade Federal de Mato Grosso (Brasil)
+- Ángel Solís, INBio (Costa Rica)
+- Andrew Short, Universidad de Kansas (EEUU)      
+- Jonathan Coddington, Smithsonian National Museum of Natural History  (EEUU)
+- Ada Sánchez – Mercado, IVIC      
+- Daniel Lew, Museo de Historia Natural La Salle
+- Jafet Nassar, IVIC      
+- Jesús Mavárez, IVIC
+- José Clavijo, Museo del Instituto de Zoología Agrícola
+- José Rafael Ferrer-Paris, IVIC      
+- Laurie Fajardo, IVIC      
+- Mariapia Bevilacqua, Fundación ACOANA
+
+**Instructores de campo**
+
+- Mery Córdova (Bolivia)
+- Paola Cely (Colombia)
+- Marianne Asmüssen (Chile)
+- Douglas Mora (Venezuela)   
+- Helios Martínez (Venezuela)     
+- Mónica Núñez  (Venezuela) 
+
 

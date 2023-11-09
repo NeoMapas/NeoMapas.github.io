@@ -1,0 +1,11 @@
+---
+title: "Especies destacadas"
+listing: 
+  id: spp-listing
+  contents: taxa
+  type: table
+  fields: [title, subtitle]
+---
+
+::: {#spp-listing}
+:::

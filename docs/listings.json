@@ -1,5 +1,18 @@
 [
   {
+    "listing": "/lugares.html",
+    "items": [
+      "/NM/NM05.html",
+      "/NM/NM08.html"
+    ]
+  },
+  {
+    "listing": "/especies.html",
+    "items": [
+      "/taxa/Oxysternon.html"
+    ]
+  },
+  {
     "listing": "/personas.html",
     "items": [
       "/personas/Ada.html",
