@@ -17,6 +17,7 @@ website:
       - referencias.qmd
       - personas.qmd
       - lugares.qmd
+      - especies.qmd
       - about.qmd
 
 format:

@@ -5,59 +5,41 @@ subtitle: "Monitoreo de la biodiversidad y fomento de capacidades"
 
 Esta es la página de la iniciativa para el monitoreo de la biodiversidad en Venezuela.
 
-## Summary 
+## Sobre NeoMapas 
 
-Tropical Latin America is home to an enormous share of the world's biodiversity. Despite its immense natural wealth, the region faces a significant deficit of reliable biodiversity data and lacks the local capacity necessary to collect such data. For more than 10 years, Dr José Rafael Ferrer-Paris has led the Neotropical Biodiversity Mapping Initiative (NeoMaps), a long-term biodiversity monitoring program. NeoMaps has not only addressed these gaps in biodiversity data in one of the megadiverse tropical countries, Venezuela, but has also emerged as a model for efficiently surveying biodiversity in developing countries while strengthening the local capacity needed to conduct these surveys. After three nationwide systematic surveys in 2006, 2009, and 2010, NeoMaps has compiled over 170,000 records of presence and abundance for birds, dung beetles, and butterflies. Additionally, it has provided the conceptual basis and practical skills required for designing and implementing biodiversity inventories to more than 60 conservationists from Venezuela, Colombia, Mexico, Peru, Bolivia, Brazil, Uruguay, and Spain. 
+El descubrimiento de patrones en la distribución y abundancia de la biodiversidad es el primer paso para el diseño de estrategias de conservación efectivas. La adquisición de la información necesaria para tales estrategias no es una labor trivial, ya que los estudios de campo toman tiempo y son costosos. 
 
-## Research description 
-
-Tropical Latin America houses a significant portion of the world's biodiversity. Despite its immense natural wealth, the region faces a marked deficit in trained personnel and adequate funding for planning and prioritizing the conservation of its diverse species and ecosystems. 
-
-The Neotropical Biodiversity Mapping Initiative (NeoMaps), led by Dr. José Rafael Ferrer-Paris, Ada Sánchez-Mercado, and Jon Paul Rodríguez, serves as a model for surveying biodiversity in developing countries, aiming to overcome the challenges of cost and time associated with large-scale surveys. 
-
-NeoMaps minimizes the field effort required for generating biodiversity data by employing an environmentally stratified sampling design and applying spatial interpolation methods. This allows for the reliable and comparable collection of data in a country as vast as Venezuela (916,445 km2) within six months to a year. 
-
-To achieve this, NeoMaps relies on field survey teams that bring together Venezuelan scientists and students with counterparts from neighbouring countries. For this purpose, three international postgraduate courses were held in 2006, 2009, and 2010 at the Ecology Centre of the Venezuelan Institute for Scientific Research. These theoretical and practical courses provided an ideal platform for uniting young individuals from different nationalities and areas of expertise, fostering the exchange of experiences and interactions with internationally recognized experts in biodiversity research. Students from Venezuela, Colombia, Mexico, Peru, Bolivia, Brazil, Uruguay, and Spain participated, alongside invited experts from the United States, Brazil, Costa Rica, Australia, and Venezuela. The students formed several working groups, and after a week of lectures and workshops, they embarked on expeditions to explore various regions of the country, conducting national inventories of dung beetles butterflies and birds. 
-
-Between 2001 and 2005, an initial pilot phase was developed, followed by the establishment of uniform data collection protocols nationwide for birds, dung beetles, and butterflies in 2006. During these surveys, NeoMaps accumulated data across 25 locations visited throughout the country. They invested over 800 hours per person in butterfly collection and deployed over 140,000 hours per trap for beetle collection. This intensive effort resulted in the capture of more than 9,000 butterflies from XXX species and over 45,000 beetle specimens from >70 species. Additionally, NeoMaps recorded >170,000 bird observations. 
+NeoMapas es un modelo para la creación de bases de datos georeferenciadas sobre la distribución y abundancia de la biodiversidad neotropical. Se fundamenta en el diseño de protocolos que minimizan el esfuerzo de muestreo de campo, a la vez que sistematizan los métodos para su fácil replicación y la comparación entre localidades. Asimismo, se hace énfasis en la creación y fortalecimiento de equipos de trabajo locales.            
+El éxito de NeoMapas depende de una mezcla de trabajo entusiasta de estudiantes y voluntarios, y la valiosa contribución de expertos que pueden identificar, en campo o en laboratorio, las especies observadas y capturadas. Desde el principio las actividades de NeoMapas han involucrado estudiantes nacionales y extranjeros, y hemos procurado establecer vínculos de cooperación con expertos en los grupos taxonómicos escogidos. 
 
 
- 
+## Más de 10 años de esfuerzos en Venezuela 2002-2016
 
-### Research impact 
+Las actividades de NeoMapas se iniciaron con los muestreos pilotos de observación de aves realizados por Jon Paul Rodríguez (JPR) y Chris Sharpe en tres regiones de Venezuela entre 2001 y 2002.            
+  
+**Entre el 2002 y 2003** José R. Ferrer Paris (JRFP) se dedicó a elaborar la primera propuesta del diseño muestral que se utilizó para seleccionar un primer conjunto de regiones de muestreo. Pedro Borges y otros colaboradores se encargaron de delinear transectas en estas regiones seleccionadas.            
+  
+**Entre 2004 y 2005** un grupo de estudiantes y voluntarios, liderados por JRFP y Tatjana Good (TG), colaboraron en la calibración de los protocolos de captura de mariposas y escarabajos coprófagos en varias regiones de Venezuela.            
+  
+**En 2006** el grupo de trabajo de NeoMapas dirigidos por JRFP y TG dicta el primer  _Curso Internacional sobre Inventario y Monitorización de la Biodiversidad Neotropical_ , en el cual se ofrecieron  herramientas básicas teóricas y prácticas para diseñar, planificar e implementar un programa de inventario y monitorización de la biodiversidad neotropical. Este conjunto de preparadores, estudiantes del curso y voluntarios realizó por primera vez el muestreo de mariposas a nivel nacional y un estudio piloto del muestreo de escarabajos.            
+  
+**A finales de 2008 y principios de 2009** JRFP realizó una evaluación del diseño muestral para proponer regiones de muestreos alternativas y complementarias a la selección inicial realizada en 2003. De esta forma se incorporaron nuevas transectas para el estudio de la diversidad biológica en el marco de NeoMapas.           
+  
+**En 2009**  Ada Sánchez Mercado (ASM) y JRFP organizan  el segundo   _Curso Internacional sobre Inventario y Monitorización de la Biodiversidad Neotropical_. En esta oportunidad el curso contó con seis preparadores y 17 estudiantes inscritos, lo cual permitió conformar seis grupos de trabajo para realizar el primer muestreo nacional de escarabajos, y el segundo muestreo nacional de mariposas.            
+  
+**Entre 2009 y 2010** Gustavo Rodríguez (GR) se incorpora al grupo de trabajo para planificar el primer muestreo nacional de aves de NeoMapas. Esta actividad contó con la participación de siete expertos y 14 asistentes que formaron siete grupos de trabajo. En marzo de 2010 se realiza un corto taller de entrenamiento para los participantes y durante las últimas semanas de marzo y las primeras de abril de 2010 los siete grupos de trabajo visitan 27 transectas para implementar el protocolo de observación de aves.            
+**Entre 2010 y 2016** los datos generados durante todas las actividades de NeoMapas se mantienen en una base de datos para la cual se está desarrollando un portal de acceso que permita consultas del público interesado, tanto para los que buscan acceso a datos básicos sobre diversidad como para los entes gubernamentales y privados que requieran información sobre regiones o localidades específicas.            
+  
+Para poder garantizar la utilidad de estas herramientas es necesario hacer un mantenimiento riguroso de las muestras colectadas y de las bases de datos generadas. Es importante verificar la consistencia de la información desde el momento en que se realiza una observación o una captura, hasta el momento de establecer una identificación válida.            
+  
+El análisis de los datos han contribuído a mejorar el estado del conocimiento de los tres grupos de estudio en el país. Al combinar nuestros datos y con otras fuentes de información hemos contribuído además con el estudio de patrones de diversidad en regiones tropicales.
 
-#### Documenting changes in distribution 
+## Información respaldada
 
-Before NeoMaps, Venezuelan conservationists faced a significant challenge: the absence of comprehensive data on the abundance and distribution of species critical to their work. This information gap made it difficult to formulate effective strategies to protect threatened species and manage their habitats. 
+Hacemos un gran esfuerzo para documentar la biodiversidad de Venezuela. Miles de horas de trabajo de campo se resumen en planillas y ejemplares que debemos organizar y procesar. Una vez digitalizados es posible analizar los resultados, pero el respaldo físico de los originales es esencial para el control de calidad y la constante verificación de dudas. 
 
-NeoMaps emerged as a ground-breaking initiative, addressing this challenge head-on. By compiling data that spanned a wide range of vegetation types, climatic conditions, and landscape characteristics, NeoMaps became an invaluable resource for conservationists. It provided the tools needed to explore changes in the abundance and distribution of species, improve our knowledge about distribution for less know species, and allowing us to identify potential ecological indicator species to better understand responses of the biota to environmental changes. 
+Más allá del ejemplar, imprescindible para el trabajo taxonómico y morfológico, las planillas proveen toda la información asociada al evento de captura u observación: fecha, hora, localidad, esfuerzo de muestreo,&nbsp; habitat y perturbaciones, entre otros detalles y mediciones que pueden ser &#250;tiles para comprender mejor las asociaciones de las especies con su entorno natural. 
 
-One notable impact of NeoMaps was its contribution to our understanding of parrot species' distribution and abundance. For instance, it identified that two widespread parrot species, Amazona amazonica and Amazona ochrocephala, initially considered of lesser concern, were experiencing a decline in their distribution. This discovery sent an alert throughout the conservation community. The data gathered by NeoMaps had the power to challenge established notions about the conservation status of certain species, highlighting the need of additional in-depth studies to uncover the meaning behind these contemporary absences. 
+En 31 carpetas guardamos planillas, listas, mapas y formatos que surgieron de las visitas a 53 regiones de nuestro país. 
 
-NeoMaps, also unveiled new information regarding the distribution of a dung-beetle species Oxysternon ebeninum. Its rigorous sampling efforts, allow identify new locations, each presenting unique temperature and precipitation range conditions previously unreported. These new sampling locations offered more than just geographical data; they provided crucial insights. NeoMaps' data revealed that not only biogeographic barriers, but ecological one played a significant role in shaping the distribution of this species. Thanks to this new information it becomes feasible to design sampling strategies aimed at advancing our comprehension of the species' ecology and biogeography in the future. 
-
-Identifying a suitable ecological indicator is no small feat. It requires a species that not only lends itself to study but also offers profound insights into its ecological context. NeoMaps played a pivotal role in this endeavour by providing crucial occurrence and abundance data for the dung beetle Oxysternon festivum. It also supplied essential information about individual body size and total biomass, allowing us to assess its response to changing climatic conditions and vegetation cover. The results were promising. Oxysternon festivum demonstrated sensitivity to shifts in vegetation cover while exhibiting unexpected resilience. In hotter and drier regions, it not only thrived but also grew in abundance and size, potentially outcompeting more sensitive species. This remarkable adaptability positions Oxysternon festivum as a dynamic indicator species, offering valuable ecological insights. 
-
-“This paper proposes a valuable procedure to defining the location of surveys in hyper diverse countries, also providing interesting results of the real capacities of such huge efforts to unveil "real" biodiversity data. In the reviewer’s opinion, which I concur with, the divulgation of this and similar approaches is very recommendable.” Dr Lluis Brotons, Associate Editor, Diversity and Distribution. 
-
-#### Enhancing local capacities to monitoring biodiversity 
-
-By combining the enthusiasm of young professionals with the consolidated knowledge of scientific experts, NeoMaps developed and strengthened regional capacity. 
-
-
-> I enjoy seeing how students make the most of the opportunity to interact when speakers or researchers from other countries visit. They are very enthusiastic, coming from various countries: Uruguay, Bolivia, Peru, Colombia, Mexico, and Venezuela, each with their own country-specific issues. Some already have data, and when they have their own data, they are always interested in applying new techniques and seeing the results, especially because this has an impact on their work.
-- Jonathan Coddington, Scientific Curator at the National Museum of the Smithsonian Institute, USA. 
-
- 
-NeoMaps had a direct impact on 60 conservationists across eight countries, including Venezuela, Colombia, Mexico, Peru, Bolivia, Brazil, Uruguay, and Spain. However, its impact extended beyond the participants, as NeoMaps provided data and mentorship opportunities for the future generation of researchers. Two postgraduate students developed their projects under Dr. Ferrer's supervision using NeoMaps' data. 
-
- For example, Dr. Cecilia Lozano assessed the conservation status of Venezuelan dung beetles during her postgraduate project at the Universidade Federal de Mato Grosso in Brazil. Dr. Arianna Thomas-Cabianca, currently the head of the Diptera section at the Senckenberg Natural History Collections in Germany, served as the curator of NeoMaps' dung beetle collection. Also, the interest for develop new sampling methods for butterflies and beetles of  Indiana Cristóbal Ríos-Málaver, currently Research Associate at the McGuire Center for Lepidoptera and Biodiversity in the University of Florida, emerged after NeoMaps course, as well as the passion for entomology of María Eugenia Lozada. For all of them, the early interactions with professionals from different countries were instrumental in expanding their vision of their roles in the conservation arena and creating the much-needed networking opportunities that were pivotal to advancing their international careers. 
-
-> "They [course participants] may realize that conservation is not just a problem for scientists, such as biologists or ecologists, but it involves everyone who is around or works in the field of planning" Tatjana Good - James Cook University, Australia. 
-
-
-### Selected media appearances 
-
- Scientists from IVIC (Venezuelan Institute for Scientific Research) are building a map of Neotropical biodiversity that crosses borders. Funvisis 29th August 2009  
-
-
+<a href="https://lh3.googleusercontent.com/-Xp6Irp403-Y/VxeD1m2Yc4I/AAAAAAAAERQ/d4FocQkkESw/s1600/20160420_082741.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"> <img border="0" src="https://lh3.googleusercontent.com/-Xp6Irp403-Y/VxeD1m2Yc4I/AAAAAAAAERQ/d4FocQkkESw/s640/20160420_082741.jpg"> </a>
