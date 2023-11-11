@@ -26,7 +26,7 @@ if (!dir.exists(dir_datos))
 
 # Load the dataverse library
 library("dataverse")
-
+library(dplyr)
 # Option 1: read file directly
 
 gpstrack <- get_dataframe_by_name(
@@ -75,3 +75,35 @@ archivo <- "Amazona-dataset.tab"
 
 download.file("https://doi.pangaea.de/10.1594/PANGAEA.803430?format=textfile",
               here::here("sandbox", archivo))
+
+## datos de los respaldos copiados:
+## scp jferrer@gaia.ad.unsw.edu.au:~/respaldo/NeoMapas/Rdata/20150515_NM.rda /Users/z3529065/proyectos/NeoMapas/NeoMapas.github.io/sandbox
+
+
+load(here::here("sandbox",  "20150515_NM.rda"))
+info.NM <- info.NM %>% filter(Nombre != "", !Fecha %in% "0000-00-00")
+front.matter <- "---
+title: \"NM%s - %s\"
+subtitle: \"%s\"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+---
+
+## Basic information 
+
+"
+
+for (j in 1:nrow(info.NM)) {
+  i <- info.NM[j,]
+  archivo <- here::here("NM",sprintf("NM%02d.qmd",i$NM))
+  if (!file.exists(archivo)) {
+    cat(file=archivo,
+        sprintf(front.matter, i$NM, i$Nombre, i$ADM1))
+  }
+    print(i$Nombre) 
+    cat(file=archivo,paste(sprintf("*%s*: %s",names(i),i),collapse="\n"),append=TRUE)
+}
