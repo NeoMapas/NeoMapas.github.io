@@ -1,6 +1,6 @@
 ---
-title: "NM08 - Altagracia de Orituco"
-subtitle: "Aragua"
+title: "NM25 - Yacambú"
+subtitle: "Lara"
 bibliography: 
   - ../bibTeX/peer-review.bibtex
   - ../bibTeX/other.bibtex
@@ -9,7 +9,7 @@ bibliography:
 nocite: |
   @Ferrer_Paris_2012
   @Rodr_guez_2012
-  @https://doi.org/10.6084/m9.figshare.4736611,
+  @https://doi.org/10.6084/m9.figshare.4745836
 editor_options: 
   chunk_output_type: console
 execute:
@@ -20,7 +20,7 @@ execute:
 
 # Ubicación
 
-Altagracia de Orituco, estado Aragua
+Parque Nacional Yacambú en el estado Lara.
 
 ```{r}
 #| label: Data download and map
@@ -31,8 +31,8 @@ library(tmap)
 library(knitr)
 library(readr)
 
-gpstrack <- read_sf(here::here("sandbox","08.gpx"))
-ruta <- gpstrack %>% filter(grepl("08", name)) %>% select(name) 
+gpstrack <- read_sf(here::here("sandbox","25.gpx"))
+ruta <- gpstrack %>% filter(grepl("25", name)) %>% select(name) 
 map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
 tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 
@@ -43,24 +43,11 @@ tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 
 Región incluida en las actividades:
 
-- Estudio piloto de muestreo de escarabajos [@Ferrer_Paris_2013].
 - Muestreos de mariposas y escarabajos [@Ferrer_Paris_2012]
 - Muestreos de Aves en 2010 [@Rodr_guez_2012]
 
 # Hallazgos importantes
 
-Se observaron dos especies del género Amazona [@Amazona_pangaea_dataset].
-
-```{r}
-archivo <- "Amazona-dataset.tab"
-Amazonas <- read_delim(here::here("sandbox", archivo), skip=27)
-Amazonas %>% 
-  filter(Code=="NM08") %>% 
-  select(starts_with("A.")) %>% 
-  select(where(~sum(.) > 0)) %>% 
-  rename_with(~ gsub(" [#]", "", .x, fixed = TRUE)) %>% 
-  colSums() %>% kable()
-```
 
 # Documentos
 
