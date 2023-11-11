@@ -1,10 +1,12 @@
 [
   {
-    "listing": "/personas.html",
+    "listing": "/lugares.html",
     "items": [
-      "/personas/Ada.html",
-      "/personas/Gustavo.html",
-      "/personas/JR.html"
+      "/NM/NM05.html",
+      "/NM/NM08.html",
+      "/NM/NM25.html",
+      "/NM/NM43.html",
+      "/NM/NM95.html"
     ]
   },
   {
@@ -14,12 +16,11 @@
     ]
   },
   {
-    "listing": "/lugares.html",
+    "listing": "/personas.html",
     "items": [
-      "/NM/NM05.html",
-      "/NM/NM08.html",
-      "/NM/NM43.html",
-      "/NM/NM95.html"
+      "/personas/Ada.html",
+      "/personas/Gustavo.html",
+      "/personas/JR.html"
     ]
   }
 ]
