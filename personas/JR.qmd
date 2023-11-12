@@ -11,6 +11,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/jrfep
+    - icon: link
+      text: Website
+      href: https://jrfep.github.io/
 bibliography: 
   - ../bibTeX/peer-review.bibtex
 nocite: |
