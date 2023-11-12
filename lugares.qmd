@@ -1,5 +1,5 @@
 ---
-title: "Lugares"
+title: "Rutas NM"
 listing: 
   id: nm-listing
   contents: NM

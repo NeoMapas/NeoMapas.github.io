@@ -1,0 +1,24 @@
+---
+title: "Cuadrícula para el estudio de la distribución espacial de la biodiversidad terrestre en Venezuela"
+author: 
+    - "JR Ferrer-Paris"
+    - "AY Sánchez-Mercado"
+date: "21 Dec 2010"
+---
+
+
+<p>Con el fin de comparar la información que proviene de distintas fuentes, desarrollamos la Cuadrícula para el estudio de la distribución espacial de la biodiversidad terrestre en Venezuela (CNEB), compuesta de celdas de 0,5 x 0,5 grados (aproximadamente 2.500 km2) que inicia a los 73,35 ºO y 0,7 ºN. </p>
+
+<p>La CNEB consiste en 377 celdas que cubren los 23 estados que comprenden Venezuela los cuales incluyen toda la tierra firme y las islas cercanas a la costa.</p>
+
+<p>En NeoMapas, el universo muestral fue definido como todas las celdas en la CNEB que son accesibles por carretera con al menos 30% de la cobertura terrestre. </p>
+
+<p>El universo de muestreo lo componen 170 celdas, que cubren aproximadamente 425.000 km2. </p>
+
+<p>Restringimos el universo de muestreo a las celdas con acceso por carretera fue para enfocarnos en áreas con gran impacto humano.</p>
+
+<p>Una vez definido el universo de muestreo, desarrollamos un diseño muestral estratificado por variables ambientales y bioregiones con el fin de minimizar el esfuerzo necesario  para caracterizar la biodiversidad a escala nacional. Luego, seleccionamos 27 de celdas que representen la variabilidad ambiental y las regiones biogeográficas del país.</p>
+
+<p>Dentro de cada celda trazamos una transecta de 40 km de longitud que represente un gradiente de máxima variación ambiental dentro de la celda (e.g. gradiente altitudinal, de cobertura boscosa, de humedad, etc.). Esta transecta es la unidad regional para los análisis (URA), dentro de la cual se distribuyen las unidades elementales de muestreo (UEM) que varían según el grupo taxonómico (trampas, punto observación, recorrido cronometrado).</p>
+
+<p>Para cada taxón, definimos protocolos de muestreos para asegurarnos que el trabajo de campo fuera simple, repetible y eficiente. Los protocolos de captura fueron estandarizados con base en las UEM con un esfuerzo de captura/observación cuantificable que permita la comparación de resultados obtenidos en diferentes regiones y épocas.</p>

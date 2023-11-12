@@ -23,10 +23,24 @@ website:
     left:
       - href: index.qmd
         text: Inicio
+      - text: "Lugares"
+        menu:
+          - text: "CNEB"
+            href: CNEB.qmd
+          - lugares.qmd
+      - text: "Taxones"
+        menu:
+          - text: "Grupos indicadores"
+            href: CNEB.qmd
+          - text: "Mariposas"
+            href: CNEB.qmd
+          - text: "Escarabajos"
+            href: CNEB.qmd
+          - text: "Aves"
+            href: CNEB.qmd
+          - especies.qmd
       - referencias.qmd
       - personas.qmd
-      - lugares.qmd
-      - especies.qmd
       - about.qmd
 
 format:
