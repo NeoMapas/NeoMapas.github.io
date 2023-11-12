@@ -34,6 +34,9 @@ bibliography:
 
 **Resumen**: <p>Propuesta en 2003, includa en los muestreos de mariposas 2006.</p>
 
+## Caracterización Ambiental
+
+<iframe src="https://widgets.figshare.com/articles/4733098/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
 
 ## Ubicación
 
