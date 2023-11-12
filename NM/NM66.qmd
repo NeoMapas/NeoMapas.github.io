@@ -1,0 +1,55 @@
+---
+title: "NM66 - Macanao"
+subtitle: "Nueva Esparta"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 66
+
+**CNEB**: c19
+
+**Nombre**: Macanao
+
+**ADM1**: Nueva Esparta
+
+**Estado_actual**: activa
+
+**Responsables**: G Medina :: H Martínez
+
+**Fecha**: 2009-10-17
+
+**Resumen**: <p>Incluida en el muestreo de aves (NM2010), Se capturaron mariposas y escarabajos en junio de 2010 para complementar los muestreos de 2009.</p>
+
+
+## Actividades
+
+- Muestreo de mariposas en 2010 [@Ferrer_Paris_2012]
+- Muestreo de aves en 2010 [@Rodr_guez_2012]
+
+
+## Hallazgos importantes
+
+Se observaron las siguientes especies del género Amazona: *A. barbadensis* [@Amazona_pangaea_dataset].
+
+En esta región se detecto la presencia de la mariposas del Guayacán *Kricogonia lyside*.
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

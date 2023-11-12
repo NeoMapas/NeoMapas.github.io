@@ -8,6 +8,9 @@ listing:
   field-display-names:
     title: "Transección/ruta"
     subtitle: "Estado"
+  sort:
+    - "title"
+    - "subtitle"
 ---
 
 ::: {#nm-listing}

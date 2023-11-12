@@ -1,6 +1,6 @@
 ---
-title: "NM08 - Altagracia de Orituco"
-subtitle: "Guárico"
+title: "NM07 - Sur del Lago"
+subtitle: "Zulia"
 editor_options: 
   chunk_output_type: console
 execute:
@@ -16,23 +16,23 @@ bibliography:
 
 ## Información básica
 
-**NM**: 8
+**NM**: 7
 
-**CNEB**: f14
+**CNEB**: g04
 
-**Nombre**: Altagracia de Orituco
+**Nombre**: Sur del Lago
 
-**ADM1**: Guárico
+**ADM1**: Zulia
 
 **Estado_actual**: activa
 
 **Responsables**: Pedro Borges :: Yamil Madi
 
-**Fecha**: 2003-10-30
+**Fecha**: 2003-12-02
 
-**Informe**: Informes/08 Altagracia de Orituco.xls
+**Informe**: Informes/07 Sur del Lago.xls
 
-**Resumen**: <p>Propuesta en octubre 2003, inclu&iacute;da en muestreo de mariposas y escarabajos NM2006 y NM2009 y el muestreo de aves NM 2010.</p>
+**Resumen**: <p>Propuesta en diciembre 2003, inclu&iacute;da en muestreo de mariposas NM2006 y mariposas y escarabajos NM2009 y el muestreo de aves NM 2010.</p>
 
 
 ## Ubicación
@@ -47,8 +47,8 @@ library(tmap)
 library(knitr)
 library(readr)
 
-gpstrack <- read_sf(here::here("sandbox","08.gpx"))
-ruta <- gpstrack %>% filter(grepl("08", name)) %>% select(name) 
+gpstrack <- read_sf(here::here("sandbox","07.gpx"))
+ruta <- gpstrack %>% filter(grepl("07", name)) %>% select(name) 
 map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
 tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 ```
@@ -59,16 +59,13 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 ## Actividades
 
 - Muestreo de mariposas en 2006, 2009 [@Ferrer_Paris_2012]
-- Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
 - Muestreo de aves en 2010 [@Rodr_guez_2012]
 
 
 ## Hallazgos importantes
 
-Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. ochrocephala* [@Amazona_pangaea_dataset].
-
-En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
+Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. farinosa*, *A. ochrocephala* [@Amazona_pangaea_dataset].
 
 
 # Documentos

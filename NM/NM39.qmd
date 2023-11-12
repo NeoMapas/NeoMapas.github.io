@@ -1,0 +1,76 @@
+---
+title: "NM39 - Piacoa"
+subtitle: "Delta Amacuro"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 39
+
+**CNEB**: h23
+
+**Nombre**: Piacoa
+
+**ADM1**: Delta Amacuro
+
+**Estado_actual**: activa
+
+**Responsables**: JR Ferrer Paris :: S Flantua :: M Abarca
+
+**Fecha**: 2009-04-09
+
+**Informe**: Informes/NM39_con_fotos.pdf
+
+**Resumen**: Propuesta en 2009, incluída en los muestreos de escarabajos y mariposas de 2009. Se realizaron colectas de insectos acuáticos en colaboración con el proyecto de Insectos Acuáticos de Andrew Short (Universidad de Kansas).
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","39.gpx"))
+ruta <- gpstrack %>% filter(grepl("39", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2009 [@Ferrer_Paris_2012]
+- Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
+
+
+## Hallazgos importantes
+
+En esta región está presente el escarabajo *Oxysternon festivum* [@Ferrer_Paris_2016].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

@@ -1,0 +1,55 @@
+---
+title: "NM50 - Aroa"
+subtitle: "Yaracuy"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 50
+
+**CNEB**: d10
+
+**Nombre**: Aroa
+
+**ADM1**: Yaracuy
+
+**Estado_actual**: activa
+
+**Responsables**: JR Ferrer Paris :: D Mora :: P Colmenares
+
+**Fecha**: 2009-05-23
+
+**Informe**: Informes/InformePreliminarTranseccion_NM50-1.pdf
+
+**Resumen**: <p>Propuesta en 2009, incluida en el entrenamiento de preparadores para NM2009. Colectas de mariposas y escarabajos.</p>
+
+
+## Actividades
+
+- Muestreo de mariposas en 2009 [@Ferrer_Paris_2012]
+- Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
+
+
+## Hallazgos importantes
+
+En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

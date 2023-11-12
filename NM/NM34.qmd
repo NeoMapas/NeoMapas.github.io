@@ -1,6 +1,6 @@
 ---
-title: "NM08 - Altagracia de Orituco"
-subtitle: "Guárico"
+title: "NM34 - Gavilán"
+subtitle: "Amazonas"
 editor_options: 
   chunk_output_type: console
 execute:
@@ -16,23 +16,23 @@ bibliography:
 
 ## Información básica
 
-**NM**: 8
+**NM**: 34
 
-**CNEB**: f14
+**CNEB**: n12
 
-**Nombre**: Altagracia de Orituco
+**Nombre**: Gavilán
 
-**ADM1**: Guárico
+**ADM1**: Amazonas
 
 **Estado_actual**: activa
 
-**Responsables**: Pedro Borges :: Yamil Madi
+**Responsables**: JR Ferrer Paris :: D Mora :: M Assmussen
 
-**Fecha**: 2003-10-30
+**Fecha**: 2009-02-22
 
-**Informe**: Informes/08 Altagracia de Orituco.xls
+**Informe**: Informes/InformePreliminarTranseccion_NM34.pdf
 
-**Resumen**: <p>Propuesta en octubre 2003, inclu&iacute;da en muestreo de mariposas y escarabajos NM2006 y NM2009 y el muestreo de aves NM 2010.</p>
+**Resumen**: Propuesta en 2009, incluida en mariposas y escarabajos NM2009.
 
 
 ## Ubicación
@@ -47,8 +47,8 @@ library(tmap)
 library(knitr)
 library(readr)
 
-gpstrack <- read_sf(here::here("sandbox","08.gpx"))
-ruta <- gpstrack %>% filter(grepl("08", name)) %>% select(name) 
+gpstrack <- read_sf(here::here("sandbox","34.gpx"))
+ruta <- gpstrack %>% filter(grepl("34", name)) %>% select(name) 
 map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
 tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 ```
@@ -58,8 +58,7 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Actividades
 
-- Muestreo de mariposas en 2006, 2009 [@Ferrer_Paris_2012]
-- Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
+- Muestreo de mariposas en 2009 [@Ferrer_Paris_2012]
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
 - Muestreo de aves en 2010 [@Rodr_guez_2012]
 

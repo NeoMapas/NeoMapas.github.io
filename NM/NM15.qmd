@@ -1,6 +1,6 @@
 ---
-title: "NM08 - Altagracia de Orituco"
-subtitle: "Guárico"
+title: "NM15 - Cantaura"
+subtitle: "Anzoátegui"
 editor_options: 
   chunk_output_type: console
 execute:
@@ -16,23 +16,23 @@ bibliography:
 
 ## Información básica
 
-**NM**: 8
+**NM**: 15
 
-**CNEB**: f14
+**CNEB**: f19
 
-**Nombre**: Altagracia de Orituco
+**Nombre**: Cantaura
 
-**ADM1**: Guárico
+**ADM1**: Anzoátegui
 
-**Estado_actual**: activa
+**Estado_actual**: inactiva
 
-**Responsables**: Pedro Borges :: Yamil Madi
+**Responsables**: Pedro Borges :: Virginia Sanz
 
-**Fecha**: 2003-10-30
+**Fecha**: 2003-09-14
 
-**Informe**: Informes/08 Altagracia de Orituco.xls
+**Informe**: Informes/15 Cantaura.xls
 
-**Resumen**: <p>Propuesta en octubre 2003, inclu&iacute;da en muestreo de mariposas y escarabajos NM2006 y NM2009 y el muestreo de aves NM 2010.</p>
+**Resumen**: <p>Propuesta en 2003, inclu&iacute;da en muestreos de mariposas de 2006 y mariposas y escarabajos de 2009. Originalmente era una v&iacute;a engranzonada, pero el grupo que fue en 2009 reporta que ahora es una v&iacute;a asfaltada con mucho tr&aacute;fico pesado y de alta velocidad por lo que es peligroso realizar muestreos en sus alrededores. Se sugiere utilizar un trazado alternativo o sustituirla por otra transecta.</p>
 
 
 ## Ubicación
@@ -47,8 +47,8 @@ library(tmap)
 library(knitr)
 library(readr)
 
-gpstrack <- read_sf(here::here("sandbox","08.gpx"))
-ruta <- gpstrack %>% filter(grepl("08", name)) %>% select(name) 
+gpstrack <- read_sf(here::here("sandbox","15.gpx"))
+ruta <- gpstrack %>% filter(grepl("15", name)) %>% select(name) 
 map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
 tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 ```
@@ -59,14 +59,10 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 ## Actividades
 
 - Muestreo de mariposas en 2006, 2009 [@Ferrer_Paris_2012]
-- Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
-- Muestreo de aves en 2010 [@Rodr_guez_2012]
 
 
 ## Hallazgos importantes
-
-Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. ochrocephala* [@Amazona_pangaea_dataset].
 
 En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
 

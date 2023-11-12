@@ -1,6 +1,6 @@
 ---
-title: "NM08 - Altagracia de Orituco"
-subtitle: "Guárico"
+title: "NM26 - Jají"
+subtitle: "Mérida"
 editor_options: 
   chunk_output_type: console
 execute:
@@ -16,23 +16,23 @@ bibliography:
 
 ## Información básica
 
-**NM**: 8
+**NM**: 26
 
-**CNEB**: f14
+**CNEB**: h04
 
-**Nombre**: Altagracia de Orituco
+**Nombre**: Jají
 
-**ADM1**: Guárico
+**ADM1**: Mérida
 
 **Estado_actual**: activa
 
 **Responsables**: Pedro Borges :: Yamil Madi
 
-**Fecha**: 2003-10-30
+**Fecha**: 2003-05-12
 
-**Informe**: Informes/08 Altagracia de Orituco.xls
+**Informe**: Informes/26 Jaji.xls
 
-**Resumen**: <p>Propuesta en octubre 2003, inclu&iacute;da en muestreo de mariposas y escarabajos NM2006 y NM2009 y el muestreo de aves NM 2010.</p>
+**Resumen**: <p>Propuesta en 2003, inclu&iacute;da en el estudio piloto de mariposas y escarabajos en 2005, en los muestreos de mariposas de 2006 y los muestreos de mariposas y escarabajos en 2009. Incluye una peque&ntilde;a franja del Parque Nacional La Culata, donde se colectaron algunas especies interesantes de Leptophobia (Pieridae). Programada para NM Aves 2010.</p>
 
 
 ## Ubicación
@@ -47,8 +47,8 @@ library(tmap)
 library(knitr)
 library(readr)
 
-gpstrack <- read_sf(here::here("sandbox","08.gpx"))
-ruta <- gpstrack %>% filter(grepl("08", name)) %>% select(name) 
+gpstrack <- read_sf(here::here("sandbox","26.gpx"))
+ruta <- gpstrack %>% filter(grepl("26", name)) %>% select(name) 
 map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
 tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 ```
@@ -58,17 +58,15 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Actividades
 
-- Muestreo de mariposas en 2006, 2009 [@Ferrer_Paris_2012]
-- Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
+- Muestreo de mariposas en 2006, 2005, 2009 [@Ferrer_Paris_2012]
+- Estudio piloto de muestreo de escarabajos en 2005 [@Ferrer_Paris_2013]
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
 - Muestreo de aves en 2010 [@Rodr_guez_2012]
 
 
 ## Hallazgos importantes
 
-Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. ochrocephala* [@Amazona_pangaea_dataset].
-
-En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
+En esta región se detecto la presencia de la mariposas endémica *Ardaris eximia*.
 
 
 # Documentos

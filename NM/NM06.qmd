@@ -1,0 +1,75 @@
+---
+title: "NM06 - San Simón"
+subtitle: "Táchira"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 6
+
+**CNEB**: h03
+
+**Nombre**: San Simón
+
+**ADM1**: Táchira
+
+**Estado_actual**: activa
+
+**Responsables**: Pedro Borges :: Yamil Madi
+
+**Fecha**: 2003-12-04
+
+**Informe**: Informes/06 -2- San Simon -P.La Negra-.xls
+
+**Resumen**: <p>Propuesta en 2003, includa en los muestreos de mariposas 2006.</p>
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","06.gpx"))
+ruta <- gpstrack %>% filter(grepl("06", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006 [@Ferrer_Paris_2012]
+
+
+## Hallazgos importantes
+
+En esta región se detecto la presencia de la mariposas endémica *Ardaris eximia*.
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

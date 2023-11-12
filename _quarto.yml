@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
+    - "!sandbox/"
+
+execute:
+  cache: true
 
 website:
   title: "NeoMapas"

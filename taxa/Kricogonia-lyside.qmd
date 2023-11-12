@@ -1,0 +1,15 @@
+---
+title: "*Kricogonia lyside*"
+subtitle: "Pieridae"
+bibliography: 
+  - ../bibTeX/thesis.bibtex
+nocite: |
+  @Ferrer_Paris_2008_PhD_thesis
+---
+
+
+
+# Documentos
+
+::: {#refs}
+:::
