@@ -6,7 +6,7 @@ project:
     - "!sandbox/"
 
 execute:
-  cache: true
+  freeze: auto
 
 website:
   title: "NeoMapas"

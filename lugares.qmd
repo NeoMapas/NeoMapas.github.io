@@ -10,7 +10,7 @@ listing:
     subtitle: "Estado"
   sort:
     - "title"
-    - "subtitle"
+    - "Estado"
 ---
 
 ::: {#nm-listing}

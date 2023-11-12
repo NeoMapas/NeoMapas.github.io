@@ -2,16 +2,46 @@
   {
     "listing": "/lugares.html",
     "items": [
+      "/NM/NM02.html",
+      "/NM/NM03.html",
       "/NM/NM05.html",
+      "/NM/NM06.html",
+      "/NM/NM07.html",
       "/NM/NM08.html",
-      "/NM/NM25.html",
+      "/NM/NM09.html",
+      "/NM/NM13.html",
+      "/NM/NM14.html",
+      "/NM/NM15.html",
+      "/NM/NM16.html",
+      "/NM/NM18.html",
+      "/NM/NM19.html",
+      "/NM/NM22.html",
+      "/NM/NM24.html",
+      "/NM/NM26.html",
+      "/NM/NM27.html",
+      "/NM/NM28.html",
+      "/NM/NM29.html",
+      "/NM/NM34.html",
+      "/NM/NM35.html",
+      "/NM/NM39.html",
+      "/NM/NM41.html",
       "/NM/NM43.html",
-      "/NM/NM95.html"
+      "/NM/NM45.html",
+      "/NM/NM50.html",
+      "/NM/NM55.html",
+      "/NM/NM57.html",
+      "/NM/NM66.html",
+      "/NM/NM95.html",
+      "/NM/NM97.html"
     ]
   },
   {
     "listing": "/especies.html",
     "items": [
+      "/taxa/Amazona-barbadensis.html",
+      "/taxa/Digitonthophagus.html",
+      "/taxa/Eurysternus-impressicollis.html",
+      "/taxa/Kricogonia-lyside.html",
       "/taxa/Oxysternon.html"
     ]
   },
