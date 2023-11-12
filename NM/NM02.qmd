@@ -1,0 +1,77 @@
+---
+title: "NM02 - Paraguaná"
+subtitle: "Falcón"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 2
+
+**CNEB**: a07
+
+**Nombre**: Paraguaná
+
+**ADM1**: Falcón
+
+**Estado_actual**: activa
+
+**Responsables**: Pedro Borges :: Virginia Sanz
+
+**Fecha**: 2003-12-17
+
+**Informe**: Informes/02 Paraguana.xls
+
+**Resumen**: <p>Propuesta en 2003, inclu&iacute;da en NM Mariposas 2006. La actividad de mariposas y escarabajos en los meses de julio y agosto es muy baja, por lo que se sugiri&oacute; no incluirla en los muestreos de invertebrados de agosto de 2009, Programada para Aves 2010.</p>
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","02.gpx"))
+ruta <- gpstrack %>% filter(grepl("02", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006 [@Ferrer_Paris_2012]
+- Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
+- Muestreo de aves en 2010 [@Rodr_guez_2012]
+
+
+## Hallazgos importantes
+
+En esta región se detecto la presencia de la mariposas del Guayacán *Kricogonia lyside*.
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

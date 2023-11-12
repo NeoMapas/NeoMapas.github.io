@@ -1,0 +1,77 @@
+---
+title: "NM07 - Sur del Lago"
+subtitle: "Zulia"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 7
+
+**CNEB**: g04
+
+**Nombre**: Sur del Lago
+
+**ADM1**: Zulia
+
+**Estado_actual**: activa
+
+**Responsables**: Pedro Borges :: Yamil Madi
+
+**Fecha**: 2003-12-02
+
+**Informe**: Informes/07 Sur del Lago.xls
+
+**Resumen**: <p>Propuesta en diciembre 2003, inclu&iacute;da en muestreo de mariposas NM2006 y mariposas y escarabajos NM2009 y el muestreo de aves NM 2010.</p>
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","07.gpx"))
+ruta <- gpstrack %>% filter(grepl("07", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006, 2009 [@Ferrer_Paris_2012]
+- Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
+- Muestreo de aves en 2010 [@Rodr_guez_2012]
+
+
+## Hallazgos importantes
+
+Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. farinosa*, *A. ochrocephala* [@Amazona_pangaea_dataset].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

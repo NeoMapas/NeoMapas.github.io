@@ -1,0 +1,74 @@
+---
+title: "NM27 - Páramo"
+subtitle: "Mérida"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 27
+
+**CNEB**: g06
+
+**Nombre**: Páramo
+
+**ADM1**: Mérida
+
+**Estado_actual**: inactiva
+
+**Responsables**: Pedro Borges :: Yamil Madi
+
+**Fecha**: 2003-12-07
+
+**Informe**: Informes/00 Paramo.xls
+
+**Resumen**: <p>Sugerida en 2003, inclu&iacute;da en muestreos de mariposas y escarabajos de 2006. Se sugiri&oacute; cambiarla por NM57 en Pi&ntilde;ango para evitar trabajar en una v&iacute;a muy transitada.</p>
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","27.gpx"))
+ruta <- gpstrack %>% filter(grepl("27", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006 [@Ferrer_Paris_2012]
+- Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
+
+
+## Hallazgos importantes
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

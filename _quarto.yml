@@ -1,9 +1,18 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
+    - "!sandbox/"
+
+execute:
+  cache: true
 
 website:
   title: "NeoMapas"
+  repo-url: https://github.com/NeoMapas/NeoMapas.github.io
+  repo-branch: alpha-centauri
+  repo-actions: [edit, issue]
   favicon: /img/logo_NeoMapas_p.gif
   twitter-card: 
     creator: "@neomapas"

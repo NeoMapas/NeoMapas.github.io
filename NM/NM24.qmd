@@ -1,0 +1,77 @@
+---
+title: "NM24 - Guri"
+subtitle: "Bolívar"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 24
+
+**CNEB**: i21
+
+**Nombre**: Guri
+
+**ADM1**: Bolívar
+
+**Estado_actual**: activa
+
+**Responsables**: Pedro Borges :: Yamil Madi
+
+**Fecha**: 2004-01-07
+
+**Informe**: Informes/24 Guri.xls
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","24.gpx"))
+ruta <- gpstrack %>% filter(grepl("24", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006, 2005, 2009 [@Ferrer_Paris_2012]
+- Estudio piloto de muestreo de escarabajos en 2005 [@Ferrer_Paris_2013]
+- Muestreo de aves en 2010 [@Rodr_guez_2012]
+
+
+## Hallazgos importantes
+
+Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. farinosa*, *A. ochrocephala* [@Amazona_pangaea_dataset].
+
+En esta región está presente el escarabajo *Oxysternon festivum* [@Ferrer_Paris_2016].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

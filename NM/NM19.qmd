@@ -1,0 +1,74 @@
+---
+title: "NM19 - Capitanejo"
+subtitle: "Barinas"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 19
+
+**CNEB**: i05
+
+**Nombre**: Capitanejo
+
+**ADM1**: Barinas
+
+**Estado_actual**: activa
+
+**Responsables**: Pedro Borges :: Yamil Madi
+
+**Fecha**: 2003-11-12
+
+**Informe**: Informes/19 Capitanejo.xls
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","19.gpx"))
+ruta <- gpstrack %>% filter(grepl("19", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006, 2005 [@Ferrer_Paris_2012]
+- Muestreo de aves en 2010 [@Rodr_guez_2012]
+
+
+## Hallazgos importantes
+
+Se observaron las siguientes especies del género Amazona: *A. ochrocephala* [@Amazona_pangaea_dataset].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

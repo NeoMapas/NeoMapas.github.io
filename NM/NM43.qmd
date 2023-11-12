@@ -1,0 +1,66 @@
+---
+title: "NM43 - Manglarito, Hato Piñero"
+subtitle: Cojedes
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/ebird-trip-reports.bibtex
+  - ../bibTeX/reports.bibtex
+  - ../bibTeX/datasets.bibtex
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+---
+
+# Ubicación
+
+Estado Cojedes, los datos están disponibles en [@RS02_gps]
+
+```{r}
+library(readr)
+library(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+
+archivo <- "Coordenadas-puntos-transectas-NeoMapas.csv"
+archivo <- "Piñero-Manglarito-coords.csv"
+
+puntos <- read_csv(here::here("sandbox",archivo),
+                   show_col_types = FALSE)
+ruta <- puntos %>% st_as_sf( coords=c("Long","Lat"))
+st_crs(ruta) <- "EPSG:4326"
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+
+# Actividades
+
+Región incluida en las actividades del estudio piloto de observación de aves [@RS02].
+
+# Hallazgos importantes
+
+Las listas de aves están disponibles en eBird [@NM43_ebird_20010227; @NM43_ebird_20010228; @NM43_ebird_20010301; @NM43_ebird_20010302; @NM43_ebird_20010303; @NM43_ebird_20010304; @NM43_ebird_20010305]
+
+```{r}
+archivo <- "Ejemplares-Aves-NM43-Piñero.csv"
+registros <- read_csv(here::here("sandbox",archivo),
+                   show_col_types = FALSE)
+registros %>% 
+  filter(jmp>0) %>% 
+  group_by(Fecha=fch) %>% 
+  summarise(paradas = n_distinct(Prd),
+            especies = n_distinct(spp), 
+            individuos = sum(jmp)) %>%
+  kable()
+```
+
+
+# Documentos
+
+::: {#refs}
+:::
+

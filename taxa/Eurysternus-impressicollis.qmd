@@ -1,0 +1,17 @@
+---
+title: "*Eurysternus impressicollis*"
+subtitle: "Scarabaeinae"
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/other.bibtex
+  - ../bibTeX/reports.bibtex
+nocite: |
+  @ferrer-paris_et_al_E_impressicolis_2023
+---
+
+
+
+# Documentos
+
+::: {#refs}
+:::

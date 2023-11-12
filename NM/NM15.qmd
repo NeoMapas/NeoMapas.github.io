@@ -1,0 +1,76 @@
+---
+title: "NM15 - Cantaura"
+subtitle: "Anzoátegui"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 15
+
+**CNEB**: f19
+
+**Nombre**: Cantaura
+
+**ADM1**: Anzoátegui
+
+**Estado_actual**: inactiva
+
+**Responsables**: Pedro Borges :: Virginia Sanz
+
+**Fecha**: 2003-09-14
+
+**Informe**: Informes/15 Cantaura.xls
+
+**Resumen**: <p>Propuesta en 2003, inclu&iacute;da en muestreos de mariposas de 2006 y mariposas y escarabajos de 2009. Originalmente era una v&iacute;a engranzonada, pero el grupo que fue en 2009 reporta que ahora es una v&iacute;a asfaltada con mucho tr&aacute;fico pesado y de alta velocidad por lo que es peligroso realizar muestreos en sus alrededores. Se sugiere utilizar un trazado alternativo o sustituirla por otra transecta.</p>
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","15.gpx"))
+ruta <- gpstrack %>% filter(grepl("15", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006, 2009 [@Ferrer_Paris_2012]
+- Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
+
+
+## Hallazgos importantes
+
+En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

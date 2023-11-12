@@ -1,0 +1,76 @@
+---
+title: "NM28 - Quebrada del Toro"
+subtitle: "Falcón"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 28
+
+**CNEB**: c09
+
+**Nombre**: Quebrada del Toro
+
+**ADM1**: Falcón
+
+**Estado_actual**: activa
+
+**Responsables**: JR Ferrer Paris
+
+**Fecha**: 2009-01-27
+
+**Informe**: Informes/InformePreliminarTranseccion_NM28.odt
+
+**Resumen**: <p>Muestreo de mariposas y escarabajos realizado en julio de 2010.</p>
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","28.gpx"))
+ruta <- gpstrack %>% filter(grepl("28", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2010 [@Ferrer_Paris_2012]
+- Muestreo nacional de escarabajos en 2010 [@Ferrer_Paris_2012]
+
+
+## Hallazgos importantes
+
+En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

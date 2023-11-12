@@ -1,0 +1,69 @@
+---
+title: "NM95 - Charco Azul/Arenales"
+subtitle: Cojedes
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/ebird-trip-reports.bibtex
+  - ../bibTeX/reports.bibtex
+  - ../bibTeX/datasets.bibtex
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+---
+
+# Ubicación
+
+Estado Cojedes, entre Charco Azul y Arenales.
+
+```{r}
+library(readr)
+library(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+
+archivo <- "Coordenadas-puntos-transectas-NeoMapas.csv"
+
+puntos <- read_csv(here::here("sandbox",archivo),
+                   show_col_types = FALSE)
+ruta <- puntos %>% 
+  filter(NM %in% 43) %>%
+  st_as_sf( coords=c("lat","lon"))
+st_crs(ruta) <- "EPSG:4326"
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@RS02_gps]. Los puntos están en el archivo `Coordenadas-puntos-transectas-NeoMapas.csv` pero están etiquetados con el codigo NM43.
+
+
+# Actividades
+
+Región incluida en las actividades del estudio piloto de observación de aves [@RS02].
+
+# Hallazgos importantes
+
+La lista de aves observadas está disponible en un repositorio en Dataverse [@RS02_gps, archivo `Ejemplares-Aves-NM95-Piñero-b.csv`]
+
+```{r}
+archivo <- "Ejemplares-Aves-NM95-Piñero-b.csv"
+registros <- read_csv(here::here("sandbox",archivo),
+                   show_col_types = FALSE)
+registros %>% 
+  filter(jmp>0) %>% 
+  group_by(Fecha=fch) %>% 
+  summarise(paradas = n_distinct(Prd),
+            especies = n_distinct(spp), 
+            individuos = sum(jmp)) %>%
+  kable()
+```
+
+
+# Documentos
+
+::: {#refs}
+:::
+

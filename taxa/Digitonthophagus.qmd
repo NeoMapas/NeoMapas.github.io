@@ -1,0 +1,17 @@
+---
+title: "*Digitonthophagus gazella*"
+subtitle: "Scarabaeinae"
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/other.bibtex
+  - ../bibTeX/reports.bibtex
+nocite: |
+  @Ferrer_Paris_digitonthophagus_2014
+---
+
+
+
+# Documentos
+
+::: {#refs}
+:::

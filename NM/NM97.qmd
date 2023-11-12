@@ -1,0 +1,52 @@
+---
+title: "NM97 - IVIC"
+subtitle: "Miranda"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 97
+
+**CNEB**: e13
+
+**Nombre**: IVIC
+
+**ADM1**: Miranda
+
+**Estado_actual**: Mini-transecta de calibración
+
+**Responsables**: Tatjana Good :: JR Ferrer Paris
+
+**Fecha**: 2005-10-10
+
+**Resumen**: <p>Mini-transecta de ensayo para los estudiantes y preparadores del proyecto. Se han realizado colectas de mariposas y escarabajos en varios a&ntilde;os.</p>
+
+
+## Actividades
+
+- Muestreo de mariposas en 2010 [@Ferrer_Paris_2012]
+- Muestreo nacional de escarabajos en 2008 [@Ferrer_Paris_2012]
+- Estudio piloto de muestreo de escarabajos en 2005 [@Ferrer_Paris_2013]
+
+
+## Hallazgos importantes
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

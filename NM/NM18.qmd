@@ -1,0 +1,77 @@
+---
+title: "NM18 - San Joaquín de Navay"
+subtitle: "Táchira"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 18
+
+**CNEB**: j04
+
+**Nombre**: San Joaquín de Navay
+
+**ADM1**: Táchira
+
+**Estado_actual**: activa
+
+**Responsables**: Pedro Borges :: Yamil Madi
+
+**Fecha**: 2003-11-15
+
+**Informe**: Informes/18 San Joaquin de Navay.xls
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","18.gpx"))
+ruta <- gpstrack %>% filter(grepl("18", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2006, 2005 [@Ferrer_Paris_2012]
+- Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
+- Muestreo de aves en 2010 [@Rodr_guez_2012]
+
+
+## Hallazgos importantes
+
+Se observaron las siguientes especies del género Amazona: *A. farinosa*, *A. ochrocephala* [@Amazona_pangaea_dataset].
+
+En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+

@@ -1,0 +1,75 @@
+---
+title: "NM29 - Guaramacal"
+subtitle: "Trujillo"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+bibliography: 
+  - ../bibTeX/datasets.bibtex
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+  - ../bibTeX/other.bibtex
+---
+
+## Información básica
+
+**NM**: 29
+
+**CNEB**: f07
+
+**Nombre**: Guaramacal
+
+**ADM1**: Trujillo
+
+**Estado_actual**: activa
+
+**Responsables**: JR Ferrer Paris :: D Mora
+
+**Fecha**: 2009-01-30
+
+**Informe**: Informes/InformePreliminarTranseccion_NM29.pdf
+
+**Resumen**: <p>Propuesta en 2009, los muestreos de mariposas y escarabajos se realizaron en septiembre de 2009. La transecta est&aacute; dentro del Parque Nacional Guaramacal, por lo que se requiere de permiso de Inparques.</p>
+
+
+## Ubicación
+
+```{r}
+#| label: Mapa
+#| message: false
+#| warning: false
+require(sf)
+library(dplyr)
+library(tmap)
+library(knitr)
+library(readr)
+
+gpstrack <- read_sf(here::here("sandbox","29.gpx"))
+ruta <- gpstrack %>% filter(grepl("29", name)) %>% select(name) 
+map1 <- tm_shape(ruta) + tm_symbols( col="orchid2") +tm_minimap()
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
+
+
+## Actividades
+
+- Muestreo de mariposas en 2009 [@Ferrer_Paris_2012]
+
+
+## Hallazgos importantes
+
+En esta región se detecto la presencia de la mariposas endémica *Steromapedaliodes schuberti*.
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::
+
