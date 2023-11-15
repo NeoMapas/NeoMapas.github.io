@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -94,14 +113,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Inicio</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./referencias.html" rel="" target="">
- <span class="menu-text">Publicaciones de NeoMapas</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./personas.html" rel="" target="">
- <span class="menu-text">Colaboradores</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lugares" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Lugares</span>
@@ -113,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./lugares.html" rel="" target="">
- <span class="dropdown-text">Rutas NM</span></a>
+ <span class="dropdown-text">Rutas de NeoMapas</span></a>
   </li>  
     </ul>
   </li>
@@ -122,6 +133,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Taxones</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-taxones">    
+        <li>
+    <a class="dropdown-item" href="./CNEB.html" rel="" target="">
+ <span class="dropdown-text">Grupos indicadores</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./CNEB.html" rel="" target="">
  <span class="dropdown-text">Mariposas</span></a>
@@ -140,6 +155,14 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./referencias.html" rel="" target="">
+ <span class="menu-text">Publicaciones de NeoMapas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./personas.html" rel="" target="">
+ <span class="menu-text">Colaboradores</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">+ información</span></a>
@@ -199,9 +222,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>
-Con el fin de comparar la información que proviene de distintas fuentes, desarrollamos la Cuadrícula para el estudio de la distribución espacial de la biodiversidad terrestre en Venezuela (CNEB), compuesta de celdas de 0,5 x 0,5 grados (aproximadamente 2.500 km2) que inicia a los 73,35 ºO y 0,7 ºN.
-</p>
+<p>Con el fin de comparar la información que proviene de distintas fuentes, desarrollamos la Cuadrícula para el estudio de la distribución espacial de la biodiversidad terrestre en Venezuela (CNEB), compuesta de celdas de 0,5 x 0,5 grados (aproximadamente 2.500 km2) que inicia a los 73,35 ºO y 0,7 ºN. Esta cuadícula y otros datos geoespaciales de NeoMapas están disponibles en un repositorio de acceso público <span class="citation" data-cites="NeoMapas_GIS">(<a href="#ref-NeoMapas_GIS" role="doc-biblioref">Ferrer-Paris 2023</a>)</span>.</p>
 <p>
 La CNEB consiste en 377 celdas que cubren los 23 estados que comprenden Venezuela los cuales incluyen toda la tierra firme y las islas cercanas a la costa.
 </p>
@@ -212,13 +233,13 @@ En NeoMapas, el universo muestral fue definido como todas las celdas en la CNEB 
 El universo de muestreo lo componen 170 celdas, que cubren aproximadamente 425.000 km2.
 </p>
 <p>
-Restringimos el universo de muestreo a las celdas con acceso por carretera fue para enfocarnos en áreas con gran impacto humano.
+Restringimos el universo de muestreo a las celdas con acceso por carretera para enfocarnos en áreas con gran impacto humano.
 </p>
 <p>
-Una vez definido el universo de muestreo, desarrollamos un diseño muestral estratificado por variables ambientales y bioregiones con el fin de minimizar el esfuerzo necesario para caracterizar la biodiversidad a escala nacional. Luego, seleccionamos 27 de celdas que representen la variabilidad ambiental y las regiones biogeográficas del país.
+Una vez definido el universo de muestreo, desarrollamos un diseño muestral estratificado por variables ambientales y bioregiones con el fin de minimizar el esfuerzo necesario para caracterizar la biodiversidad a escala nacional. Luego, seleccionamos 27 celdas que representan la variabilidad ambiental y las regiones biogeográficas del país.
 </p>
 <p>
-Dentro de cada celda trazamos una transecta de 40 km de longitud que represente un gradiente de máxima variación ambiental dentro de la celda (e.g.&nbsp;gradiente altitudinal, de cobertura boscosa, de humedad, etc.). Esta transecta es la unidad regional para los análisis (URA), dentro de la cual se distribuyen las unidades elementales de muestreo (UEM) que varían según el grupo taxonómico (trampas, punto observación, recorrido cronometrado).
+Dentro de cada celda trazamos una transecta o ruta de 40 km de longitud que representa un gradiente de máxima variación ambiental dentro de la celda (e.g.&nbsp;gradiente altitudinal, de cobertura boscosa, de humedad, etc.). Esta transecta es la unidad regional de análisis (URA), dentro de la cual se distribuyen las unidades elementales de muestreo (UEM) que varían según el grupo taxonómico (trampas, punto observación, recorrido cronometrado). Estas transectas o rutas están identificadas con un código alfanumérico en formato <em>NM00</em>, la lista completa de rutas <a href="./lugares.html">puede ser consultadas aquí</a>.
 </p>
 <p>
 Para cada taxón, definimos protocolos de muestreos para asegurarnos que el trabajo de campo fuera simple, repetible y eficiente. Los protocolos de captura fueron estandarizados con base en las UEM con un esfuerzo de captura/observación cuantificable que permita la comparación de resultados obtenidos en diferentes regiones y épocas.
@@ -226,7 +247,12 @@ Para cada taxón, definimos protocolos de muestreos para asegurarnos que el trab
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-NeoMapas_GIS" class="csl-entry" role="listitem">
+Ferrer-Paris, José R. 2023. <span>«<span>Datos espaciales para el diseño muestral de NeoMapas</span>»</span>. Harvard Dataverse. <a href="https://doi.org/10.7910/DVN/IME0M5">https://doi.org/10.7910/DVN/IME0M5</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
