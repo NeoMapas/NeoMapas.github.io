@@ -3,12 +3,7 @@ title: "NM05 - Rosario de Perijá"
 subtitle: Zulia
 code: NM05
 contributors: JRFEP
-bibliography: 
-  - ../bibTeX/peer-review.bibtex
-  - ../bibTeX/other.bibtex
-  - ../bibTeX/reports.bibtex
-  - ../bibTeX/preprints.bibtex
-  - ../bibTeX/datasets.bibtex
+
 nocite: |
   @Ferrer_Paris_2012
   @https://doi.org/10.6084/m9.figshare.4733107
