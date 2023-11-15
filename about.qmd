@@ -8,10 +8,10 @@ Esta es la página de la iniciativa para el monitoreo de la biodiversidad en Ven
 
 Algunos productos científicos de NeoMapas están disponibles en los siguientes repositorios:
 
+- [OSF](https://osf.io/jhy3z/)
 - [Zenodo](https://zenodo.org/communities/neomapas/?page=1&size=20)
 - [Figshare](https://figshare.com/search?q=:keyword:%20%22NeoMapas%22)
 - [Dataverse](https://dataverse.harvard.edu/dataverse/NeoMapas)
-
 
 ### Funding 
 

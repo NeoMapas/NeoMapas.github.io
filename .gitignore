@@ -1,6 +1,9 @@
 *~
 sandbox
 
+# I think I don't need this in the git folder
+_freeze
+
 # History files
 .Rhistory
 .Rapp.history
