@@ -32,11 +32,11 @@ website:
         menu:
           - text: "Grupos indicadores"
           - text: "Mariposas"
-            href: CNEB.qmd
+            href: grupos_indicadores/mariposas.qmd
           - text: "Escarabajos"
-            href: escarabajos.qmd
+            href: grupos_indicadores/escarabajos.qmd
           - text: "Aves"
-            href: aves.qmd
+            href: grupos_indicadores/aves.qmd
           - text: "Especies destacadas"
           - especies.qmd
       - text: "Producción científica"
@@ -44,7 +44,7 @@ website:
           - text: "Publicaciones"
             href: referencias.qmd
           - text: "Presentaciones"
-            href: referencias.qmd
+            href: presentaciones.qmd
       - personas.qmd
       - about.qmd
 

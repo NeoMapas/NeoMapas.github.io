@@ -1,0 +1,67 @@
+---
+title: "Muestreo de mariposas diurnas"
+subtitle: "Órden Lepidoptera, Superfamilia Papilionoidea"
+author: 
+    - "JR Ferrer-Paris"
+    - "AY Sánchez-Mercado"
+date: "21 Dec 2010"
+---
+
+# Mariposas diurnas o Papilionoidea
+
+## Clasificación taxonómica
+
+
+<p>Los lepidópteros representan el segundo orden con más especies entre los insectos (siendo superado solamente por el orden Coleoptera); de hecho, cuenta con más de 165.000 especies clasificadas en 127 familias y 46 superfamilias. Durante muchos años se mantuvo una división en dos subórdenes, los ropalóceros, o mariposas diurnas, y los heteróceros, o mariposas nocturas. La moderna cladística ha demostrado que esta antigua clasificación es artificial y en la actualidad se admiten los subórdenes Aglossata, Heterobathmiina, Zeugloptera y Glossata. Los tres primeros contienen unas pocas especies, mientras que Glossata incluye el 99% de los lepidópteros actuales, entre las que se cuentan seis familias de habitos diurnos.</p>
+
+## Reproducción y desarrollo
+
+<p>Las mariposas experimentan metamorfosis: pasan de un estado de oruga, hasta un estado adulto. El ciclo vital completo se compone de cuatro fases: huevo, larva (oruga), pupa (capullo o crisálida) y adulto. Tras aparearse, la hembra adulta de la mayoría de las especies pone sus huevos en una planta, que sirve de alimento a las larvas cuando nacen. Cada especie requiere una o unas pocas especies de plantas para su alimentación. La mayoría de las mariposas adultas se alimentan libando el néctar de las flores.</p>
+
+<p>Machos y hembras se buscan activamente, usando como guía visual su aleteo característico, y empleando el sentido del olfato. Tras la fecundación, la hembra pone varios cientos o miles de huevos. En algunos casos la vida adulta es breve, no durando más que el tiempo necesario, a veces un solo día.</p>
+
+## Hábitat y distribución
+
+<p>Las larvas de las mariposas suelen alimentarse de una sola especie, o de unas cuantas especies emparentadas de plantas. Como resultado de esta íntima relación, muchas especies quedan aisladas en colonias en lugares específicos. Otras especies pueden tener una distribución más amplia, en especial las que ponen sus huevos sobre malas hierbas o plantas de amplia distribución.</p>
+
+<p>Las mariposas viven en gran variedad de climas, desde el antártico hasta el clima tropical de la selva, y en variadas alturas (desde cotas inferiores al nivel del mar hasta casi 6.000 m de altitud). En las zonas tropicales, donde alcanzan mayor diversidad, muchas mariposas pueden volar durante todo el año.</p>
+
+## Importancia ecológica
+
+<p>Las mariposas son excelentes bioindicadoras del estado de salud de los ecosistemas naturales, más que ningún otro animal, reflejan las condiciones de conservación o de alteración de los ecosistemas debido a la estrecha relación planta-animal. Dos de los cuatro estados de desarrollo por los que atraviesa una mariposa dependen exclusivamente de las plantas: las orugas son netamente herbívoras, mientras que los imagos (la mariposa adulta) se alimentan sobre todo de néctar y de polen. </p>
+
+# Protocolos de muestreo de NeoMapas para mariposas diurnas
+
+## La unidad regional de análisis (URA): La transecta
+
+<p>Consiste en una transecta de aproximadamente 40 km de longitud, a lo largo de la cual se realizan varios recorridos cronometrados durante 3 días. El esfuerzo de muestreo de una transecta se mide por el total de minutos*colector (m*c) acumulados en todas los recorridos.</p>
+
+<p>Para poder comparar dos o más transectas es necesario que tengan un esfuerzo de muestreo similar. El mínimo recomendable es de 2000 m*c, o el equivalente a 22 muestreos de 30 minutos y 3 colectores. Para maximizar el número de especies capturadas en una transecta es recomendable repartir los recorridos cronometrados a lo largo de toda la transecta y a diferentes horas del día.</p>
+
+## La unidad elemental de muestreo (UEM): conteo por puntos
+
+<p>La unidad de muestreo para el inventario de mariposas es el recorrido cronometrado, similar al descrito por Caldas y Robbins (2003). Durante las recorridos no existen restricciones al desplazamiento de los colectores, que pueden atrapar todas las mariposas que puedan durante el período de tiempo establecido. La duración total de cada recorrido es de 30 minutos, divididos en periodos de cinco minutos. Las capturas de cada colector se separan en sobres independientes por cada periodo de cinco minutos. Los muestreos deben realizarse entre las 7 am y las 4 pm. </p>
+<p>El grupo de colectores puede variar entre 1 a 4 personas. En cada grupo de trabajo, debe haber un anotador que llevaba el tiempo, el número de mariposas colectadas en cada período de cinco minutos, registre los datos del recorrido en una planilla y asista a los colectores en su trabajo. </p>
+<p>	El material requerido para realizar el recorrido cronometrado incluye:
+<ul>
+<li>Una malla o red entomológica por colector.
+</li><li>Una planilla para cada muestreo.
+</li><li>Una tabla de apoyo y un rapidografo.
+</li><li>Un juego de sobres para mariposas; por cada muestreo y cada colector se necesita al menos un sobre por cada periodo de 5 minutos de muestreo.
+</li><li>Etiquetas de papel para los sobres.
+</li><li>Un cronómetro y un silbato.
+</li><li>Un GPS.
+</li><li>Un medidor de temperatura / viento / humedad relativa
+(data logger).
+</li><li>Una caja hermética para guardar las mariposas colectadas.
+</li><li>Naftalina y sílica gel para preservar el material colectado.
+</li></ul></p>
+
+<div class='referencias'>
+<strong>Referencias</strong>
+<p>Caldas, A. y R. K. Robbins (2003): Modified Pollard transects for assessing tropical butterfly abundance and diversity. Biological Conservation. 110: 211-219.</p>
+</div>
+
+Fecha de elaboraci&oacute;n: 21/12/2010
+Elaborado por: JR Ferrer-Paris jferrer (a) ivic.gob.ve y AY Sánchez-Mercado
+

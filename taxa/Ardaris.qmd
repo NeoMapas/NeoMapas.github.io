@@ -1,0 +1,24 @@
+---
+title: "*Ardaris* spp."
+subtitle: "Mariposas"
+---
+
+Durante los muestreos de mariposas de NeoMapas capturamos algunos ejemplares de las dos especies endémicas de los páramos venezolanos:
+
+- Ardaris eximia
+- Ardaris hantra
+
+![](Ardaris-gaveta-ordenada.jpg)
+
+Esta información fue luego integrada en las fichas del Libro Rojo de la Fauna Venezolana para estas especies:
+
+https://especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris
+
+Ferrer-París, J. R., Cardozo-Urdaneta, A., Lozano, C. y Orellana, A., (2015) Mariposa hespéride altiandina, Ardaris eximia, En: J.P. Rodríguez, A. García-Rawlins y F. Rojas-Suárez (eds.) Libro Rojo de la Fauna Venezolana. Cuarta edición. Provita y Fundación Empresas Polar, Caracas, Venezuela., Recuperado de: www.especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris/mariposa-hesperide-altiandina Jueves, 16/11/2023 
+
+ Ferrer-París, J. R., Cardozo-Urdaneta, A. y Orellana, A., (2015) Mariposa hespéride paramera, Ardaris hantra, En: J.P. Rodríguez, A. García-Rawlins y F. Rojas-Suárez (eds.) Libro Rojo de la Fauna Venezolana. Cuarta edición. Provita y Fundación Empresas Polar, Caracas, Venezuela., Recuperado de: www.especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris/mariposa-hesperide-paramera Jueves, 16/11/2023 
+
+# Documentos
+
+::: {#refs}
+:::

@@ -1,5 +1,6 @@
 ---
 title: "Muestreo de escarabajos coprófagos"
+subtitle: "Órden Coleoptera, Subfamilia Scarabaeinae"
 author: 
     - "JR Ferrer-Paris"
     - "AY Sánchez-Mercado"
