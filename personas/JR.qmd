@@ -3,7 +3,7 @@ title: "JR Ferrer-Paris"
 about:
   id: hero-heading
   template: jolla
-  image: profile.jpg
+  image: JR-en-Araya.jpg
   links:
     - icon: twitter
       text: twitter

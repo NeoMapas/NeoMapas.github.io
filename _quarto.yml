@@ -31,15 +31,20 @@ website:
       - text: "Taxones"
         menu:
           - text: "Grupos indicadores"
-            href: CNEB.qmd
           - text: "Mariposas"
             href: CNEB.qmd
           - text: "Escarabajos"
-            href: CNEB.qmd
+            href: escarabajos.qmd
           - text: "Aves"
-            href: CNEB.qmd
+            href: aves.qmd
+          - text: "Especies destacadas"
           - especies.qmd
-      - referencias.qmd
+      - text: "Producción científica"
+        menu:
+          - text: "Publicaciones"
+            href: referencias.qmd
+          - text: "Presentaciones"
+            href: referencias.qmd
       - personas.qmd
       - about.qmd
 
