@@ -37,15 +37,18 @@ website:
             href: grupos_indicadores/escarabajos.qmd
           - text: "Aves"
             href: grupos_indicadores/aves.qmd
-          - text: "Especies destacadas"
+          - text: "+ información"
           - especies.qmd
+          - text: "Contribuciones en iNaturalist"
+            href: https://neomapas.github.io/iNat-obs-dashboard/
       - text: "Producción científica"
         menu:
           - text: "Publicaciones"
             href: referencias.qmd
           - text: "Presentaciones"
             href: presentaciones.qmd
-      - personas.qmd
+      - text: "Personas"
+        href: personas.qmd
       - about.qmd
 
 bibliography: 
@@ -55,6 +58,7 @@ bibliography:
   - bibTeX/preprints.bibtex
   - bibTeX/datasets.bibtex
   - bibTeX/other.bibtex
+  - bibTeX/thesis.bibtex
 
 format:
   html:

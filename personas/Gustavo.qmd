@@ -1,5 +1,5 @@
 ---
-title: "Gustavo Rodríguez"
+title: "Gustavo Rodríguez(†)"
 about:
   id: hero-heading
   template: jolla
@@ -12,6 +12,7 @@ bibliography:
   - ../bibTeX/peer-review.bibtex
 nocite: |
   @Rodr_guez_2012
+  @Ferrer_Paris_2012
 ---
 
 :::{#hero-heading}
@@ -20,11 +21,15 @@ nocite: |
 
 Gustavo A. Rodríguez Arvelo (1961-†2021) fue un reconocido ornitólogo venezolano. Autor de varios artículos científicos y libros; guía y mentor de numerosos observadores de aves en el país.
 
-## Contribuciones
+## Contribuciones a NeoMapas
 
-NeoMapas Aves | Muestreo nacional | 2009
+Dr. Gustavo Rodríguez, dirigió el grupo de observadores de aves y ornitólogos que condujeron el muestreo de aves en 2010, realizó el curaje y análisis de los datos.
+
+NeoMapas Aves | Muestreo nacional | 2010
 
 :::
+ 
+
 
 
 ## Documentos más relevantes

@@ -34,6 +34,11 @@ bibliography:
 
 **Resumen**: <p>Muestreo de mariposas y escarabajos realizado en julio de 2010.</p>
 
+## Galeria de fotos
+
+![](fotos/NM28.jpg)
+![](fotos/NM28-alt.jpg)
+![](fotos/NM28-veg.jpg)
 
 ## Ubicación
 

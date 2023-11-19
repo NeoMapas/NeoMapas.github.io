@@ -1,0 +1,6 @@
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false

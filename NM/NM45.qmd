@@ -34,6 +34,10 @@ bibliography:
 
 **Resumen**: <p>Sugerida en 2003. Inclu&iacute;da en muestreo de aves NM2010. En junio de 2009 se realizaron unas colectas exploratorias de mariposas.</p>
 
+## Galeria de fotos
+
+![](fotos/NM45.jpg)
+![](fotos/NM45-alt.jpg)
 
 ## Ubicación
 

@@ -1,0 +1,30 @@
+---
+title: "Jon Paul Rodríguez"
+about:
+  id: hero-heading
+  template: jolla
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+nocite: |
+  @Rodr_guez_2012
+  @RS02
+---
+
+:::{#hero-heading}
+
+## Breve Biografía
+
+
+## Contribuciones a NeoMapas
+
+NeoMapas Aves | Estudio Piloto | 2001-2002
+
+:::
+ 
+
+
+
+## Documentos más relevantes
+
+::: {#refs}
+:::

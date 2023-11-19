@@ -3,7 +3,7 @@ title: "JR Ferrer-Paris"
 about:
   id: hero-heading
   template: jolla
-  image: JR-en-Araya.jpg
+  image: JR.jpg
   links:
     - icon: twitter
       text: twitter
@@ -14,8 +14,12 @@ about:
     - icon: link
       text: Website
       href: https://jrfep.github.io/
+    - icon: orcid
+      text: ORCID
+      href: http://orcid.org/0000-0002-9554-3395
 bibliography: 
   - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
 nocite: |
   @Ferrer_Paris_2016
   @Ferrer_Paris_2012

@@ -1,0 +1,31 @@
+---
+title: "Angel Solis"
+about:
+  id: hero-heading
+  template: jolla
+  image: https://unsm-ento.unl.edu/workers/graphics/solis.jpg
+bibliography:
+  - ../bibTeX/peer-review.bibtex
+nocite: |
+  @Ferrer_Paris_2012
+---
+
+:::{#hero-heading}
+
+## Breve Biografía
+
+
+## Contribuciones a NeoMapas
+
+
+NeoMapas Aves | Estudio Piloto | 2001-2002
+
+:::
+ 
+
+
+
+## Documentos más relevantes
+
+::: {#refs}
+:::

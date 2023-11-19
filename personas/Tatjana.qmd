@@ -1,0 +1,29 @@
+---
+title: "Tatjana Good"
+about:
+  id: hero-heading
+  template: jolla
+  image: Tatjana.jpg
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+nocite: |
+  @Ferrer_Paris_2012
+---
+
+:::{#hero-heading}
+
+
+## Contribuciones a NeoMapas
+
+NeoMapas Escarabajos | Estudio Piloto | 2005
+NeoMapas Escarabajos y Mariposas | Curso Internacional | 2006 y 2009
+
+:::
+ 
+
+
+
+## Documentos más relevantes
+
+::: {#refs}
+:::
