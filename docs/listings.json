@@ -40,6 +40,7 @@
     "items": [
       "/taxa/Amazona-barbadensis.html",
       "/taxa/Ardaris.html",
+      "/taxa/Catasticta-revancha.html",
       "/taxa/Digitonthophagus.html",
       "/taxa/Eurysternus-impressicollis.html",
       "/taxa/Kricogonia-lyside.html",
@@ -50,8 +51,13 @@
     "listing": "/personas.html",
     "items": [
       "/personas/Ada.html",
+      "/personas/Solis.html",
+      "/personas/Cecilia.html",
+      "/personas/Chris.html",
       "/personas/Gustavo.html",
-      "/personas/JR.html"
+      "/personas/JR.html",
+      "/personas/Jon.html",
+      "/personas/Tatjana.html"
     ]
   }
 ]
