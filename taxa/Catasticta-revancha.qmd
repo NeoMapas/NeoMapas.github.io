@@ -1,0 +1,15 @@
+---
+title: "*Catasticta revancha*"
+subtitle: "Pieridae"
+bibliography: 
+  - ../bibTeX/thesis.bibtex
+nocite: |
+  @Ferrer_Paris_2008_PhD_thesis
+---
+
+![](Catasticta-revancha.jpg)
+
+# Documentos
+
+::: {#refs}
+:::

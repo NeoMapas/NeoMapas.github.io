@@ -1,0 +1,86 @@
+---
+title: "*Ardaris eximia*"
+subtitle: "Papilionoidea, familia Hesperiidae"
+nocite: |
+  @Ferrer_Paris_2012
+  @RCA_NM06
+  @RCA_NM26
+  @RCA_NM57
+  @RCA_NM58
+---
+
+Durante los muestreos de mariposas de NeoMapas capturamos algunos ejemplares de *Ardaris eximia*, una de las dos especies que conforman el género Ardaris, endémico de los páramos venezolanos.
+
+## Detecciones
+
+```{r}
+library(dplyr)
+library(sf)
+library(tmap)
+here::i_am("taxa/Ardaris.qmd")
+load(here::here("sandbox","NMppln.rda"))
+VBG <- read_sf(here::here("sandbox","VBG.gpkg"))
+
+spp_name <- "Ardaris eximia"
+jmps <- jmp.NM %>% filter(spp %in% spp_name)
+
+NMs <- jmps %>% filter(!is.na(NM)) %>% distinct(NM) %>% pull()
+CNs <- jmps %>% filter(is.na(NM)) %>% distinct(CN) %>% pull()
+CN_sf <- VBG %>% filter(cdg %in% jmps$CN) %>% select(celda=cdg)
+UEMs <- tvn.NM %>% 
+  filter(tvn %in% jmps$tvn) %>% 
+  group_by(vst,NM,lat,lon,fecha) %>% 
+  summarise(esfuerzo=sum(sfrz),.groups="drop") %>%
+  mutate(NM = if_else(is.na(NM), "—", NM)) %>%
+  st_as_sf(coords=c("lon","lat"))
+
+```
+
+
+```{r}
+map1 <- tm_basemap(leaflet::providers$Esri.NatGeoWorldMap) +
+  tm_basemap(leaflet::providers$Esri.WorldImagery) +
+  tm_shape(CN_sf) + tm_polygons(alpha=.4) +
+  tm_shape(UEMs) + 
+  tm_symbols( col="orchid2", title.shape=sprintf("Detecciones de %s",spp_name)) + 
+  tm_minimap() +
+  tm_layout(legend.bg.color = "grey90", legend.bg.alpha=.5, legend.frame=TRUE)
+
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+
+```{r}
+#| results: asis
+
+rutas <- paste(
+  sprintf("[NM%1$s](/NM/NM%1$s.qmd)",NMs),
+  collapse =", "
+  )
+celdas <- paste(
+  sprintf("[%1$s](/celdas/%1$s.qmd)",CNs),
+  collapse =", "
+  )
+cat(sprintf("*%s* fue detectada en %s rutas : %s; y en muestreos oportunistas en la celda %s.\n", 
+            spp_name, length(NMs), rutas, celdas))
+VBG <- read_sf(here::here("sandbox","VBG.gpkg"))
+```
+
+## Ejemplares en colección
+
+![](Ardaris-gaveta-ordenada.jpg)
+
+## Conservación 
+
+La información de los muestreos de NeoMapas fue integrada en las fichas del Libro Rojo de la Fauna Venezolana para estas dos especies:
+
+https://especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris
+
+Ferrer-París, J. R., Cardozo-Urdaneta, A., Lozano, C. y Orellana, A., (2015) Mariposa hespéride altiandina, Ardaris eximia, En: J.P. Rodríguez, A. García-Rawlins y F. Rojas-Suárez (eds.) Libro Rojo de la Fauna Venezolana. Cuarta edición. Provita y Fundación Empresas Polar, Caracas, Venezuela., Recuperado de: www.especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris/mariposa-hesperide-altiandina Jueves, 16/11/2023 
+
+ Ferrer-París, J. R., Cardozo-Urdaneta, A. y Orellana, A., (2015) Mariposa hespéride paramera, Ardaris hantra, En: J.P. Rodríguez, A. García-Rawlins y F. Rojas-Suárez (eds.) Libro Rojo de la Fauna Venezolana. Cuarta edición. Provita y Fundación Empresas Polar, Caracas, Venezuela., Recuperado de: www.especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris/mariposa-hesperide-paramera Jueves, 16/11/2023 
+
+# Documentos
+
+::: {#refs}
+:::

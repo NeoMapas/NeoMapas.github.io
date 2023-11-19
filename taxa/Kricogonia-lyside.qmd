@@ -1,11 +1,74 @@
 ---
 title: "*Kricogonia lyside*"
 subtitle: "Pieridae"
-bibliography: 
-  - ../bibTeX/thesis.bibtex
 nocite: |
   @Ferrer_Paris_2008_PhD_thesis
+  @RCA_NM02
+  @RCA_NM09
+  @RCA_NM66
+  @RCA_NM45
 ---
+
+```{r}
+library(dplyr)
+library(sf)
+library(tmap)
+here::i_am("taxa/Kricogonia-lyside.qmd")
+load(here::here("sandbox","NMppln.rda"))
+VBG <- read_sf(here::here("sandbox","VBG.gpkg"))
+
+spp_name <- "Kricogonia lyside"
+jmps <- jmp.NM %>% filter(spp %in% spp_name)
+
+NMs <- jmps %>% filter(!is.na(NM)) %>% distinct(NM) %>% pull()
+CNs <- jmps %>% filter(is.na(NM)) %>% distinct(CN) %>% pull()
+CN_sf <- VBG %>% filter(cdg %in% jmps$CN) %>% select(celda=cdg)
+UEMs <- tvn.NM %>% 
+  filter(tvn %in% jmps$tvn) %>% 
+  group_by(vst,NM,lat,lon,fecha) %>% 
+  summarise(esfuerzo=sum(sfrz),.groups="drop") %>%
+  mutate(NM = if_else(is.na(NM), "—", NM)) %>%
+  st_as_sf(coords=c("lon","lat"))
+
+```
+
+
+```{r}
+map1 <- tm_basemap(leaflet::providers$Esri.NatGeoWorldMap) +
+  tm_basemap(leaflet::providers$Esri.WorldImagery) +
+  tm_shape(CN_sf) + tm_polygons(alpha=.4) +
+  tm_shape(UEMs) + 
+  tm_symbols( col="orchid2", title.shape=sprintf("Detecciones de %s",spp_name)) + 
+  tm_minimap() +
+  tm_layout(legend.bg.color = "grey90", legend.bg.alpha=.5, legend.frame=TRUE)
+
+tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
+```
+
+
+```{r}
+#| results: asis
+
+rutas <- paste(
+  sprintf("[NM%1$s](/NM/NM%1$s.qmd)",NMs),
+  collapse =", "
+  )
+celdas <- paste(
+  sprintf("[%1$s](/celdas/%1$s.qmd)",CNs),
+  collapse =", "
+  )
+cat(sprintf("*%s* fue detectada en %s rutas : %s; y en muestreos oportunistas en la celda %s.\n", 
+            spp_name, length(NMs), rutas, celdas))
+VBG <- read_sf(here::here("sandbox","VBG.gpkg"))
+```
+
+
+
+@Ferrer_Paris_2008_PhD_thesis
+
+[@Ferrer_Paris_2012]
+
+
 
 
 

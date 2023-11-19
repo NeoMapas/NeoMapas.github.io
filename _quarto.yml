@@ -31,16 +31,24 @@ website:
       - text: "Taxones"
         menu:
           - text: "Grupos indicadores"
-            href: CNEB.qmd
           - text: "Mariposas"
-            href: CNEB.qmd
+            href: grupos_indicadores/mariposas.qmd
           - text: "Escarabajos"
-            href: CNEB.qmd
+            href: grupos_indicadores/escarabajos.qmd
           - text: "Aves"
-            href: CNEB.qmd
+            href: grupos_indicadores/aves.qmd
+          - text: "+ información"
           - especies.qmd
-      - referencias.qmd
-      - personas.qmd
+          - text: "Contribuciones en iNaturalist"
+            href: https://neomapas.github.io/iNat-obs-dashboard/
+      - text: "Producción científica"
+        menu:
+          - text: "Publicaciones"
+            href: referencias.qmd
+          - text: "Presentaciones"
+            href: presentaciones.qmd
+      - text: "Personas"
+        href: personas.qmd
       - about.qmd
 
 bibliography: 
@@ -50,6 +58,7 @@ bibliography:
   - bibTeX/preprints.bibtex
   - bibTeX/datasets.bibtex
   - bibTeX/other.bibtex
+  - bibTeX/thesis.bibtex
 
 format:
   html:

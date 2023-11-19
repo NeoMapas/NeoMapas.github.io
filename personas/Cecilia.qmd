@@ -1,0 +1,35 @@
+---
+title: "Cecilia Lozano"
+about:
+  id: hero-heading
+  template: jolla
+  links:
+    - icon: orcid
+      text: ORCID
+      href: http://orcid.org/0000-0003-0215-6335
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/preprints.bibtex
+nocite: |
+  @Ferrer_Paris_2016
+  @Ferrer-Paris_2022_Distribution_Oxysternon
+  @ferrer-paris_et_al_E_impressicolis_2023
+  @ferrer-paris_JBM_acustico_2015
+---
+
+:::{#hero-heading}
+
+
+## Contribuciones a NeoMapas
+
+NeoMapas Escarabajos | Muestreo nacional | 2009
+
+:::
+ 
+
+
+
+## Documentos más relevantes
+
+::: {#refs}
+:::

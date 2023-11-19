@@ -3,7 +3,7 @@ title: "Ada Y. Sánchez-Mercado"
 about:
   id: hero-heading
   template: jolla
-  image: https://api.research.unsw.edu.au/sites/default/files/images/profile/Ada_Sanchez-Mercado_0.jpg
+  image: Ada.jpg
 bibliography: 
   - ../bibTeX/peer-review.bibtex
 nocite: |
@@ -18,6 +18,8 @@ nocite: |
 Estudio piloto | Escarabajos y mariposas | 2005 - 2006
 
 :::
+
+Dr. Ada Sánchez-Mercado, participó en los muestreos de mariposas y escarabajos, coordinadora de cursos internacionales y actividades de laboratorio.
 
 ### Documentos más relevantes
 

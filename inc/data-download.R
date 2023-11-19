@@ -10,6 +10,18 @@ if (!dir.exists(dir_datos))
 
 # Los datos de la NeoMapas están dispersos en varios repositorios diferentes.
 
+# OSF ----
+readRenviron("~/.Renviron")
+library(osfr)
+conflict_answer <- "skip"
+
+osfcode <- "8tuan"
+osf_project <- osf_retrieve_node(sprintf("https://osf.io/%s", osfcode))
+osf_all_files <- osf_ls_files(osf_project)
+osf_all_files <- osf_ls_files(osf_project, "Rdata-muestreo")
+osf_download(osf_all_files,
+             path = here::here("sandbox"),
+             conflicts = conflict_answer)
 
 # Dataverse ----
 
@@ -29,11 +41,11 @@ library("dataverse")
 library(dplyr)
 # Option 1: read file directly
 
-gpstrack <- get_dataframe_by_name(
-  filename = "05.gpx",
-  dataset = "10.7910/DVN/Y1AQKS",
-  original = TRUE,
-  .f = sf::read_sf)
+#gpstrack <- get_dataframe_by_name(
+#  filename = "05.gpx",
+#  dataset = "10.7910/DVN/Y1AQKS",
+#  original = TRUE,
+#  .f = sf::read_sf)
 
 # Option 2: read binary and save
 # let's create our own function
@@ -55,7 +67,10 @@ repositorio <- "10.7910/DVN/Y1AQKS"
 for (archivo in c(sprintf("%02d.gpx",c(1:29,34:41,43:45,93:95)))) {
   dataverse_download(repositorio, archivo)
 }
-
+repositorio <- "10.7910/DVN/IME0M5"
+for (archivo in c("VBG.gpkg","SIG.rda")) {
+  dataverse_download(repositorio, archivo)
+}
 
 repositorio <- "10.7910/DVN/YLZTVZ"
 for (archivo in 

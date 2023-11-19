@@ -1,5 +1,5 @@
 ---
-title: "Colaboradores"
+title: "Equipo de NeoMapas"
 listing: 
   id: col-listing
   contents: personas
@@ -12,29 +12,35 @@ listing:
 ::: {#col-listing}
 :::
 
-### Research team, collaborators, and funding 
+# Participantes, colaboradores y otros miembros del equipo de trabajo 
 
-#### Research team and collaborators 
+## Estudio piloto aves 2001-2002
 
-Dr. Jon Paul Rodríguez, NeoMaps founder, identified and evaluated the survey protocols for bird monitoring. 
+Dr. Jon Paul Rodríguez, fundador de NeoMapas y proponente del protocolo de observación de aves
 
-Dr. Ada Sánchez-Mercado, Co-investigator, tested survey protocols for butterflies and dung beetles on the pilot phase, and coordinate the postgraduate international courses. 
+Chris Sharpe, proponente del protocolo de observación de aves y coordinador del estudio piloto
 
-Dr. Gustavo Rodríguez, lead a team of XX? Venezuelan ornithologists and birdwatchers to conduct the bird surveys, and curate and analyse all the data obtained. 
-
-MSc. Angel Solis, Beetle Curator at the Museo Nacional de Costa Rica, identified dung beetle specimens and created taxonomic keys for several genera and species. 
+## Estudio piloto mariposas y escarabajos 2004-2005
 
 
-## Otros colaboradores de NeoMapas
 
-- Jon Paul Rodríguez
-- Chris Sharpe
-- Cecilia Lozano
-- Ángel Solis
-- Ariana 
-- Arlene Cardozo-Urdaneta
+*Expertos entomólogos*
 
-## Curso 2009
+Rafael Fernando Rey Cárdenas (†) contribuyó al muestreo de mariposas entre 2006 y 2009.
+
+Antonio A. De Ascenção Da Silva (Universidad de Los Andes, Venezuela)
+
+## Curso Internacional 2006
+
+*Experto taxónomo invitado*
+
+MSc. Ángel Solis, actualmente Curador de la colección de escarabajos del Museo Nacional de Costa Rica, identificó los especimenes de de escarabajos coprófagos y desarrollo las claves taxonómicas para la distinción de géneros, especies y morfotipos en Venezuela. 
+
+*Asistentes de laboratorio*
+
+Cecilia Lozano
+
+## Curso Internacional 2009
 
 **Coordinadores del Curso** 
 
@@ -65,4 +71,11 @@ José Rafael Ferrer-Paris y Ada Y. Sánchez-Mercado (IVIC)
 - Helios Martínez (Venezuela)     
 - Mónica Núñez  (Venezuela) 
 
+## Mantenimiento de la colección 2010-2018
+
+Arlene Cardozo-Urdaneta
+
+Arianna Thomas Cabianca
+
+Helios Martínez
 

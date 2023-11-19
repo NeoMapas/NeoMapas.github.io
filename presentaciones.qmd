@@ -1,0 +1,18 @@
+---
+title: "Presentaciones sobre NeoMapas"
+author: "JR Ferrer-Paris"
+date: "10 Oct 2023"
+---
+
+## Carteles o Pósters
+
+- Panamá / ELEN / Geoestadística
+- España/Baeza / curso / museos y muestreos
+
+/home/jferrer/respaldo/NeoMapas/etc/NM2006/400_Divulgacion/000_Presentaciones/ELEN_II_en_Panamá
+
+## Presentaciones
+
+- Julio 2007 IVIC / resumen del curso 2006
+
+/home/jferrer/respaldo/NeoMapas/etc/NM2006/400_Divulgacion/000_Presentaciones/PresentacionJulio2007
