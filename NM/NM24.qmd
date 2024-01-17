@@ -1,6 +1,9 @@
 ---
 title: "NM24 - Guri"
 subtitle: "Bolívar"
+categories:
+ - Escarabajos 2005
+ - Escarabajos 2009
 editor_options: 
   chunk_output_type: console
 execute:
@@ -66,7 +69,8 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. farinosa*, *A. ochrocephala* [@Amazona_pangaea_dataset].
 
-En esta región está presente el escarabajo *Oxysternon festivum* [@Ferrer_Paris_2016].
+
+En esta región está presente el escarabajo [*Oxysternon festivum*](/taxa/Oxysternon.qmd) [@Ferrer_Paris_2016].
 
 
 # Documentos

@@ -1,6 +1,8 @@
 ---
 title: "NM13 - San Fernando"
 subtitle: "Apure"
+categories:
+ - Escarabajos 2006
 editor_options: 
   chunk_output_type: console
 execute:

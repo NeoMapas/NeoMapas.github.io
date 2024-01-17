@@ -1,6 +1,8 @@
 ---
 title: "NM28 - Quebrada del Toro"
 subtitle: "Falcón"
+categories:
+ - Escarabajos 2010
 editor_options: 
   chunk_output_type: console
 execute:

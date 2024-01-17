@@ -1,6 +1,9 @@
 ---
 title: "NM06 - San Simón"
 subtitle: "Táchira"
+categories:
+ - Mariposas 2004
+ - Mariposas 2006
 editor_options: 
   chunk_output_type: console
 execute:

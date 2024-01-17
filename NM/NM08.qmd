@@ -1,6 +1,11 @@
 ---
 title: "NM08 - Altagracia de Orituco"
 subtitle: "Guárico"
+categories:
+ - Escarabajos 2006
+ - Escarabajos 2009
+ - Mariposas 2006
+ - Mariposas 2009
 editor_options: 
   chunk_output_type: console
 execute:

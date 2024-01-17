@@ -9,9 +9,7 @@ listing:
   field-display-names:
     title: "Transección/ruta"
     subtitle: "Estado"
-  sort:
-    - "title"
-    - "Estado"
+  sort-ui: [title, subtitle]
 ---
 
 Las transectas o rutas de NeoMapas representan unidades regionales de análisis (URA), dentro de las cuales se distribuyen las unidades elementales de muestreo (UEM) que varían según el grupo taxonómico (trampas, punto observación, recorrido cronometrado).

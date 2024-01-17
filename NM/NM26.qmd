@@ -1,6 +1,9 @@
 ---
 title: "NM26 - Jají"
 subtitle: "Mérida"
+categories:
+ - Escarabajos 2005
+ - Escarabajos 2009
 editor_options: 
   chunk_output_type: console
 execute:

@@ -1,0 +1,19 @@
+---
+title: "NM65 - Bochinche"
+subtitle: "Bolívar"
+categories:
+ - Escarabajos 2009
+---
+
+
+## Hallazgos importantes
+
+En esta región está presente el escarabajo [*Oxysternon festivum*](/taxa/Oxysternon.qmd) [@Ferrer_Paris_2016].
+
+
+# Documentos
+
+Publicaciones, conjuntos de datos y otros documentos que se refieren a esta unidad regional de análisis.
+
+::: {#refs}
+:::

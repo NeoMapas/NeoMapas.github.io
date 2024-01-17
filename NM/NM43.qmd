@@ -1,6 +1,8 @@
 ---
 title: "NM43 - Manglarito, Hato Piñero"
 subtitle: Cojedes
+categories:
+ - Escarabajos 2009
 bibliography: 
   - ../bibTeX/peer-review.bibtex
   - ../bibTeX/ebird-trip-reports.bibtex

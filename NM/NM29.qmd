@@ -1,6 +1,8 @@
 ---
 title: "NM29 - Guaramacal"
 subtitle: "Trujillo"
+categories:
+ - Escarabajos 2009
 editor_options: 
   chunk_output_type: console
 execute:

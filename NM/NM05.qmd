@@ -5,6 +5,7 @@ code: NM05
 contributors: JRFEP
 categories:
  - Mariposas 2006
+ - Mariposas 2009
  - Escarabajos 2006
  - Escarabajos 2009
  - Aves 2010

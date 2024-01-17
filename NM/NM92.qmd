@@ -1,0 +1,24 @@
+---
+title: "NM92 - Hacienda Guáquira"
+subtitle: Yaracuy
+categories:
+ - Escarabajos 2005
+ - Mariposas 2004
+ - Mariposas 2005
+ - Mariposas 2006
+bibliography: 
+  - ../bibTeX/peer-review.bibtex
+  - ../bibTeX/ebird-trip-reports.bibtex
+  - ../bibTeX/reports.bibtex
+  - ../bibTeX/datasets.bibtex
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+---
+
+# Ubicación
+
+Estado Yaracuy.

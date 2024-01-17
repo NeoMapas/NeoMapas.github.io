@@ -1,6 +1,8 @@
 ---
 title: "NM18 - San Joaquín de Navay"
 subtitle: "Táchira"
+categories:
+ - Escarabajos 2006
 editor_options: 
   chunk_output_type: console
 execute:

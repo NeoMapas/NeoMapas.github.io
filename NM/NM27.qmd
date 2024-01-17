@@ -1,6 +1,8 @@
 ---
 title: "NM27 - Páramo"
 subtitle: "Mérida"
+categories:
+ - Escarabajos 2006
 editor_options: 
   chunk_output_type: console
 execute:
