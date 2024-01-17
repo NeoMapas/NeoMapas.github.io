@@ -3,10 +3,15 @@ title: "NM05 - Rosario de Perijá"
 subtitle: Zulia
 code: NM05
 contributors: JRFEP
-
+categories:
+ - Mariposas 2006
+ - Escarabajos 2006
+ - Escarabajos 2009
+ - Aves 2010
 nocite: |
   @Ferrer_Paris_2012
   @https://doi.org/10.6084/m9.figshare.4733107
+  @FerrerParis_Calibracion_2006
 editor_options: 
   chunk_output_type: console
 execute:

@@ -34,7 +34,7 @@ osf_download(osf_all_files,
 # echo "DATAVERSE_KEY=..."" >> ~/.Renviron
 
 # Tambien agregamos un valor para DATAVERSE_SERVER en el mismo archivo.
-# echo "DATAVERSE_KEY=dataverse.harvard.edu" >> ~/.Renviron
+# echo "DATAVERSE_SERVER=dataverse.harvard.edu" >> ~/.Renviron
 
 # Load the dataverse library
 library("dataverse")

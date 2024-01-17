@@ -1,6 +1,9 @@
 ---
 title: "*Catasticta revancha*"
-subtitle: "Pieridae"
+subtitle: "Mariposa piéride emblemática del estado Táchira"
+categories:
+  - Papilionoidea
+  - Pieridae
 bibliography: 
   - ../bibTeX/thesis.bibtex
 nocite: |

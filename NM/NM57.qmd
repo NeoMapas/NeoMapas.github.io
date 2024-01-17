@@ -45,7 +45,7 @@ bibliography:
 
 En esta región se detecto la presencia de la mariposas endémica *Steromapedaliodes sanchezi*.
 
-En esta región se detecto la presencia de la mariposas endémica *Ardaris eximia*.
+En esta región se detecto la presencia de la mariposas endémica [*Ardaris eximia*](/taxa/Ardaris.qmd) [@LRFV_eximia].
 
 
 # Documentos

@@ -1,6 +1,9 @@
 ---
 title: "*Ardaris eximia*"
-subtitle: "Papilionoidea, familia Hesperiidae"
+subtitle: "Mariposa hespéride altiandina, endémica de los Andes venezolanos"
+categories:
+  - Papilionoidea
+  - Hesperiidae
 nocite: |
   @Ferrer_Paris_2012
   @RCA_NM06
@@ -72,13 +75,8 @@ VBG <- read_sf(here::here("sandbox","VBG.gpkg"))
 
 ## Conservación 
 
-La información de los muestreos de NeoMapas fue integrada en las fichas del Libro Rojo de la Fauna Venezolana para estas dos especies:
+La información de los muestreos de NeoMapas fue integrada en las fichas del Libro Rojo de la Fauna Venezolana para estas dos especies [@LRFV_eximia;@LRFV_hantra].
 
-https://especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris
-
-Ferrer-París, J. R., Cardozo-Urdaneta, A., Lozano, C. y Orellana, A., (2015) Mariposa hespéride altiandina, Ardaris eximia, En: J.P. Rodríguez, A. García-Rawlins y F. Rojas-Suárez (eds.) Libro Rojo de la Fauna Venezolana. Cuarta edición. Provita y Fundación Empresas Polar, Caracas, Venezuela., Recuperado de: www.especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris/mariposa-hesperide-altiandina Jueves, 16/11/2023 
-
- Ferrer-París, J. R., Cardozo-Urdaneta, A. y Orellana, A., (2015) Mariposa hespéride paramera, Ardaris hantra, En: J.P. Rodríguez, A. García-Rawlins y F. Rojas-Suárez (eds.) Libro Rojo de la Fauna Venezolana. Cuarta edición. Provita y Fundación Empresas Polar, Caracas, Venezuela., Recuperado de: www.especiesamenazadas.org/taxon/arthropoda/insecta/lepidoptera/hesperiidae/ardaris/mariposa-hesperide-paramera Jueves, 16/11/2023 
 
 # Documentos
 

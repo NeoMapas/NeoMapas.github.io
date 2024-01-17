@@ -1,6 +1,8 @@
 ---
 title: "*Oxysternon festivum*"
-subtitle: "Scarabaeinae"
+subtitle: "Una especie de escarabajo indicadora de condiciones de bosque"
+categories: 
+  - "Scarabaeinae"
 bibliography: 
   - ../bibTeX/peer-review.bibtex
   - ../bibTeX/other.bibtex

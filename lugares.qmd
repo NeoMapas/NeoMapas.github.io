@@ -4,6 +4,7 @@ listing:
   id: nm-listing
   contents: NM
   type: table
+  categories: true
   fields: [title, subtitle]
   field-display-names:
     title: "Transección/ruta"

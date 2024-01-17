@@ -59,6 +59,7 @@ bibliography:
   - bibTeX/datasets.bibtex
   - bibTeX/other.bibtex
   - bibTeX/thesis.bibtex
+  - bibTeX/LRAV.bibtex
 
 format:
   html:

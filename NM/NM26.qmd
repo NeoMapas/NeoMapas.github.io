@@ -58,6 +58,7 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Actividades
 
+- Estudio piloto mariposas y escarabajos en 2005 [@FerrerParis_Calibracion_2006]
 - Muestreo de mariposas en 2006, 2005, 2009 [@Ferrer_Paris_2012]
 - Estudio piloto de muestreo de escarabajos en 2005 [@Ferrer_Paris_2013]
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
@@ -66,7 +67,7 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Hallazgos importantes
 
-En esta región se detecto la presencia de la mariposas endémica *Ardaris eximia*.
+En esta región se detecto la presencia de la mariposas endémica [*Ardaris eximia*](/taxa/Ardaris.qmd) [@LRFV_eximia]
 
 
 # Documentos

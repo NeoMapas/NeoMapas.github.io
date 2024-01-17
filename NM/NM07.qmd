@@ -58,6 +58,7 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Actividades
 
+- Estudio piloto mariposas y escarabajos [@FerrerParis_Calibracion_2006]
 - Muestreo de mariposas en 2006, 2009 [@Ferrer_Paris_2012]
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
 - Muestreo de aves en 2010 [@Rodr_guez_2012]

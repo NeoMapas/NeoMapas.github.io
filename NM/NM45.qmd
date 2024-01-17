@@ -62,13 +62,14 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Actividades
 
+- Estudio piloto mariposas y escarabajos [@FerrerParis_Calibracion_2006]
 - Muestreo de mariposas en 2009 [@Ferrer_Paris_2012]
 - Muestreo de aves en 2010 [@Rodr_guez_2012]
 
 
 ## Hallazgos importantes
 
-En esta región se detecto la presencia de la mariposas del Guayacán *Kricogonia lyside*.
+En esta región se detecto la presencia de la [mariposas del Guayacán](/taxa/Kricogonia-lyside.qmd) *Kricogonia lyside*.
 
 
 # Documentos

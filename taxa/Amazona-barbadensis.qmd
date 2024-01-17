@@ -1,6 +1,8 @@
 ---
 title: "*Amazona barbadensis*"
 subtitle: "Aves"
+categories:
+  - Aves
 nocite: |
   @Rodr_guez_2012
   @Ferrer_Paris_2014_distribution_Amazon
