@@ -8,6 +8,7 @@ bibliography:
   - ../bibTeX/ebird-trip-reports.bibtex
   - ../bibTeX/reports.bibtex
   - ../bibTeX/datasets.bibtex
+  - ../bibTeX/presentations.bibtex
 editor_options: 
   chunk_output_type: console
 execute:
@@ -59,6 +60,11 @@ registros %>%
             individuos = sum(jmp)) %>%
   kable()
 ```
+
+
+La lista de escarabajos coprófagos de Hato Piñero está disponible en formato de cartel [@Lozano2023].
+
+<iframe src="https://widgets.figshare.com/articles/23798841/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
 
 
 # Documentos
