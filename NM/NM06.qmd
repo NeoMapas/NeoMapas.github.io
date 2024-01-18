@@ -10,11 +10,6 @@ execute:
   echo: false 
   message: false
   warning: false
-bibliography: 
-  - ../bibTeX/datasets.bibtex
-  - ../bibTeX/peer-review.bibtex
-  - ../bibTeX/preprints.bibtex
-  - ../bibTeX/other.bibtex
 ---
 
 ## Información básica
