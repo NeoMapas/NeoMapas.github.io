@@ -1,6 +1,8 @@
 ---
 title: "NM34 - Gavilán"
 subtitle: "Amazonas"
+categories:
+ - Escarabajos 2009
 editor_options: 
   chunk_output_type: console
 execute:
@@ -66,6 +68,9 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 ## Hallazgos importantes
 
 Se observaron las siguientes especies del género Amazona: *A. amazonica*, *A. ochrocephala* [@Amazona_pangaea_dataset].
+
+
+En esta región está presente el escarabajo [*Oxysternon festivum*](/taxa/Oxysternon.qmd) [@Ferrer_Paris_2016].
 
 En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
 

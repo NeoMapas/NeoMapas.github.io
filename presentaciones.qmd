@@ -1,18 +1,26 @@
 ---
 title: "Presentaciones sobre NeoMapas"
 author: "JR Ferrer-Paris"
-date: "10 Oct 2023"
+date: "17 Jan 2024"
+bibliography: 
+  - bibTeX/presentations.bibtex
+  - bibTeX/other.bibtex
+  - bibTeX/reports.bibtex
 ---
 
 ## Carteles o Pósters
 
-- Panamá / ELEN / Geoestadística
-- España/Baeza / curso / museos y muestreos
+- Panamá / ELEN / Geoestadística (/home/jferrer/respaldo/NeoMapas/etc/NM2006/400_Divulgacion/000_Presentaciones/ELEN_II_en_Panamá)
+- España/Baeza / curso / museos y muestreos [@ferrer-paris_poster_Baeza_2005]
+- Escarabajos de Hato Piñero [@Lozano2023]
+- Métodos para la estimación de abundancia de mariposas [@Ferrer-Paris_metodos_mariposas_2014]
 
-/home/jferrer/respaldo/NeoMapas/etc/NM2006/400_Divulgacion/000_Presentaciones/ELEN_II_en_Panamá
+<iframe src="https://widgets.figshare.com/articles/23798841/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
 
 ## Presentaciones
 
-- Julio 2007 IVIC / resumen del curso 2006
+- Julio 2007 IVIC / resumen del curso 2006 (/home/jferrer/respaldo/NeoMapas/etc/NM2006/400_Divulgacion/000_Presentaciones/PresentacionJulio2007)
 
-/home/jferrer/respaldo/NeoMapas/etc/NM2006/400_Divulgacion/000_Presentaciones/PresentacionJulio2007
+## otros
+
+- Lista actualizada de escarabajos coprófagos de Venezuela [@Lozano2019].

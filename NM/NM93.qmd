@@ -1,0 +1,12 @@
+---
+title: "NM93 - Anacoco"
+subtitle: Bolívar
+categories:
+ - Escarabajos 2006
+ - Escarabajos 2009
+---
+
+## Hallazgos importantes
+
+
+En esta región está presente el escarabajo [*Oxysternon festivum*](/taxa/Oxysternon.qmd) [@Ferrer_Paris_2016].

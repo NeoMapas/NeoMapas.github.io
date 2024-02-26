@@ -1,6 +1,10 @@
 ---
 title: "NM15 - Cantaura"
 subtitle: "Anzoátegui"
+categories:
+ - Escarabajos 2009
+ - Mariposas 2006
+ - Mariposas 2009
 editor_options: 
   chunk_output_type: console
 execute:

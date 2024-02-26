@@ -1,6 +1,8 @@
 ---
 title: "NM41 - Campamento Río Grande"
 subtitle: "Delta Amacuro"
+categories:
+ - Escarabajos 2009
 editor_options: 
   chunk_output_type: console
 execute:
@@ -64,7 +66,8 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Hallazgos importantes
 
-En esta región está presente el escarabajo *Oxysternon festivum* [@Ferrer_Paris_2016].
+
+En esta región está presente el escarabajo [*Oxysternon festivum*](/taxa/Oxysternon.qmd) [@Ferrer_Paris_2016].
 
 
 # Documentos

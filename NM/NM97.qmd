@@ -1,6 +1,13 @@
 ---
 title: "NM97 - IVIC"
 subtitle: "Miranda"
+categories:
+ - Escarabajos 2005
+ - Escarabajos 2008
+ - Mariposas 2004
+ - Mariposas 2005
+ - Mariposas 2006
+ - Mariposas 2009
 editor_options: 
   chunk_output_type: console
 execute:

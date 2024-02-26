@@ -1,17 +1,15 @@
 ---
 title: "NM06 - San Simón"
 subtitle: "Táchira"
+categories:
+ - Mariposas 2004
+ - Mariposas 2006
 editor_options: 
   chunk_output_type: console
 execute:
   echo: false 
   message: false
   warning: false
-bibliography: 
-  - ../bibTeX/datasets.bibtex
-  - ../bibTeX/peer-review.bibtex
-  - ../bibTeX/preprints.bibtex
-  - ../bibTeX/other.bibtex
 ---
 
 ## Información básica
@@ -66,7 +64,7 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Hallazgos importantes
 
-En esta región se detecto la presencia de la mariposas endémica *Ardaris eximia*.
+En esta región se detecto la presencia de la mariposas endémica [*Ardaris eximia*](/taxa/Ardaris.qmd) [@LRFV_eximia]
 
 
 # Documentos

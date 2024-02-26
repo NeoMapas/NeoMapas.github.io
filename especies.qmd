@@ -3,6 +3,7 @@ title: "Especies destacadas"
 listing: 
   id: spp-listing
   contents: taxa
+  categories: true
   type: table
   fields: [title, subtitle]
 ---

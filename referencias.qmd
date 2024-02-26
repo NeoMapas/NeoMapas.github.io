@@ -18,13 +18,13 @@ bib2 <- ReadBib(here::here("bibTeX","preprints.bibtex"), check = FALSE)
 bib3 <- ReadBib(here::here("bibTeX","other.bibtex"), check = FALSE)
 bib4 <- ReadBib(here::here("bibTeX","reports.bibtex"), check = FALSE)
 bib5 <- ReadBib(here::here("bibTeX","datasets.bibtex"), check = FALSE)
-#bib6 <- ReadBib(here::here("bibTeX","code-and-software.bibtex"), check = FALSE)
+bib6 <- ReadBib(here::here("bibTeX","LRAV.bibtex"), check = FALSE)
 NoCite(bib = bib1, 1:length(bib1), .opts = list(hyperlink = FALSE))
 NoCite(bib = bib2, 1:length(bib2), .opts = list(hyperlink = FALSE))
 NoCite(bib = bib3, 1:length(bib3), .opts = list(hyperlink = FALSE))
 NoCite(bib = bib4, 1:length(bib4), .opts = list(hyperlink = FALSE))
 NoCite(bib = bib5, 1:length(bib5), .opts = list(hyperlink = FALSE))
-#NoCite(bib = bib6, 1:length(bib6), .opts = list(hyperlink = FALSE))
+NoCite(bib = bib6, c("LRFV_sanchezi","LRFV_eximia","LRFV_hantra"), .opts = list(hyperlink = FALSE))
 ```
 
 Lista de todas las publicaciones, informes y otros productos científicos relacionados con la iniciativa NeoMapas.
@@ -62,6 +62,14 @@ Manuscritos y reportes preparados (pre-arbitraje).
 ```{r results = "asis", echo = FALSE}
 PrintBibliography(bib2, .opts = list(check.entries = FALSE,  max.names=100, sorting = "ydnt"))
 ```
+
+## Evaluación de riesgo de extinción
+
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib6, .opts = list(check.entries = FALSE,  max.names=100, sorting = "ydnt"))
+```
+
 
 
 ## Conjuntos de datos

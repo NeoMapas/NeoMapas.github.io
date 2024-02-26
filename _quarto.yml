@@ -38,6 +38,8 @@ website:
           - text: "Aves"
             href: grupos_indicadores/aves.qmd
           - text: "+ información"
+          - text: "Resumen por grupo"
+            href: grupos_indicadores/resumen-resultados.qmd
           - especies.qmd
           - text: "Contribuciones en iNaturalist"
             href: https://neomapas.github.io/iNat-obs-dashboard/
@@ -59,6 +61,7 @@ bibliography:
   - bibTeX/datasets.bibtex
   - bibTeX/other.bibtex
   - bibTeX/thesis.bibtex
+  - bibTeX/LRAV.bibtex
 
 format:
   html:

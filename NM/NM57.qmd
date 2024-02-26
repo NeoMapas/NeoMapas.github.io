@@ -1,17 +1,14 @@
 ---
 title: "NM57 - Piñango"
 subtitle: "Mérida"
+categories:
+ - Escarabajos 2009
 editor_options: 
   chunk_output_type: console
 execute:
   echo: false 
   message: false
   warning: false
-bibliography: 
-  - ../bibTeX/datasets.bibtex
-  - ../bibTeX/peer-review.bibtex
-  - ../bibTeX/preprints.bibtex
-  - ../bibTeX/other.bibtex
 ---
 
 ## Información básica
@@ -45,7 +42,7 @@ bibliography:
 
 En esta región se detecto la presencia de la mariposas endémica *Steromapedaliodes sanchezi*.
 
-En esta región se detecto la presencia de la mariposas endémica *Ardaris eximia*.
+En esta región se detecto la presencia de la mariposas endémica [*Ardaris eximia*](/taxa/Ardaris.qmd) [@LRFV_eximia].
 
 
 # Documentos

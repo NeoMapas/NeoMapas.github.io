@@ -1,6 +1,7 @@
 ---
 title: "*Digitonthophagus gazella*"
-subtitle: "Scarabaeinae"
+categories: 
+  - "Scarabaeinae"
 bibliography: 
   - ../bibTeX/peer-review.bibtex
   - ../bibTeX/other.bibtex

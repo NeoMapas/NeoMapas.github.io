@@ -1,15 +1,15 @@
 ---
 title: "NM09 - Araya"
 subtitle: "Sucre"
+categories:
+ - Escarabajos 2005
+ - Escarabajos 2009
 editor_options: 
   chunk_output_type: console
 execute:
   echo: false 
   message: false
   warning: false
-bibliography: 
-  - ../bibTeX/datasets.bibtex
-  - ../bibTeX/peer-review.bibtex
 ---
 
 ## Información básica
@@ -56,6 +56,7 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Actividades
 
+- Estudio piloto mariposas y escarabajos [@FerrerParis_Calibracion_2006]
 - Muestreo de mariposas en 2006, 2005, 2009 [@Ferrer_Paris_2012]
 - Estudio piloto de muestreo de escarabajos en 2005 [@Ferrer_Paris_2013]
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
@@ -64,4 +65,6 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 
 ## Hallazgos importantes
 
-Se observaron las siguientes especies del género Amazona: *A. barbadensis* [@Amazona_pangaea_dataset].
+Se observaron las siguientes especies del género Amazona: [*A. barbadensis*](/taxa/Amazona-barbadensis.qmd)  [@Amazona_pangaea_dataset].
+
+En esta región se detecto la presencia de la [mariposas del Guayacán](/taxa/Kricogonia-lyside.qmd) *Kricogonia lyside*.

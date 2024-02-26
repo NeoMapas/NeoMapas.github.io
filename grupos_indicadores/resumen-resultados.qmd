@@ -1,0 +1,59 @@
+---
+title: "Resumen por grupo indicador"
+nocite: |
+  @Ferrer_Paris_2012
+  @https://doi.org/10.6084/m9.figshare.4733107
+  @FerrerParis_Calibracion_2006
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+---
+
+
+## Aves
+
+Esfuerzo de muestreo por ruta de NeoMapas y año de muestreo.
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(DT)
+
+```
+
+## Mariposas
+
+Esfuerzo de muestreo por ruta de NeoMapas y año de muestreo.
+
+```{r}
+
+load(here::here("sandbox","NMppln.rda"))
+tvn.NM %>% 
+    mutate(metodo=tolower(metodo)) %>%
+    filter(!is.na(sfrz), !is.na(yr), !is.na(NM),
+        yr %in% 2003:2011,
+        metodo %in% "recorrido cronometrado") %>% 
+    group_by(yr,NM) %>% 
+    summarise(hours=sum(sfrz), .groups='drop') %>% 
+    pivot_wider(values_from = hours, names_from = yr) %>%
+    DT::datatable()
+
+```
+## Escarabajos coprófagos
+
+Esfuerzo de muestreo por ruta de NeoMapas y año de muestreo.
+
+```{r}
+
+load(here::here("sandbox","NMscrb.rda"))
+trmp.NM %>% 
+    filter(!is.na(sfrz),!is.na(yr)) %>% 
+    group_by(yr,NM) %>% 
+    summarise(hours=sum(sfrz), .groups='drop') %>% 
+    pivot_wider(values_from = hours, names_from = yr) %>%
+    DT::datatable()
+
+```

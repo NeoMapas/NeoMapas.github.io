@@ -1,6 +1,8 @@
 ---
 title: "NM66 - Macanao"
 subtitle: "Nueva Esparta"
+categories:
+ - Escarabajos 2010
 editor_options: 
   chunk_output_type: console
 execute:
@@ -41,10 +43,9 @@ bibliography:
 
 ## Hallazgos importantes
 
-Se observaron las siguientes especies del género Amazona: *A. barbadensis* [@Amazona_pangaea_dataset].
+Se observaron las siguientes especies del género Amazona: [*A. barbadensis*](/taxa/Amazona-barbadensis.qmd) [@Amazona_pangaea_dataset].
 
-En esta región se detecto la presencia de la mariposas del Guayacán *Kricogonia lyside*.
-
+En esta región se detecto la presencia de la [mariposas del Guayacán](/taxa/Kricogonia-lyside.qmd) *Kricogonia lyside*.
 
 # Documentos
 

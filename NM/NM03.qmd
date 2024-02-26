@@ -1,6 +1,9 @@
 ---
 title: "NM03 - Quebrada Arriba"
 subtitle: "Lara"
+categories:
+ - Mariposas 2006
+ - Aves 2010
 editor_options: 
   chunk_output_type: console
 execute:
