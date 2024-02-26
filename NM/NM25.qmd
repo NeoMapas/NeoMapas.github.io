@@ -1,0 +1,63 @@
+---
+title: "NM25 - Yacambú"
+subtitle: "Lara"
+categories:
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false 
+  message: false
+  warning: false
+---
+
+## Información básica
+
+**NM**: 25
+
+**Nombre**: Yacambú
+
+**ADM1**: Lara
+
+## Galería de fotos
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(pixture)
+library(FlickrAPI)
+library(dplyr)
+here::i_am("NM/NM01.qmd")
+
+file_name <- here::here("data","flickr-photos.rds")
+all_photos <- readRDS(file=file_name)
+photos <- all_photos %>% slice(grep("nm25",tags)) 
+
+paths <- photos %>% 
+    pull(url_m)
+captions <- photos %>% 
+  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/%s/%s' target='flickr'>%s @ flickr</a>", title, owner, id, ownername)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
+
+## Observaciones en iNaturalist
+
+```{r}
+#| echo: false
+file_name <- here::here("data","iNaturalist-obs-NeoMapas.rds")
+iNat_photos <- readRDS(file=file_name) 
+
+seleccion <- c("NM25")
+
+photos <- iNat_photos  %>% 
+    filter(grepl(seleccion,tag_list)) 
+
+paths <- photos %>% 
+    pull(image_url)
+captions <- photos %>% 
+    transmute(caption=sprintf("<strong>%s</strong> (<emph>%s</emph>) by <a href='%s' target='iNat'>NeoMapas @ iNaturalist</a>",species_guess,scientific_name,url)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```

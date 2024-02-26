@@ -29,11 +29,6 @@ execute:
 
 **Resumen**: <p>Sugerida en 2003. Inclu&iacute;da en muestreo de aves NM2010. En junio de 2009 se realizaron unas colectas exploratorias de mariposas.</p>
 
-## Galeria de fotos
-
-![](fotos/NM45.jpg)
-![](fotos/NM45-alt.jpg)
-
 ## Ubicación
 
 ```{r}
@@ -61,6 +56,30 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 - Muestreo de mariposas en 2009 [@Ferrer_Paris_2012]
 - Muestreo de aves en 2010 [@Rodr_guez_2012]
 
+
+## Galería de fotos
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(pixture)
+library(FlickrAPI)
+library(dplyr)
+here::i_am("NM/NM01.qmd")
+
+file_name <- here::here("data","flickr-photos.rds")
+all_photos <- readRDS(file=file_name)
+photos <- all_photos %>% slice(grep("nm45",tags)) 
+
+paths <- photos %>% 
+    pull(url_m)
+captions <- photos %>% 
+  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/%s/%s' target='flickr'>%s @ flickr</a>", title, owner, id, ownername)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
 
 ## Hallazgos importantes
 
