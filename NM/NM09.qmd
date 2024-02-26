@@ -62,6 +62,29 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 - Muestreo nacional de escarabajos en 2009 [@Ferrer_Paris_2012]
 - Muestreo de aves en 2010 [@Rodr_guez_2012]
 
+## Galería de fotos
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(pixture)
+library(FlickrAPI)
+library(dplyr)
+here::i_am("NM/NM01.qmd")
+
+file_name <- here::here("data","flickr-photos.rds")
+all_photos <- readRDS(file=file_name)
+photos <- all_photos %>% slice(grep("nm09",tags)) 
+
+paths <- photos %>% 
+    pull(url_m)
+captions <- photos %>% 
+  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/jferrer/%s' target='flickr'>%s @ flickr</a>",title,id, ownername)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
 
 ## Hallazgos importantes
 
