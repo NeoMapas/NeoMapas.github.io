@@ -55,6 +55,30 @@ tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx].
 
 
+## Galería de fotos
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(pixture)
+library(FlickrAPI)
+library(dplyr)
+here::i_am("NM/NM01.qmd")
+
+file_name <- here::here("data","flickr-photos.rds")
+all_photos <- readRDS(file=file_name)
+photos <- all_photos %>% slice(grep("nm07",tags)) 
+
+paths <- photos %>% 
+    pull(url_m)
+captions <- photos %>% 
+  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/%s/%s' target='flickr'>%s @ flickr</a>", title, owner, id, ownername)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
+
 ## Actividades
 
 - Estudio piloto mariposas y escarabajos [@FerrerParis_Calibracion_2006]

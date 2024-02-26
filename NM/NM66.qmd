@@ -3,6 +3,8 @@ title: "NM66 - Macanao"
 subtitle: "Nueva Esparta"
 categories:
  - Escarabajos 2010
+ - Mariposas 2010
+ - Aves 2010
 editor_options: 
   chunk_output_type: console
 execute:
@@ -46,6 +48,62 @@ bibliography:
 Se observaron las siguientes especies del género Amazona: [*A. barbadensis*](/taxa/Amazona-barbadensis.qmd) [@Amazona_pangaea_dataset].
 
 En esta región se detecto la presencia de la [mariposas del Guayacán](/taxa/Kricogonia-lyside.qmd) *Kricogonia lyside*.
+
+## Resumen de muestreos
+
+### Mariposas
+
+```{r}
+#| echo: false
+
+library(dplyr)
+library(tidyr)
+library(DT)
+
+load(here::here("sandbox","NMppln.rda"))
+slc <- tvn.NM %>% filter(NM %in% "66") %>% pull(vst)
+jmp.NM %>% 
+  filter(vst %in% slc) %>%  
+  group_by(spp,yr) %>% 
+  summarise(ejemplares=n(), .groups="drop") %>% 
+  arrange(yr) %>% 
+  pivot_wider(id_cols=spp, names_from=yr, values_from=ejemplares) %>% DT::datatable()
+```
+
+### Escarabajos
+
+```{r}
+#| echo: false
+
+library(dplyr)
+library(DT)
+
+load(here::here("sandbox","NMscrb.rda"))
+load(here::here("sandbox","scrbsolis.rda"))
+
+slc <- 
+  scrb.solis %>% 
+  filter(NM %in% 66) %>% 
+  summarise(across(Agamopus.sp066:Canthidium.sp218, 
+    ~ sum(.x, na.rm = TRUE)))
+capturados <- names(slc)[slc>0]
+
+jmps <- 
+  scrb.solis %>% 
+    filter(NM %in% 66) %>% 
+    group_by(vst) %>% 
+    summarise(across(all_of(capturados), 
+      ~ sum(.x, na.rm = TRUE)))
+
+trmps <- 
+  trmp.NM %>% 
+    filter(NM %in% "66") %>% 
+    group_by(Prd,vst) %>% 
+    summarise(cebo=unique(cebo), inicio=min(fch), fin=max(fch), .groups='drop') 
+
+trmps %>% left_join(jmps,by="vst") %>% DT::datatable()
+
+```
 
 # Documentos
 

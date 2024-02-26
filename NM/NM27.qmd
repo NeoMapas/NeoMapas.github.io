@@ -64,6 +64,50 @@ Las coordenadas de los puntos de muestreo están disponibles en un repositorio e
 - Estudio piloto de muestreo de escarabajos en 2006 [@Ferrer_Paris_2013]
 
 
+## Galería de fotos
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(pixture)
+library(FlickrAPI)
+library(dplyr)
+here::i_am("NM/NM01.qmd")
+
+file_name <- here::here("data","flickr-photos.rds")
+all_photos <- readRDS(file=file_name)
+photos <- all_photos %>% slice(grep("nm27",tags)) 
+
+paths <- photos %>% 
+    pull(url_m)
+captions <- photos %>% 
+  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/%s/%s' target='flickr'>%s @ flickr</a>", title, owner, id, ownername)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
+
+## Observaciones en iNaturalist
+
+```{r}
+#| echo: false
+file_name <- here::here("data","iNaturalist-obs-NeoMapas.rds")
+iNat_photos <- readRDS(file=file_name) 
+
+seleccion <- c("NM27")
+
+photos <- iNat_photos  %>% 
+    filter(grepl(seleccion,tag_list)) 
+
+paths <- photos %>% 
+    pull(image_url)
+captions <- photos %>% 
+    transmute(caption=sprintf("<strong>%s</strong> (<emph>%s</emph>) by <a href='%s' target='iNat'>NeoMapas @ iNaturalist</a>",species_guess,scientific_name,url)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
+
 ## Hallazgos importantes
 
 

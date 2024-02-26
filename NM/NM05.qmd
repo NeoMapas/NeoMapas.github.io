@@ -21,7 +21,7 @@ execute:
   warning: false
 ---
 
-# Ubicación
+## Ubicación
 
 Rosario de Perijá en el Estado Zulia.
 
@@ -55,7 +55,7 @@ tmap_leaflet(map1, show = FALSE, add.titles = FALSE)
 
 Las coordenadas de los puntos de muestreo están disponibles en un repositorio en Dataverse [@NeoMapas_gpx]
 
-# Actividades
+## Actividades
 
 Región incluida en las actividades:
 
@@ -63,7 +63,52 @@ Región incluida en las actividades:
 - Muestreos de mariposas y escarabajos [@Ferrer_Paris_2012]
 - muestreos de Aves en 2010 [@Rodr_guez_2012]
 
-# Hallazgos importantes
+
+## Galería de fotos
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(pixture)
+library(FlickrAPI)
+library(dplyr)
+here::i_am("NM/NM01.qmd")
+
+file_name <- here::here("data","flickr-photos.rds")
+all_photos <- readRDS(file=file_name)
+photos <- all_photos %>% slice(grep("nm05",tags)) 
+
+paths <- photos %>% 
+    pull(url_m)
+captions <- photos %>% 
+  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/%s/%s' target='flickr'>%s @ flickr</a>", title, owner, id, ownername)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
+
+## Observaciones en iNaturalist
+
+```{r}
+#| echo: false
+file_name <- here::here("data","iNaturalist-obs-NeoMapas.rds")
+iNat_photos <- readRDS(file=file_name) 
+
+seleccion <- c("NM05")
+
+photos <- iNat_photos  %>% 
+    filter(grepl(seleccion,tag_list)) 
+
+paths <- photos %>% 
+    pull(image_url)
+captions <- photos %>% 
+    transmute(caption=sprintf("<strong>%s</strong> (<emph>%s</emph>) by <a href='%s' target='iNat'>NeoMapas @ iNaturalist</a>",species_guess,scientific_name,url)) %>% pull()
+
+pixgallery(paths, caption=captions)
+```
+
+## Hallazgos importantes
 
 En esta región se detecto la presencia de una especie invasora de escarabajo coprófago [@Ferrer_Paris_digitonthophagus_2014].
 
@@ -84,7 +129,7 @@ Amazonas %>%
 
 
 
-# Documentos
+## Documentos
 
 ::: {#refs}
 :::

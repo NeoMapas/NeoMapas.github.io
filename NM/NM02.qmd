@@ -76,7 +76,7 @@ photos <- all_photos %>% slice(grep("nm02",tags))
 paths <- photos %>% 
     pull(url_m)
 captions <- photos %>% 
-  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/jferrer/%s' target='flickr'>%s @ flickr</a>",title,id, ownername)) %>% pull()
+  transmute(caption=sprintf("<strong>%s</strong> by <a href='https://www.flickr.com/photos/%s/%s' target='flickr'>%s @ flickr</a>", title, owner, id, ownername)) %>% pull()
 
 pixgallery(paths, caption=captions)
 ```
