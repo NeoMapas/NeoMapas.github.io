@@ -1,3 +1,10 @@
+Tengo que hacer un how2 con las instrucciones del sitio
+
+Por ahora:
+
+quarto preview
+
+
 # Curso NeoMapas 2009
 
 NM 2009: curso internacional sobre inventario y monitoreo de la biodiversidad neotropical
