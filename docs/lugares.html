@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NeoMapas - Rutas de NeoMapas</title>
+<title>Rutas de NeoMapas – NeoMapas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,19 +38,25 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ca18fbd2e8790c6568535d603d3b1e7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-fdf986989e2058d46a90f864900247d8.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -59,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "resultado adicional en este documento",
     "search-more-matches-text": "resultados adicionales en este documento",
     "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar",
     "search-label": "Buscar"
@@ -95,11 +102,38 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="NeoMapas - Rutas de NeoMapas">
+<meta name="twitter:title" content="Rutas de NeoMapas – NeoMapas">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@neomapas">
 <meta name="twitter:card" content="summary">
@@ -109,99 +143,99 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">NeoMapas</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Inicio</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lugares" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lugares" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lugares</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lugares">    
         <li>
-    <a class="dropdown-item" href="./CNEB.html" rel="" target="">
+    <a class="dropdown-item" href="./CNEB.html">
  <span class="dropdown-text">CNEB</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lugares.html" rel="" target="">
+    <a class="dropdown-item" href="./lugares.html">
  <span class="dropdown-text">Rutas de NeoMapas</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxones" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxones" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Taxones</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-taxones">    
         <li class="dropdown-header">Grupos indicadores</li>
         <li>
-    <a class="dropdown-item" href="./grupos_indicadores/mariposas.html" rel="" target="">
+    <a class="dropdown-item" href="./grupos_indicadores/mariposas.html">
  <span class="dropdown-text">Mariposas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./grupos_indicadores/escarabajos.html" rel="" target="">
+    <a class="dropdown-item" href="./grupos_indicadores/escarabajos.html">
  <span class="dropdown-text">Escarabajos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./grupos_indicadores/aves.html" rel="" target="">
+    <a class="dropdown-item" href="./grupos_indicadores/aves.html">
  <span class="dropdown-text">Aves</span></a>
   </li>  
         <li class="dropdown-header">+ información</li>
         <li>
-    <a class="dropdown-item" href="./grupos_indicadores/resumen-resultados.html" rel="" target="">
+    <a class="dropdown-item" href="./grupos_indicadores/resumen-resultados.html">
  <span class="dropdown-text">Resumen por grupo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./especies.html" rel="" target="">
+    <a class="dropdown-item" href="./especies.html">
  <span class="dropdown-text">Especies destacadas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://neomapas.github.io/iNat-obs-dashboard/" rel="" target="">
+    <a class="dropdown-item" href="https://neomapas.github.io/iNat-obs-dashboard/">
  <span class="dropdown-text">Contribuciones en iNaturalist</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-producción-científica" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-producción-científica" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Producción científica</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-producción-científica">    
         <li>
-    <a class="dropdown-item" href="./referencias.html" rel="" target="">
+    <a class="dropdown-item" href="./referencias.html">
  <span class="dropdown-text">Publicaciones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./presentaciones.html" rel="" target="">
+    <a class="dropdown-item" href="./presentaciones.html">
  <span class="dropdown-text">Presentaciones</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./personas.html" rel="" target="">
- <span class="menu-text">Personas</span></a>
+    <a class="nav-link" href="./personas.html"> 
+<span class="menu-text">Personas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">+ información</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">+ información</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -213,12 +247,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./img/logo_NeoMapas_p.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Iniciativa para el monitoreo de la biodiversidad Neotropical</figcaption>
+<figcaption>Iniciativa para el monitoreo de la biodiversidad Neotropical</figcaption>
 </figure>
 </div>
 </div></div>
         
-    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(36)</span></div><div class="category" data-category="Aves 2010">Aves 2010 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Escarabajos 2005">Escarabajos 2005 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Escarabajos 2006">Escarabajos 2006 <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Escarabajos 2008">Escarabajos 2008 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Escarabajos 2009">Escarabajos 2009 <span class="quarto-category-count">(19)</span></div><div class="category" data-category="Escarabajos 2010">Escarabajos 2010 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Mariposas 2004">Mariposas 2004 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Mariposas 2005">Mariposas 2005 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Mariposas 2006">Mariposas 2006 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Mariposas 2009">Mariposas 2009 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Mariposas 2010">Mariposas 2010 <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(36)</span></div><div class="category" data-category="QXZlcyUyMDIwMTA=">Aves 2010 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="RXNjYXJhYmFqb3MlMjAyMDA1">Escarabajos 2005 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="RXNjYXJhYmFqb3MlMjAyMDA2">Escarabajos 2006 <span class="quarto-category-count">(9)</span></div><div class="category" data-category="RXNjYXJhYmFqb3MlMjAyMDA4">Escarabajos 2008 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXNjYXJhYmFqb3MlMjAyMDA5">Escarabajos 2009 <span class="quarto-category-count">(19)</span></div><div class="category" data-category="RXNjYXJhYmFqb3MlMjAyMDEw">Escarabajos 2010 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TWFyaXBvc2FzJTIwMjAwNA==">Mariposas 2004 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TWFyaXBvc2FzJTIwMjAwNQ==">Mariposas 2005 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TWFyaXBvc2FzJTIwMjAwNg==">Mariposas 2006 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="TWFyaXBvc2FzJTIwMjAwOQ==">Mariposas 2009 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="TWFyaXBvc2FzJTIwMjAxMA==">Mariposas 2010 <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -237,7 +271,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Las transectas o rutas de NeoMapas representan unidades regionales de análisis (URA), dentro de las cuales se distribuyen las unidades elementales de muestreo (UEM) que varían según el grupo taxonómico (trampas, punto observación, recorrido cronometrado).</p>
 <p>En esta lista se encuentran las rutas identificadas con un código alfanumérico y un nombre. Cada enlace contiene información general, actividades realizadas en la ruta y enlaces y referencias a los datos y documentos disponibles.</p>
@@ -258,10 +294,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+      <input type="text" class="search form-control" placeholder="Filtro">
     </div>
 </div>
-
 <table class="quarto-listing-table table">
 <thead>
 <tr>
@@ -274,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="Mariposas 2009,Aves 2010" data-listing-file-modified-sort="1708932966579" data-listing-reading-time-sort="1" data-listing-title-sort="NM01 - Río Tocuyo" data-listing-filename-sort="NM01.qmd">
+<tr data-index="0" data-categories="TWFyaXBvc2FzJTIwMjAwOSUyQ0F2ZXMlMjAyMDEw" data-listing-file-modified-sort="1742192885221" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="NM01 - Río Tocuyo" data-listing-filename-sort="NM01.qmd">
 <td>
 <a href="./NM/NM01.html" class="title listing-title">NM01 - Río Tocuyo</a>
 </td>
@@ -282,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Falcón</span>
 </td>
 </tr>
-<tr data-index="1" data-categories="Mariposas 2006,Escarabajos 2006,Aves 2010" data-listing-file-modified-sort="1708932966620" data-listing-reading-time-sort="2" data-listing-title-sort="NM02 - Paraguaná" data-listing-filename-sort="NM02.qmd">
+<tr data-index="1" data-categories="TWFyaXBvc2FzJTIwMjAwNiUyQ0VzY2FyYWJham9zJTIwMjAwNiUyQ0F2ZXMlMjAyMDEw" data-listing-file-modified-sort="1742192885221" data-listing-reading-time-sort="2" data-listing-word-count-sort="208" data-listing-title-sort="NM02 - Paraguaná" data-listing-filename-sort="NM02.qmd">
 <td>
 <a href="./NM/NM02.html" class="title listing-title">NM02 - Paraguaná</a>
 </td>
@@ -290,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Falcón</span>
 </td>
 </tr>
-<tr data-index="2" data-categories="Mariposas 2006,Aves 2010" data-listing-file-modified-sort="1705466517117" data-listing-reading-time-sort="1" data-listing-title-sort="NM03 - Quebrada Arriba" data-listing-filename-sort="NM03.qmd">
+<tr data-index="2" data-categories="TWFyaXBvc2FzJTIwMjAwNiUyQ0F2ZXMlMjAyMDEw" data-listing-file-modified-sort="1742192885222" data-listing-reading-time-sort="1" data-listing-word-count-sort="147" data-listing-title-sort="NM03 - Quebrada Arriba" data-listing-filename-sort="NM03.qmd">
 <td>
 <a href="./NM/NM03.html" class="title listing-title">NM03 - Quebrada Arriba</a>
 </td>
@@ -298,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Lara</span>
 </td>
 </tr>
-<tr data-index="3" data-categories="Mariposas 2006,Mariposas 2009,Escarabajos 2006,Escarabajos 2009,Aves 2010" data-listing-file-modified-sort="1708932966619" data-listing-reading-time-sort="2" data-listing-title-sort="NM05 - Rosario de Perijá" data-listing-filename-sort="NM05.qmd">
+<tr data-index="3" data-categories="TWFyaXBvc2FzJTIwMjAwNiUyQ01hcmlwb3NhcyUyMDIwMDklMkNFc2NhcmFiYWpvcyUyMDIwMDYlMkNFc2NhcmFiYWpvcyUyMDIwMDklMkNBdmVzJTIwMjAxMA==" data-listing-file-modified-sort="1742192885222" data-listing-reading-time-sort="2" data-listing-word-count-sort="250" data-listing-title-sort="NM05 - Rosario de Perijá" data-listing-filename-sort="NM05.qmd">
 <td>
 <a href="./NM/NM05.html" class="title listing-title">NM05 - Rosario de Perijá</a>
 </td>
@@ -306,7 +341,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Zulia</span>
 </td>
 </tr>
-<tr data-index="4" data-categories="Mariposas 2004,Mariposas 2006" data-listing-file-modified-sort="1705600615319" data-listing-reading-time-sort="1" data-listing-title-sort="NM06 - San Simón" data-listing-filename-sort="NM06.qmd">
+<tr data-index="4" data-categories="TWFyaXBvc2FzJTIwMjAwNCUyQ01hcmlwb3NhcyUyMDIwMDY=" data-listing-file-modified-sort="1742192885222" data-listing-reading-time-sort="1" data-listing-word-count-sort="118" data-listing-title-sort="NM06 - San Simón" data-listing-filename-sort="NM06.qmd">
 <td>
 <a href="./NM/NM06.html" class="title listing-title">NM06 - San Simón</a>
 </td>
@@ -314,7 +349,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Táchira</span>
 </td>
 </tr>
-<tr data-index="5" data-categories="Escarabajos 2009,Mariposas 2006,Mariposas 2009" data-listing-file-modified-sort="1708932966600" data-listing-reading-time-sort="1" data-listing-title-sort="NM07 - Sur del Lago" data-listing-filename-sort="NM07.qmd">
+<tr data-index="5" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5JTJDTWFyaXBvc2FzJTIwMjAwNiUyQ01hcmlwb3NhcyUyMDIwMDk=" data-listing-file-modified-sort="1742192885223" data-listing-reading-time-sort="1" data-listing-word-count-sort="188" data-listing-title-sort="NM07 - Sur del Lago" data-listing-filename-sort="NM07.qmd">
 <td>
 <a href="./NM/NM07.html" class="title listing-title">NM07 - Sur del Lago</a>
 </td>
@@ -322,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Zulia</span>
 </td>
 </tr>
-<tr data-index="6" data-categories="Escarabajos 2006,Escarabajos 2009,Mariposas 2006,Mariposas 2009" data-listing-file-modified-sort="1705600575285" data-listing-reading-time-sort="1" data-listing-title-sort="NM08 - Altagracia de Orituco" data-listing-filename-sort="NM08.qmd">
+<tr data-index="6" data-categories="RXNjYXJhYmFqb3MlMjAyMDA2JTJDRXNjYXJhYmFqb3MlMjAyMDA5JTJDTWFyaXBvc2FzJTIwMjAwNiUyQ01hcmlwb3NhcyUyMDIwMDk=" data-listing-file-modified-sort="1742192885224" data-listing-reading-time-sort="1" data-listing-word-count-sort="157" data-listing-title-sort="NM08 - Altagracia de Orituco" data-listing-filename-sort="NM08.qmd">
 <td>
 <a href="./NM/NM08.html" class="title listing-title">NM08 - Altagracia de Orituco</a>
 </td>
@@ -330,7 +365,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Guárico</span>
 </td>
 </tr>
-<tr data-index="7" data-categories="Escarabajos 2005,Escarabajos 2009" data-listing-file-modified-sort="1708932966600" data-listing-reading-time-sort="2" data-listing-title-sort="NM09 - Araya" data-listing-filename-sort="NM09.qmd">
+<tr data-index="7" data-categories="RXNjYXJhYmFqb3MlMjAyMDA1JTJDRXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885224" data-listing-reading-time-sort="2" data-listing-word-count-sort="225" data-listing-title-sort="NM09 - Araya" data-listing-filename-sort="NM09.qmd">
 <td>
 <a href="./NM/NM09.html" class="title listing-title">NM09 - Araya</a>
 </td>
@@ -338,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Sucre</span>
 </td>
 </tr>
-<tr data-index="8" data-categories="Escarabajos 2006" data-listing-file-modified-sort="1705489778825" data-listing-reading-time-sort="1" data-listing-title-sort="NM13 - San Fernando" data-listing-filename-sort="NM13.qmd">
+<tr data-index="8" data-categories="RXNjYXJhYmFqb3MlMjAyMDA2" data-listing-file-modified-sort="1742192885224" data-listing-reading-time-sort="1" data-listing-word-count-sort="145" data-listing-title-sort="NM13 - San Fernando" data-listing-filename-sort="NM13.qmd">
 <td>
 <a href="./NM/NM13.html" class="title listing-title">NM13 - San Fernando</a>
 </td>
@@ -346,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Apure</span>
 </td>
 </tr>
-<tr data-index="9" data-listing-file-modified-sort="1705462249637" data-listing-reading-time-sort="1" data-listing-title-sort="NM14 - San Tomé" data-listing-filename-sort="NM14.qmd">
+<tr data-index="9" data-listing-file-modified-sort="1742192885226" data-listing-reading-time-sort="1" data-listing-word-count-sort="101" data-listing-title-sort="NM14 - San Tomé" data-listing-filename-sort="NM14.qmd">
 <td>
 <a href="./NM/NM14.html" class="title listing-title">NM14 - San Tomé</a>
 </td>
@@ -354,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Anzoátegui</span>
 </td>
 </tr>
-<tr data-index="10" data-categories="Escarabajos 2009,Mariposas 2006,Mariposas 2009" data-listing-file-modified-sort="1705491268528" data-listing-reading-time-sort="1" data-listing-title-sort="NM15 - Cantaura" data-listing-filename-sort="NM15.qmd">
+<tr data-index="10" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5JTJDTWFyaXBvc2FzJTIwMjAwNiUyQ01hcmlwb3NhcyUyMDIwMDk=" data-listing-file-modified-sort="1742192885226" data-listing-reading-time-sort="1" data-listing-word-count-sort="169" data-listing-title-sort="NM15 - Cantaura" data-listing-filename-sort="NM15.qmd">
 <td>
 <a href="./NM/NM15.html" class="title listing-title">NM15 - Cantaura</a>
 </td>
@@ -362,7 +397,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Anzoátegui</span>
 </td>
 </tr>
-<tr data-index="11" data-categories="Escarabajos 2006" data-listing-file-modified-sort="1705600580374" data-listing-reading-time-sort="1" data-listing-title-sort="NM16 - Otopún" data-listing-filename-sort="NM16.qmd">
+<tr data-index="11" data-categories="RXNjYXJhYmFqb3MlMjAyMDA2" data-listing-file-modified-sort="1742192885226" data-listing-reading-time-sort="1" data-listing-word-count-sort="117" data-listing-title-sort="NM16 - Otopún" data-listing-filename-sort="NM16.qmd">
 <td>
 <a href="./NM/NM16.html" class="title listing-title">NM16 - Otopún</a>
 </td>
@@ -370,7 +405,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Barinas</span>
 </td>
 </tr>
-<tr data-index="12" data-categories="Escarabajos 2006" data-listing-file-modified-sort="1705600580374" data-listing-reading-time-sort="1" data-listing-title-sort="NM18 - San Joaquín de Navay" data-listing-filename-sort="NM18.qmd">
+<tr data-index="12" data-categories="RXNjYXJhYmFqb3MlMjAyMDA2" data-listing-file-modified-sort="1742192885227" data-listing-reading-time-sort="1" data-listing-word-count-sort="137" data-listing-title-sort="NM18 - San Joaquín de Navay" data-listing-filename-sort="NM18.qmd">
 <td>
 <a href="./NM/NM18.html" class="title listing-title">NM18 - San Joaquín de Navay</a>
 </td>
@@ -378,7 +413,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Táchira</span>
 </td>
 </tr>
-<tr data-index="13" data-listing-file-modified-sort="1705462249638" data-listing-reading-time-sort="1" data-listing-title-sort="NM19 - Capitanejo" data-listing-filename-sort="NM19.qmd">
+<tr data-index="13" data-listing-file-modified-sort="1742192885228" data-listing-reading-time-sort="1" data-listing-word-count-sort="100" data-listing-title-sort="NM19 - Capitanejo" data-listing-filename-sort="NM19.qmd">
 <td>
 <a href="./NM/NM19.html" class="title listing-title">NM19 - Capitanejo</a>
 </td>
@@ -386,7 +421,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Barinas</span>
 </td>
 </tr>
-<tr data-index="14" data-categories="Escarabajos 2006,Escarabajos 2009,Mariposas 2006,Mariposas 2009" data-listing-file-modified-sort="1705511986709" data-listing-reading-time-sort="1" data-listing-title-sort="NM22 - El Manteco" data-listing-filename-sort="NM22.qmd">
+<tr data-index="14" data-categories="RXNjYXJhYmFqb3MlMjAyMDA2JTJDRXNjYXJhYmFqb3MlMjAyMDA5JTJDTWFyaXBvc2FzJTIwMjAwNiUyQ01hcmlwb3NhcyUyMDIwMDk=" data-listing-file-modified-sort="1742192885228" data-listing-reading-time-sort="1" data-listing-word-count-sort="145" data-listing-title-sort="NM22 - El Manteco" data-listing-filename-sort="NM22.qmd">
 <td>
 <a href="./NM/NM22.html" class="title listing-title">NM22 - El Manteco</a>
 </td>
@@ -394,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Bolívar</span>
 </td>
 </tr>
-<tr data-index="15" data-categories="Escarabajos 2005,Escarabajos 2009" data-listing-file-modified-sort="1705600580374" data-listing-reading-time-sort="1" data-listing-title-sort="NM24 - Guri" data-listing-filename-sort="NM24.qmd">
+<tr data-index="15" data-categories="RXNjYXJhYmFqb3MlMjAyMDA1JTJDRXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885229" data-listing-reading-time-sort="1" data-listing-word-count-sort="129" data-listing-title-sort="NM24 - Guri" data-listing-filename-sort="NM24.qmd">
 <td>
 <a href="./NM/NM24.html" class="title listing-title">NM24 - Guri</a>
 </td>
@@ -402,7 +437,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Bolívar</span>
 </td>
 </tr>
-<tr data-index="16" data-listing-file-modified-sort="1708932859314" data-listing-reading-time-sort="1" data-listing-title-sort="NM25 - Yacambú" data-listing-filename-sort="NM25.qmd">
+<tr data-index="16" data-listing-file-modified-sort="1742192885229" data-listing-reading-time-sort="1" data-listing-word-count-sort="97" data-listing-title-sort="NM25 - Yacambú" data-listing-filename-sort="NM25.qmd">
 <td>
 <a href="./NM/NM25.html" class="title listing-title">NM25 - Yacambú</a>
 </td>
@@ -410,7 +445,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Lara</span>
 </td>
 </tr>
-<tr data-index="17" data-categories="Escarabajos 2005,Escarabajos 2009" data-listing-file-modified-sort="1705600545445" data-listing-reading-time-sort="1" data-listing-title-sort="NM26 - Jají" data-listing-filename-sort="NM26.qmd">
+<tr data-index="17" data-categories="RXNjYXJhYmFqb3MlMjAyMDA1JTJDRXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885229" data-listing-reading-time-sort="1" data-listing-word-count-sort="181" data-listing-title-sort="NM26 - Jají" data-listing-filename-sort="NM26.qmd">
 <td>
 <a href="./NM/NM26.html" class="title listing-title">NM26 - Jají</a>
 </td>
@@ -418,7 +453,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Mérida</span>
 </td>
 </tr>
-<tr data-index="18" data-categories="Escarabajos 2006" data-listing-file-modified-sort="1708932966620" data-listing-reading-time-sort="2" data-listing-title-sort="NM27 - Páramo" data-listing-filename-sort="NM27.qmd">
+<tr data-index="18" data-categories="RXNjYXJhYmFqb3MlMjAyMDA2" data-listing-file-modified-sort="1742192885230" data-listing-reading-time-sort="2" data-listing-word-count-sort="212" data-listing-title-sort="NM27 - Páramo" data-listing-filename-sort="NM27.qmd">
 <td>
 <a href="./NM/NM27.html" class="title listing-title">NM27 - Páramo</a>
 </td>
@@ -426,7 +461,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Mérida</span>
 </td>
 </tr>
-<tr data-index="19" data-categories="Escarabajos 2010" data-listing-file-modified-sort="1705490023321" data-listing-reading-time-sort="1" data-listing-title-sort="NM28 - Quebrada del Toro" data-listing-filename-sort="NM28.qmd">
+<tr data-index="19" data-categories="RXNjYXJhYmFqb3MlMjAyMDEw" data-listing-file-modified-sort="1742192885230" data-listing-reading-time-sort="1" data-listing-word-count-sort="116" data-listing-title-sort="NM28 - Quebrada del Toro" data-listing-filename-sort="NM28.qmd">
 <td>
 <a href="./NM/NM28.html" class="title listing-title">NM28 - Quebrada del Toro</a>
 </td>
@@ -434,7 +469,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Falcón</span>
 </td>
 </tr>
-<tr data-index="20" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705489913172" data-listing-reading-time-sort="1" data-listing-title-sort="NM29 - Guaramacal" data-listing-filename-sort="NM29.qmd">
+<tr data-index="20" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885231" data-listing-reading-time-sort="1" data-listing-word-count-sort="127" data-listing-title-sort="NM29 - Guaramacal" data-listing-filename-sort="NM29.qmd">
 <td>
 <a href="./NM/NM29.html" class="title listing-title">NM29 - Guaramacal</a>
 </td>
@@ -442,7 +477,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Trujillo</span>
 </td>
 </tr>
-<tr data-index="21" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705512068562" data-listing-reading-time-sort="1" data-listing-title-sort="NM34 - Gavilán" data-listing-filename-sort="NM34.qmd">
+<tr data-index="21" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885231" data-listing-reading-time-sort="1" data-listing-word-count-sort="143" data-listing-title-sort="NM34 - Gavilán" data-listing-filename-sort="NM34.qmd">
 <td>
 <a href="./NM/NM34.html" class="title listing-title">NM34 - Gavilán</a>
 </td>
@@ -450,7 +485,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Amazonas</span>
 </td>
 </tr>
-<tr data-index="22" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705512084745" data-listing-reading-time-sort="1" data-listing-title-sort="NM35 - Samariapo" data-listing-filename-sort="NM35.qmd">
+<tr data-index="22" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885232" data-listing-reading-time-sort="1" data-listing-word-count-sort="129" data-listing-title-sort="NM35 - Samariapo" data-listing-filename-sort="NM35.qmd">
 <td>
 <a href="./NM/NM35.html" class="title listing-title">NM35 - Samariapo</a>
 </td>
@@ -458,7 +493,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Amazonas</span>
 </td>
 </tr>
-<tr data-index="23" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705512077051" data-listing-reading-time-sort="1" data-listing-title-sort="NM39 - Piacoa" data-listing-filename-sort="NM39.qmd">
+<tr data-index="23" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885232" data-listing-reading-time-sort="1" data-listing-word-count-sort="136" data-listing-title-sort="NM39 - Piacoa" data-listing-filename-sort="NM39.qmd">
 <td>
 <a href="./NM/NM39.html" class="title listing-title">NM39 - Piacoa</a>
 </td>
@@ -466,7 +501,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Delta Amacuro</span>
 </td>
 </tr>
-<tr data-index="24" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705512075516" data-listing-reading-time-sort="1" data-listing-title-sort="NM41 - Campamento Río Grande" data-listing-filename-sort="NM41.qmd">
+<tr data-index="24" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885233" data-listing-reading-time-sort="1" data-listing-word-count-sort="148" data-listing-title-sort="NM41 - Campamento Río Grande" data-listing-filename-sort="NM41.qmd">
 <td>
 <a href="./NM/NM41.html" class="title listing-title">NM41 - Campamento Río Grande</a>
 </td>
@@ -474,7 +509,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Delta Amacuro</span>
 </td>
 </tr>
-<tr data-index="25" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705514692613" data-listing-reading-time-sort="1" data-listing-title-sort="NM43 - Manglarito, Hato Piñero" data-listing-filename-sort="NM43.qmd">
+<tr data-index="25" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885233" data-listing-reading-time-sort="1" data-listing-word-count-sort="175" data-listing-title-sort="NM43 - Manglarito, Hato Piñero" data-listing-filename-sort="NM43.qmd">
 <td>
 <a href="./NM/NM43.html" class="title listing-title">NM43 - Manglarito, Hato Piñero</a>
 </td>
@@ -482,7 +517,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Cojedes</span>
 </td>
 </tr>
-<tr data-index="26" data-listing-file-modified-sort="1708932966621" data-listing-reading-time-sort="1" data-listing-title-sort="NM45 - Paria" data-listing-filename-sort="NM45.qmd">
+<tr data-index="26" data-listing-file-modified-sort="1742192885233" data-listing-reading-time-sort="1" data-listing-word-count-sort="173" data-listing-title-sort="NM45 - Paria" data-listing-filename-sort="NM45.qmd">
 <td>
 <a href="./NM/NM45.html" class="title listing-title">NM45 - Paria</a>
 </td>
@@ -490,7 +525,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Sucre</span>
 </td>
 </tr>
-<tr data-index="27" data-categories="Escarabajos 2009,Mariposas 2006,Mariposas 2009" data-listing-file-modified-sort="1705491258075" data-listing-reading-time-sort="1" data-listing-title-sort="NM50 - Aroa" data-listing-filename-sort="NM50.qmd">
+<tr data-index="27" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5JTJDTWFyaXBvc2FzJTIwMjAwNiUyQ01hcmlwb3NhcyUyMDIwMDk=" data-listing-file-modified-sort="1742192885234" data-listing-reading-time-sort="1" data-listing-word-count-sort="80" data-listing-title-sort="NM50 - Aroa" data-listing-filename-sort="NM50.qmd">
 <td>
 <a href="./NM/NM50.html" class="title listing-title">NM50 - Aroa</a>
 </td>
@@ -498,7 +533,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Yaracuy</span>
 </td>
 </tr>
-<tr data-index="28" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705489954087" data-listing-reading-time-sort="1" data-listing-title-sort="NM55 - Coromoto" data-listing-filename-sort="NM55.qmd">
+<tr data-index="28" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885234" data-listing-reading-time-sort="1" data-listing-word-count-sort="83" data-listing-title-sort="NM55 - Coromoto" data-listing-filename-sort="NM55.qmd">
 <td>
 <a href="./NM/NM55.html" class="title listing-title">NM55 - Coromoto</a>
 </td>
@@ -506,7 +541,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Portuguesa :: Barinas</span>
 </td>
 </tr>
-<tr data-index="29" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705600524500" data-listing-reading-time-sort="1" data-listing-title-sort="NM57 - Piñango" data-listing-filename-sort="NM57.qmd">
+<tr data-index="29" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885235" data-listing-reading-time-sort="1" data-listing-word-count-sort="106" data-listing-title-sort="NM57 - Piñango" data-listing-filename-sort="NM57.qmd">
 <td>
 <a href="./NM/NM57.html" class="title listing-title">NM57 - Piñango</a>
 </td>
@@ -514,7 +549,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Mérida</span>
 </td>
 </tr>
-<tr data-index="30" data-categories="Escarabajos 2009" data-listing-file-modified-sort="1705512088721" data-listing-reading-time-sort="1" data-listing-title-sort="NM65 - Bochinche" data-listing-filename-sort="NM65.qmd">
+<tr data-index="30" data-categories="RXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885235" data-listing-reading-time-sort="1" data-listing-word-count-sort="27" data-listing-title-sort="NM65 - Bochinche" data-listing-filename-sort="NM65.qmd">
 <td>
 <a href="./NM/NM65.html" class="title listing-title">NM65 - Bochinche</a>
 </td>
@@ -522,7 +557,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Bolívar</span>
 </td>
 </tr>
-<tr data-index="31" data-categories="Escarabajos 2010,Mariposas 2010,Aves 2010" data-listing-file-modified-sort="1708932007643" data-listing-reading-time-sort="2" data-listing-title-sort="NM66 - Macanao" data-listing-filename-sort="NM66.qmd">
+<tr data-index="31" data-categories="RXNjYXJhYmFqb3MlMjAyMDEwJTJDTWFyaXBvc2FzJTIwMjAxMCUyQ0F2ZXMlMjAyMDEw" data-listing-file-modified-sort="1742192885236" data-listing-reading-time-sort="2" data-listing-word-count-sort="227" data-listing-title-sort="NM66 - Macanao" data-listing-filename-sort="NM66.qmd">
 <td>
 <a href="./NM/NM66.html" class="title listing-title">NM66 - Macanao</a>
 </td>
@@ -530,7 +565,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Nueva Esparta</span>
 </td>
 </tr>
-<tr data-index="32" data-categories="Escarabajos 2005,Mariposas 2004,Mariposas 2005,Mariposas 2006" data-listing-file-modified-sort="1708932966620" data-listing-reading-time-sort="1" data-listing-title-sort="NM92 - Hacienda Guáquira" data-listing-filename-sort="NM92.qmd">
+<tr data-index="32" data-categories="RXNjYXJhYmFqb3MlMjAyMDA1JTJDTWFyaXBvc2FzJTIwMjAwNCUyQ01hcmlwb3NhcyUyMDIwMDUlMkNNYXJpcG9zYXMlMjAyMDA2" data-listing-file-modified-sort="1742192885237" data-listing-reading-time-sort="1" data-listing-word-count-sort="47" data-listing-title-sort="NM92 - Hacienda Guáquira" data-listing-filename-sort="NM92.qmd">
 <td>
 <a href="./NM/NM92.html" class="title listing-title">NM92 - Hacienda Guáquira</a>
 </td>
@@ -538,7 +573,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Yaracuy</span>
 </td>
 </tr>
-<tr data-index="33" data-categories="Escarabajos 2006,Escarabajos 2009" data-listing-file-modified-sort="1705511984878" data-listing-reading-time-sort="1" data-listing-title-sort="NM93 - Anacoco" data-listing-filename-sort="NM93.qmd">
+<tr data-index="33" data-categories="RXNjYXJhYmFqb3MlMjAyMDA2JTJDRXNjYXJhYmFqb3MlMjAyMDA5" data-listing-file-modified-sort="1742192885237" data-listing-reading-time-sort="1" data-listing-word-count-sort="10" data-listing-title-sort="NM93 - Anacoco" data-listing-filename-sort="NM93.qmd">
 <td>
 <a href="./NM/NM93.html" class="title listing-title">NM93 - Anacoco</a>
 </td>
@@ -546,7 +581,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Bolívar</span>
 </td>
 </tr>
-<tr data-index="34" data-listing-file-modified-sort="1705514691179" data-listing-reading-time-sort="2" data-listing-title-sort="NM95 - Charco Azul/Arenales" data-listing-filename-sort="NM95.qmd">
+<tr data-index="34" data-listing-file-modified-sort="1742192885238" data-listing-reading-time-sort="2" data-listing-word-count-sort="207" data-listing-title-sort="NM95 - Charco Azul/Arenales" data-listing-filename-sort="NM95.qmd">
 <td>
 <a href="./NM/NM95.html" class="title listing-title">NM95 - Charco Azul/Arenales</a>
 </td>
@@ -554,7 +589,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="listing-subtitle">Cojedes</span>
 </td>
 </tr>
-<tr data-index="35" data-categories="Escarabajos 2005,Escarabajos 2008,Mariposas 2004,Mariposas 2005,Mariposas 2006,Mariposas 2009" data-listing-file-modified-sort="1705490887601" data-listing-reading-time-sort="1" data-listing-title-sort="NM97 - IVIC" data-listing-filename-sort="NM97.qmd">
+<tr data-index="35" data-categories="RXNjYXJhYmFqb3MlMjAyMDA1JTJDRXNjYXJhYmFqb3MlMjAyMDA4JTJDTWFyaXBvc2FzJTIwMjAwNCUyQ01hcmlwb3NhcyUyMDIwMDUlMkNNYXJpcG9zYXMlMjAyMDA2JTJDTWFyaXBvc2FzJTIwMjAwOQ==" data-listing-file-modified-sort="1742192885238" data-listing-reading-time-sort="1" data-listing-word-count-sort="78" data-listing-title-sort="NM97 - IVIC" data-listing-filename-sort="NM97.qmd">
 <td>
 <a href="./NM/NM97.html" class="title listing-title">NM97 - IVIC</a>
 </td>
@@ -563,7 +598,6 @@ ul.task-list li input[type="checkbox"] {
 </td>
 </tr>
 </tbody>
-
 </table>
 <div class="listing-no-matching d-none">
 No hay resultados
@@ -618,6 +652,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -686,13 +747,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -727,18 +790,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -770,11 +822,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/neomapas\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -784,8 +873,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -797,7 +895,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -841,6 +1061,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -866,6 +1087,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -929,4 +1176,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NeoMapas/NeoMapas.github.io/edit/alpha-centauri/lugares.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/NeoMapas/NeoMapas.github.io/issues/new" class="toc-action">Informar de un problema</a></p></div></div></div></div></footer></body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/NeoMapas/NeoMapas.github.io/edit/alpha-centauri/lugares.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/NeoMapas/NeoMapas.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></div></div></footer></body></html>

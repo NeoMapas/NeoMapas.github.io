@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NeoMapas - Kricogonia lyside</title>
+<title>Kricogonia lyside – NeoMapas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -55,19 +56,25 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ca18fbd2e8790c6568535d603d3b1e7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-fdf986989e2058d46a90f864900247d8.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -76,11 +83,13 @@ div.csl-indent {
     "search-more-match-text": "resultado adicional en este documento",
     "search-more-matches-text": "resultados adicionales en este documento",
     "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar",
     "search-label": "Buscar"
   }
 }</script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 <script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
@@ -89,16 +98,16 @@ div.csl-indent {
 <script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-binding-2.2.0/leaflet.js"></script>
-<script src="../site_libs/leaflet-providers-1.13.0/leaflet-providers_1.13.0.js"></script>
-<script src="../site_libs/leaflet-providers-plugin-2.2.0/leaflet-providers-plugin.js"></script>
+<script src="../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<script src="../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 <link href="../site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet">
 <script src="../site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
 <script src="../site_libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta name="twitter:title" content="NeoMapas - Kricogonia lyside">
+<meta name="twitter:title" content="Kricogonia lyside – NeoMapas">
 <meta name="twitter:description" content="La mariposa del Guayacán">
 <meta name="twitter:creator" content="@neomapas">
 <meta name="twitter:card" content="summary">
@@ -108,99 +117,99 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">NeoMapas</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Inicio</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lugares" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lugares" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lugares</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-lugares">    
         <li>
-    <a class="dropdown-item" href="../CNEB.html" rel="" target="">
+    <a class="dropdown-item" href="../CNEB.html">
  <span class="dropdown-text">CNEB</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../lugares.html" rel="" target="">
+    <a class="dropdown-item" href="../lugares.html">
  <span class="dropdown-text">Rutas de NeoMapas</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxones" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxones" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Taxones</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-taxones">    
         <li class="dropdown-header">Grupos indicadores</li>
         <li>
-    <a class="dropdown-item" href="../grupos_indicadores/mariposas.html" rel="" target="">
+    <a class="dropdown-item" href="../grupos_indicadores/mariposas.html">
  <span class="dropdown-text">Mariposas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../grupos_indicadores/escarabajos.html" rel="" target="">
+    <a class="dropdown-item" href="../grupos_indicadores/escarabajos.html">
  <span class="dropdown-text">Escarabajos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../grupos_indicadores/aves.html" rel="" target="">
+    <a class="dropdown-item" href="../grupos_indicadores/aves.html">
  <span class="dropdown-text">Aves</span></a>
   </li>  
         <li class="dropdown-header">+ información</li>
         <li>
-    <a class="dropdown-item" href="../grupos_indicadores/resumen-resultados.html" rel="" target="">
+    <a class="dropdown-item" href="../grupos_indicadores/resumen-resultados.html">
  <span class="dropdown-text">Resumen por grupo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../especies.html" rel="" target="">
+    <a class="dropdown-item" href="../especies.html">
  <span class="dropdown-text">Especies destacadas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://neomapas.github.io/iNat-obs-dashboard/" rel="" target="">
+    <a class="dropdown-item" href="https://neomapas.github.io/iNat-obs-dashboard/">
  <span class="dropdown-text">Contribuciones en iNaturalist</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-producción-científica" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-producción-científica" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Producción científica</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-producción-científica">    
         <li>
-    <a class="dropdown-item" href="../referencias.html" rel="" target="">
+    <a class="dropdown-item" href="../referencias.html">
  <span class="dropdown-text">Publicaciones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../presentaciones.html" rel="" target="">
+    <a class="dropdown-item" href="../presentaciones.html">
  <span class="dropdown-text">Presentaciones</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../personas.html" rel="" target="">
- <span class="menu-text">Personas</span></a>
+    <a class="nav-link" href="../personas.html"> 
+<span class="menu-text">Personas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
- <span class="menu-text">+ información</span></a>
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">+ información</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -212,7 +221,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../img/logo_NeoMapas_p.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Iniciativa para el monitoreo de la biodiversidad Neotropical</figcaption>
+<figcaption>Iniciativa para el monitoreo de la biodiversidad Neotropical</figcaption>
 </figure>
 </div>
 </div></div>
@@ -222,7 +231,7 @@ div.csl-indent {
   <ul>
   <li><a href="#documentos" id="toc-documentos" class="nav-link active" data-scroll-target="#documentos">Documentos</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NeoMapas/NeoMapas.github.io/edit/alpha-centauri/taxa/Kricogonia-lyside.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/NeoMapas/NeoMapas.github.io/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/NeoMapas/NeoMapas.github.io/edit/alpha-centauri/taxa/Kricogonia-lyside.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/NeoMapas/NeoMapas.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -247,13 +256,14 @@ div.csl-indent {
   </div>
   
 
+
 </header>
+
 
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-5d4671cd5c4c3c1dc391" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-5d4671cd5c4c3c1dc391">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,"Esri.NatGeoWorldMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.68333333333328,-71.84999999999995,-71.84999999999995,-71.68333333333328,-71.51666666666661,-71.34999999999994,-71.34999999999994,-71.51666666666661,-71.68333333333328],"lat":[10.2,10.2,10.7,10.7,10.7,10.7,10.2,10.2,10.2]}]],[[{"lng":[-63.68333333333307,-63.84999999999973,-63.84999999999973,-63.68333333333307,-63.5166666666664,-63.34999999999974,-63.34999999999974,-63.5166666666664,-63.68333333333307],"lat":[10.2,10.2,10.7,10.7,10.7,10.7,10.2,10.2,10.2]}]],[[{"lng":[-62.18333333333309,-62.34999999999975,-62.34999999999975,-62.18333333333309,-62.01666666666642,-61.84999999999976,-61.84999999999976,-62.01666666666642,-62.18333333333309],"lat":[10.2,10.2,10.7,10.7,10.7,10.7,10.2,10.2,10.2]}]],[[{"lng":[-64.68333333333308,-64.84999999999975,-64.84999999999975,-64.68333333333308,-64.51666666666641,-64.34999999999974,-64.34999999999974,-64.51666666666641,-64.68333333333308],"lat":[10.7,10.7,11.2,11.2,11.2,11.2,10.7,10.7,10.7]}]],[[{"lng":[-64.18333333333307,-64.34999999999974,-64.34999999999974,-64.18333333333307,-64.0166666666664,-63.84999999999973,-63.84999999999973,-64.0166666666664,-64.18333333333307],"lat":[10.7,10.7,11.2,11.2,11.2,11.2,10.7,10.7,10.7]}]],[[{"lng":[-70.18333333333324,-70.34999999999991,-70.34999999999991,-70.18333333333324,-70.01666666666657,-69.84999999999989,-69.84999999999989,-70.01666666666657,-70.18333333333324],"lat":[11.7,11.7,12.2,12.2,12.2,12.2,11.7,11.7,11.7]}]]],["d04","d20","d23","c18","c19","a07"],"CN_sf",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#D9D9D9","#D9D9D9","#D9D9D9","#D9D9D9","#D9D9D9","#D9D9D9"],"fillOpacity":[0.4,0.4,0.4,0.4,0.4,0.4],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>d04<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>d04<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>d20<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>d20<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>d23<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>d23<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>c18<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>c18<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>c19<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>c19<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>a07<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>a07<\/nobr><\/td><\/tr><\/table><\/div>"],null,["d04","d20","d23","c18","c19","a07"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircles","args":[[12.09638,12.18636,10.56313,10.61739,10.64255,10.64971,10.66287,10.65054,10.6433,10.62213,10.56772,10.53926,10.59406,10.58942,10.63957,10.65137,10.6529,10.63472,10.58273,10.52719,11.03617,11.04648,10.98889,11.04586,11.04338,11.03763,10.64936,10.6433,10.61016,10.6503,10.60133,11.06328333,12.08864,10.57065,10.65342,10.5433,10.58618333,10.62505695,10.63705,10.64657497],[-69.99768,-70.02778000000001,-63.65665,-63.64487,-63.67114,-63.729084,-63.78892,-63.7349,-63.6756,-63.64063,-63.65837,-63.64025,-63.65652,-63.65768,-63.63834,-63.69839,-63.79941,-63.63758,-63.65886,-63.63162,-64.36517000000001,-64.33041,-64.11368,-64.21413,-64.35061,-64.22096999999999,-63.73755,-63.67557,-63.65088,-63.72144,-62.27533,-64.19974999999999,-69.99473,-71.70443,-71.76973,-63.64818333,-63.65943333,-63.64066047,-63.64941666,-63.73072897],[3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796],["A25j1","B25J3","D14A2","D14A3","D14A4","D14A5","D15A1b","D15A2","D15A3","D15A4","D15A5","D15A7","D15A8","E14A2","E14A3","E14A4","E15A1","E15A4","E15A5","E15A6","LUV1261008","LUV1261010","LUV1461001","LUV1461006","LUV1561003","LUV1561004","MST11J02","MST12j02","MST14J06","MST14j09","MST15j04","MT29D1","MT9D5","Maracaibo2","Maracaibo4","NM9A.007","NM9A.014","NM9A.021","NM9A.024","NM9A.037"],"UEMs",{"interactive":true,"className":"","pane":"tmap402","stroke":true,"color":"#666666","weight":1,"opacity":0.5,"fill":true,"fillColor":["#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9"],"fillOpacity":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>A25j1<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>A25j1<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-07-25<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>B25J3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>B25J3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-07-25<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>45<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A1b<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A1b<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>45<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>30<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A7<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A7<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>20<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A8<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A8<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>40<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E14A2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E14A2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>120<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E14A3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E14A3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>120<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E14A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E14A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>40<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A1<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A1<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>20<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A6<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A6<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>40<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1261008<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1261008<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1261010<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1261010<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>30<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1461001<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1461001<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1461006<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1461006<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1561003<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1561003<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1561004<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1561004<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>90<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST11J02<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST11J02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-11<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>100<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST12j02<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST12j02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST14J06<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST14J06<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST14j09<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST14j09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST15j04<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST15j04<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>45<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MT29D1<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MT29D1<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-12-29<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>3<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MT9D5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MT9D5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-12-09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>30<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Maracaibo2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>Maracaibo2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>—<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2004-07-03<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Maracaibo4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>Maracaibo4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>—<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2004-07-03<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-007<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-007<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-13<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>5<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-014<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-014<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-021<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-021<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-11<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-024<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-024<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-037<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-037<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-11<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>20<\/nobr><\/td><\/tr><\/table><\/div>"],null,["A25j1","B25J3","D14A2","D14A3","D14A4","D14A5","D15A1b","D15A2","D15A3","D15A4","D15A5","D15A7","D15A8","E14A2","E14A3","E14A4","E15A1","E15A4","E15A5","E15A6","LUV1261008","LUV1261010","LUV1461001","LUV1461006","LUV1561003","LUV1561004","MST11J02","MST12j02","MST14J06","MST14j09","MST15j04","MT29D1","MT9D5","Maracaibo2","Maracaibo4","NM9A-007","NM9A-014","NM9A-021","NM9A-024","NM9A-037"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]},{"method":"addLayersControl","args":[["Esri.NatGeoWorldMap","Esri.WorldImagery"],["CN_sf","UEMs"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]},{"method":"addMiniMap","args":[null,"Esri.NatGeoWorldMap","bottomleft",150,150,19,19,-5,false,false,false,true,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]}],"limits":{"lat":[10.2,12.2],"lng":[-71.84999999999995,-61.84999999999976]},"fitBounds":[10.2,-71.84999999999995,12.2,-61.84999999999976,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n\t\t\t    function(el, x) {\n\t\t\t      var myMap = this;\n\t\t\t      myMap.on('baselayerchange',\n\t\t\t        function (e) {\n\t\t\t          myMap.minimap.changeLayer(L.tileLayer.provider(e.name));\n\t\t\t        })\n\t\t\t    }).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-a4c32a6175b497bb9c55" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a4c32a6175b497bb9c55">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,"Esri.NatGeoWorldMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.68333333333328,-71.84999999999995,-71.84999999999995,-71.68333333333328,-71.51666666666661,-71.34999999999994,-71.34999999999994,-71.51666666666661,-71.68333333333328],"lat":[10.2,10.2,10.7,10.7,10.7,10.7,10.2,10.2,10.2]}]],[[{"lng":[-63.68333333333307,-63.84999999999973,-63.84999999999973,-63.68333333333307,-63.5166666666664,-63.34999999999974,-63.34999999999974,-63.5166666666664,-63.68333333333307],"lat":[10.2,10.2,10.7,10.7,10.7,10.7,10.2,10.2,10.2]}]],[[{"lng":[-62.18333333333309,-62.34999999999975,-62.34999999999975,-62.18333333333309,-62.01666666666642,-61.84999999999976,-61.84999999999976,-62.01666666666642,-62.18333333333309],"lat":[10.2,10.2,10.7,10.7,10.7,10.7,10.2,10.2,10.2]}]],[[{"lng":[-64.68333333333308,-64.84999999999975,-64.84999999999975,-64.68333333333308,-64.51666666666641,-64.34999999999974,-64.34999999999974,-64.51666666666641,-64.68333333333308],"lat":[10.7,10.7,11.2,11.2,11.2,11.2,10.7,10.7,10.7]}]],[[{"lng":[-64.18333333333307,-64.34999999999974,-64.34999999999974,-64.18333333333307,-64.0166666666664,-63.84999999999973,-63.84999999999973,-64.0166666666664,-64.18333333333307],"lat":[10.7,10.7,11.2,11.2,11.2,11.2,10.7,10.7,10.7]}]],[[{"lng":[-70.18333333333324,-70.34999999999991,-70.34999999999991,-70.18333333333324,-70.01666666666657,-69.84999999999989,-69.84999999999989,-70.01666666666657,-70.18333333333324],"lat":[11.7,11.7,12.2,12.2,12.2,12.2,11.7,11.7,11.7]}]]],["d04","d20","d23","c18","c19","a07"],"CN_sf",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#D9D9D9","#D9D9D9","#D9D9D9","#D9D9D9","#D9D9D9","#D9D9D9"],"fillOpacity":[0.4,0.4,0.4,0.4,0.4,0.4],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>d04<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>d04<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>d20<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>d20<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>d23<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>d23<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>c18<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>c18<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>c19<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>c19<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>a07<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>celda<\/nobr><\/td><td align=\"right\"><nobr>a07<\/nobr><\/td><\/tr><\/table><\/div>"],null,["d04","d20","d23","c18","c19","a07"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircles","args":[[12.09638,12.18636,10.56313,10.61739,10.64255,10.64971,10.66287,10.65054,10.6433,10.62213,10.56772,10.53926,10.59406,10.58942,10.63957,10.65137,10.6529,10.63472,10.58273,10.52719,11.03617,11.04648,10.98889,11.04586,11.04338,11.03763,10.64936,10.6433,10.61016,10.6503,10.60133,11.06328333,12.08864,10.57065,10.65342,10.5433,10.58618333,10.62505695,10.63705,10.64657497],[-69.99768,-70.02778000000001,-63.65665,-63.64487,-63.67114,-63.729084,-63.78892,-63.7349,-63.6756,-63.64063,-63.65837,-63.64025,-63.65652,-63.65768,-63.63834,-63.69839,-63.79941,-63.63758,-63.65886,-63.63162,-64.36517000000001,-64.33041,-64.11368,-64.21413,-64.35061,-64.22096999999999,-63.73755,-63.67557,-63.65088,-63.72144,-62.27533,-64.19974999999999,-69.99473,-71.70443,-71.76973,-63.64818333,-63.65943333,-63.64066047,-63.64941666,-63.73072897],[3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796,3706.503372582796],["A25j1","B25J3","D14A2","D14A3","D14A4","D14A5","D15A1b","D15A2","D15A3","D15A4","D15A5","D15A7","D15A8","E14A2","E14A3","E14A4","E15A1","E15A4","E15A5","E15A6","LUV1261008","LUV1261010","LUV1461001","LUV1461006","LUV1561003","LUV1561004","MST11J02","MST12j02","MST14J06","MST14j09","MST15j04","MT29D1","MT9D5","Maracaibo2","Maracaibo4","NM9A.007","NM9A.014","NM9A.021","NM9A.024","NM9A.037"],"UEMs",{"interactive":true,"className":"","pane":"tmap402","stroke":true,"color":"#666666","weight":1,"opacity":0.5,"fill":true,"fillColor":["#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9","#EE7AE9"],"fillOpacity":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>A25j1<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>A25j1<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-07-25<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>B25J3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>B25J3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-07-25<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>45<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D14A5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D14A5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A1b<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A1b<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>45<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>30<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A7<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A7<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>20<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>D15A8<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>D15A8<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>40<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E14A2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E14A2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>120<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E14A3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E14A3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>120<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E14A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E14A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>40<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A1<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A1<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>20<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>E15A6<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>E15A6<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2006-08-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>40<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1261008<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1261008<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1261010<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1261010<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>30<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1461001<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1461001<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1461006<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1461006<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>75<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1561003<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1561003<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>LUV1561004<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>LUV1561004<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2010-06-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>90<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST11J02<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST11J02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-11<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>100<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST12j02<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST12j02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>60<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST14J06<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST14J06<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST14j09<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST14j09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MST15j04<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MST15j04<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>45<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2009-06-15<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MT29D1<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MT29D1<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>66<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-12-29<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>3<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>MT9D5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>MT9D5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>02<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-12-09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>30<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Maracaibo2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>Maracaibo2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>—<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2004-07-03<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Maracaibo4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>Maracaibo4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>—<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2004-07-03<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-007<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-007<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-13<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>5<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-014<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-014<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>15<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-021<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-021<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-11<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-024<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-024<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>NM9A-037<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>vst<\/nobr><\/td><td align=\"right\"><nobr>NM9A-037<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>NM<\/nobr><\/td><td align=\"right\"><nobr>09<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>fecha<\/nobr><\/td><td align=\"right\"><nobr>2005-06-11<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>esfuerzo<\/nobr><\/td><td align=\"right\"><nobr>20<\/nobr><\/td><\/tr><\/table><\/div>"],null,["A25j1","B25J3","D14A2","D14A3","D14A4","D14A5","D15A1b","D15A2","D15A3","D15A4","D15A5","D15A7","D15A8","E14A2","E14A3","E14A4","E15A1","E15A4","E15A5","E15A6","LUV1261008","LUV1261010","LUV1461001","LUV1461006","LUV1561003","LUV1561004","MST11J02","MST12j02","MST14J06","MST14j09","MST15j04","MT29D1","MT9D5","Maracaibo2","Maracaibo4","NM9A-007","NM9A-014","NM9A-021","NM9A-024","NM9A-037"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]},{"method":"addLayersControl","args":[["Esri.NatGeoWorldMap","Esri.WorldImagery"],["CN_sf","UEMs"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]},{"method":"addMiniMap","args":[null,"Esri.NatGeoWorldMap","bottomleft",150,150,19,19,-5,false,false,false,true,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]}],"limits":{"lat":[10.2,12.2],"lng":[-71.84999999999995,-61.84999999999976]},"fitBounds":[10.2,-71.84999999999995,12.2,-61.84999999999976,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n\t\t\t    function(el, x) {\n\t\t\t      var myMap = this;\n\t\t\t      myMap.on('baselayerchange',\n\t\t\t        function (e) {\n\t\t\t          myMap.minimap.changeLayer(L.tileLayer.provider(e.name));\n\t\t\t        })\n\t\t\t    }).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 </div>
 </div>
 <p><em>Kricogonia lyside</em> fue detectada en 4 rutas : <a href="../NM/NM02.html">NM02</a>, <a href="../NM/NM09.html">NM09</a>, <a href="../NM/NM66.html">NM66</a>, <a href="../NM/NM45.html">NM45</a>; y en muestreos oportunistas en la celda <a href="../celdas/d04.qmd">d04</a>.</p>
@@ -261,7 +271,7 @@ div.csl-indent {
 <p><span class="citation" data-cites="Ferrer_Paris_2012">(<a href="#ref-Ferrer_Paris_2012" role="doc-biblioref">Ferrer-Paris et&nbsp;al. 2012</a>)</span></p>
 <section id="documentos" class="level1">
 <h1>Documentos</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Ferrer_Paris_2008_PhD_thesis" class="csl-entry" role="listitem">
 Ferrer-Paris, José Rafael. 2008. <span>«Patrones de distribución y abundancia en mariposas piérides (Lepidoptera: Pieridae) a diferentes escalas geográficas»</span>. Tesis doctoral, Altos de Pipe, Venezuela: Centro de Estudios Avanzados, Instituto Venezolano de Investigaciones Científicas; figshare. <a href="https://doi.org/10.6084/M9.FIGSHARE.1094411">https://doi.org/10.6084/M9.FIGSHARE.1094411</a>.
 </div>
@@ -321,6 +331,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -389,13 +426,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -430,18 +469,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -473,11 +501,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/neomapas\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -487,8 +552,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -500,7 +574,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -544,6 +740,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -569,6 +766,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -632,4 +855,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NeoMapas/NeoMapas.github.io/edit/alpha-centauri/taxa/Kricogonia-lyside.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/NeoMapas/NeoMapas.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Informar de un problema</a></li></ul></div></div></div></footer></body></html>
